@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "title": "CatSensor - Know Your Cat's Health, Every Day"
+  },
+  "nav": {
+    "links": [
+      { "label": "Why CatSensor", "href": "#problem" },
+      { "label": "How It Works", "href": "#how" },
+      { "label": "Features", "href": "#features" }
+    ],
+    "preorder": "Pre-order",
+    "localeButton": "FR",
+    "localeAria": "Switch language to French"
+  },
+  "hero": {
+    "titleStart": "Know when your cat",
+    "titleAccent": "isn't well",
+    "titleEnd": "before it's too late.",
+    "description": "CatSensor tracks your cat's weight and body composition daily - automatically, at home, without effort.",
+    "primaryCta": "Pre-order Now",
+    "secondaryCta": "How it works"
+  },
+  "problem": {
+    "eyebrow": "The Problem",
+    "titleStart": "Cats hide pain.",
+    "titleEnd": "You shouldn't have to guess.",
+    "description": "By the time symptoms appear, issues have usually been progressing for weeks. Earlier data changes the outcome.",
+    "items": [
+      {
+        "number": "01 -",
+        "title": "Silent suffering",
+        "body": "Cats instinctively mask illness - a survival trait. By the time you notice something is wrong, it's often already serious.",
+        "stat": "85% of owners miss early signs"
+      },
+      {
+        "number": "02 -",
+        "title": "Expensive surprises",
+        "body": "Emergency vet visits cost 3-5x more than preventive care. Most owners only discover issues when the cat stops eating.",
+        "stat": "Avg. emergency: $800-$1,500"
+      },
+      {
+        "number": "03 -",
+        "title": "No data at home",
+        "body": "Your cat sees the vet once a year. Between visits, there is no way to track health trends or detect gradual changes.",
+        "stat": "~1 vet visit per year on average"
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "How It Works",
+    "titleStart": "Passive monitoring.",
+    "titleEnd": "Active insight.",
+    "steps": [
+      {
+        "title": "Cat steps on, naturally",
+        "body": "The feeding station doubles as a precision scale. Every meal becomes an automatic health check - no training, no friction, no extra steps."
+      },
+      {
+        "title": "Bio-impedance analysis",
+        "body": "Embedded sensors measure electrical resistance through your cat's body, calculating muscle mass, hydration, and fat percentage in seconds."
+      },
+      {
+        "title": "Insights in your pocket",
+        "body": "The companion app shows daily trends, flags anomalies, and generates vet-ready reports you can share directly with your veterinarian."
+      }
+    ],
+    "monitor": {
+      "title": "Mochi - Today",
+      "weight": "Weight",
+      "hydration": "Hydration",
+      "muscle": "Muscle"
+    }
+  },
+  "features": {
+    "eyebrow": "Features",
+    "titleStart": "Everything your vet",
+    "titleEnd": "wishes you had.",
+    "description": "A continuous health dataset built from your cat's daily routine.",
+    "items": [
+      {
+        "title": "Early Detection",
+        "description": "Catch weight loss, dehydration, or muscle loss weeks before visible symptoms. Get notified when patterns shift.",
+        "icon": "clock"
+      },
+      {
+        "title": "Health Trends",
+        "description": "Track 30-day, 90-day, and yearly curves. Understand what's normal for your specific cat - not just averages.",
+        "icon": "trend"
+      },
+      {
+        "title": "Vet-Ready Reports",
+        "description": "One-tap export of full health history. Walk into any appointment with data, not just a description of symptoms.",
+        "icon": "report"
+      },
+      {
+        "title": "Effortless Daily Use",
+        "description": "No training required. CatSensor integrates into your cat's existing feeding routine - they never notice it's there.",
+        "icon": "routine"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Early Access",
+    "titleStart": "Be the first to know",
+    "titleEnd": "your cat is healthy.",
+    "description": "Reserve your spot. Be among the first to try CatSensor when it launches.",
+    "form": {
+      "placeholder": "your{'@'}email.com",
+      "button": "Get Early Access",
+      "loading": "Joining",
+      "error": "Please enter a valid email.",
+      "successTitle": "You're on the list.",
+      "successBody": "We'll reach out the moment CatSensor is ready to ship.",
+      "successFoot": "Early access confirmed",
+      "privacyLead": "No spam, ever.",
+      "privacyLink": "Privacy policy"
+    }
+  },
+  "footer": {
+    "links": [
+      { "label": "About", "href": "#" },
+      { "label": "Privacy", "href": "#" },
+      { "label": "Contact", "href": "#" },
+      { "label": "Instagram", "href": "#" },
+      { "label": "Press", "href": "#" }
+    ],
+    "copyright": "© 2025 CatSensor"
+  }
+}

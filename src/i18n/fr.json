@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "title": "CatSensor - Suivez la santé de votre chat, chaque jour"
+  },
+  "nav": {
+    "links": [
+      { "label": "Pourquoi CatSensor", "href": "#problem" },
+      { "label": "Fonctionnement", "href": "#how" },
+      { "label": "Fonctionnalités", "href": "#features" }
+    ],
+    "preorder": "Précommander",
+    "localeButton": "EN",
+    "localeAria": "Changer la langue vers anglais"
+  },
+  "hero": {
+    "titleStart": "Sachez quand votre chat",
+    "titleAccent": "ne va pas bien",
+    "titleEnd": "avant qu'il ne soit trop tard.",
+    "description": "CatSensor suit chaque jour le poids et la composition corporelle de votre chat - automatiquement, à la maison, sans effort.",
+    "primaryCta": "Précommander maintenant",
+    "secondaryCta": "Voir le fonctionnement"
+  },
+  "problem": {
+    "eyebrow": "Le problème",
+    "titleStart": "Les chats cachent leur douleur.",
+    "titleEnd": "Vous ne devriez pas avoir à deviner.",
+    "description": "Quand les symptômes apparaissent, le problème évolue souvent depuis des semaines. Des données plus tôt changent l'issue.",
+    "items": [
+      {
+        "number": "01 -",
+        "title": "Souffrance silencieuse",
+        "body": "Les chats masquent instinctivement la maladie - un réflexe de survie. Quand vous remarquez qu'il y a un problème, il est souvent déjà sérieux.",
+        "stat": "85 % des propriétaires manquent les premiers signes"
+      },
+      {
+        "number": "02 -",
+        "title": "Mauvaises surprises coûteuses",
+        "body": "Les visites d'urgence coûtent 3 à 5x plus cher que les soins préventifs. La plupart des propriétaires découvrent les problèmes quand le chat arrête de manger.",
+        "stat": "Urgence moyenne : 800 $ à 1 500 $"
+      },
+      {
+        "number": "03 -",
+        "title": "Aucune donnée à domicile",
+        "body": "Votre chat voit le vétérinaire une fois par an. Entre les visites, il n'existe aucun moyen de suivre les tendances de santé ou de détecter les changements progressifs.",
+        "stat": "~1 visite vétérinaire par an en moyenne"
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "Fonctionnement",
+    "titleStart": "Suivi passif.",
+    "titleEnd": "Informations utiles.",
+    "steps": [
+      {
+        "title": "Le chat monte dessus naturellement",
+        "body": "La station d'alimentation sert aussi de balance de précision. Chaque repas devient un contrôle de santé automatique - sans entraînement, sans friction, sans étape supplémentaire."
+      },
+      {
+        "title": "Analyse par bio-impédance",
+        "body": "Des capteurs intégrés mesurent la résistance électrique dans le corps de votre chat pour calculer la masse musculaire, l'hydratation et le taux de graisse en quelques secondes."
+      },
+      {
+        "title": "Les infos dans votre poche",
+        "body": "L'application compagnon affiche les tendances quotidiennes, signale les anomalies et génère des rapports prêts pour le vétérinaire que vous pouvez partager directement."
+      }
+    ],
+    "monitor": {
+      "title": "Mochi - Aujourd'hui",
+      "weight": "Poids",
+      "hydration": "Hydratation",
+      "muscle": "Muscle"
+    }
+  },
+  "features": {
+    "eyebrow": "Fonctionnalités",
+    "titleStart": "Tout ce que votre vétérinaire",
+    "titleEnd": "aimerait que vous ayez.",
+    "description": "Un historique continu de santé construit à partir de la routine quotidienne de votre chat.",
+    "items": [
+      {
+        "title": "Détection précoce",
+        "description": "Repérez une perte de poids, une déshydratation ou une perte musculaire des semaines avant les symptômes visibles. Recevez une alerte quand les tendances changent.",
+        "icon": "clock"
+      },
+      {
+        "title": "Tendances de santé",
+        "description": "Suivez des courbes sur 30 jours, 90 jours et sur l'année. Comprenez ce qui est normal pour votre chat, pas seulement une moyenne.",
+        "icon": "trend"
+      },
+      {
+        "title": "Rapports prêts pour le vétérinaire",
+        "description": "Exportez en un clic l'historique complet de santé. Arrivez au rendez-vous avec des données, pas seulement une description des symptômes.",
+        "icon": "report"
+      },
+      {
+        "title": "Usage quotidien sans effort",
+        "description": "Aucun entraînement requis. CatSensor s'intègre à la routine d'alimentation existante de votre chat - il ne s'en rend même pas compte.",
+        "icon": "routine"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Accès anticipé",
+    "titleStart": "Soyez parmi les premiers à savoir",
+    "titleEnd": "que votre chat va bien.",
+    "description": "Réservez votre place. Faites partie des premiers à essayer CatSensor au lancement.",
+    "form": {
+      "placeholder": "votre{'@'}email.com",
+      "button": "Obtenir l'accès anticipé",
+      "loading": "Inscription",
+      "error": "Veuillez entrer un email valide.",
+      "successTitle": "Vous êtes sur la liste.",
+      "successBody": "Nous vous contacterons dès que CatSensor sera prêt à être expédié.",
+      "successFoot": "Accès anticipé confirmé",
+      "privacyLead": "Aucun spam, jamais.",
+      "privacyLink": "Politique de confidentialité"
+    }
+  },
+  "footer": {
+    "links": [
+      { "label": "À propos", "href": "#" },
+      { "label": "Confidentialité", "href": "#" },
+      { "label": "Contact", "href": "#" },
+      { "label": "Instagram", "href": "#" },
+      { "label": "Presse", "href": "#" }
+    ],
+    "copyright": "© 2025 CatSensor"
+  }
+}
