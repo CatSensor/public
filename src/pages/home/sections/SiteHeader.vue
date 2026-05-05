@@ -2,7 +2,7 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import logoMark from '@/assets/catsensor-logo.png'
+import logoMark from '@/assets/catsensor-logo-black.png'
 import { useLocale } from '@/composables/useLocale'
 import type { NavLink } from '@/pages/home/content'
 
