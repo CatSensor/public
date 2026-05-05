@@ -23,7 +23,7 @@ const footerLinks = computed(() => tm('footer.links') as FooterLink[])
           {{ link.label }}
         </a>
       </div>
-      <div class="text-xs font-light text-[oklch(72%_0.06_155)]">{{ t('footer.copyright') }}</div>
+      <div class="text-xs font-light text-[oklch(72%_0.06_155)]">© {{ new Date().getFullYear() }} CatSensor</div>
     </div>
   </footer>
 </template>

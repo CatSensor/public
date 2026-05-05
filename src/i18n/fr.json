@@ -122,7 +122,6 @@
       { "label": "Fonctionnement", "href": "#how" },
       { "label": "Fonctionnalités", "href": "#features" },
       { "label": "Confidentialité", "href": "#" }
-    ],
-    "copyright": "© 2025 CatSensor"
+    ]
   }
 }
