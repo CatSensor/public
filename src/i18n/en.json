@@ -117,12 +117,11 @@
     }
   },
   "footer": {
-    "links": [
-      { "label": "About", "href": "#" },
-      { "label": "Privacy", "href": "#" },
-      { "label": "Contact", "href": "#" },
-      { "label": "Instagram", "href": "#" },
-      { "label": "Press", "href": "#" }
+     "links": [
+      { "label": "Why CatSensor", "href": "#problem" },
+      { "label": "How It Works", "href": "#how" },
+      { "label": "Features", "href": "#features" },
+      { "label": "Privacy", "href": "#" }
     ],
     "copyright": "© 2025 CatSensor"
   }
