@@ -2,6 +2,108 @@
   "meta": {
     "title": "CatSensor - Know Your Cat's Health, Every Day"
   },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | CatSensor"
+    },
+    "header": {
+      "backHome": "Back Home"
+    },
+    "hero": {
+      "eyebrow": "Privacy Policy",
+      "titleStart": "Clear privacy,",
+      "titleAccent": "minimal tracking,",
+      "titleEnd": "high protection by default.",
+      "description": "This policy explains what information CatSensor collects, why it is collected, and how users in Quebec and Canada can request access, correction, or deletion under Loi 25."
+    },
+    "effectiveDateLabel": "Effective date",
+    "effectiveDate": "May 5, 2026",
+    "cards": [
+      {
+        "title": "Data We Collect",
+        "items": [
+          "If you request early access, we collect the email address you submit voluntarily.",
+          "We store your language preference locally in your browser so the site can reopen in English or French.",
+          "Our hosting provider may process basic technical request data such as IP address, browser type, and access logs to keep the site secure and available."
+        ]
+      },
+      {
+        "title": "Why We Collect It",
+        "items": [
+          "To manage the CatSensor waitlist and contact you about launch or product availability.",
+          "To remember your selected language and keep the site functioning correctly.",
+          "To prevent abuse, diagnose technical issues, and maintain website security."
+        ]
+      },
+      {
+        "title": "Cookies And Trackers",
+        "items": [
+          "No advertising, profiling, or analytics cookies are enabled by default on this site.",
+          "The site currently uses only a functional local storage setting for language preference.",
+          "If non-essential cookies or tracking tools are added later, they will stay disabled until you give explicit consent."
+        ]
+      },
+      {
+        "title": "Third-Party Services",
+        "items": [
+          "Data may be processed by our website hosting provider to serve pages and maintain security logs.",
+          "If a waitlist or email delivery service is connected later, it will receive only the information needed to manage signups and launch communications.",
+          "We do not sell personal information to advertisers or data brokers."
+        ]
+      },
+      {
+        "title": "Retention Period",
+        "items": [
+          "Waitlist contact details are kept only as long as needed to manage pre-launch communication or until you ask us to delete them.",
+          "Technical logs are retained for a limited period appropriate to security and operational needs.",
+          "Functional preference data remains in your browser until you clear it or change the setting."
+        ]
+      },
+      {
+        "title": "Access And Deletion Requests",
+        "items": [
+          "You may request access to your personal information, ask for a correction, or request deletion at any time.",
+          "Send your request to privacy@catsensor.ca and include enough information for us to identify your record.",
+          "We will answer within the time required by applicable privacy law."
+        ]
+      },
+      {
+        "title": "Privacy Contact",
+        "items": [
+          "Privacy Officer: CatSensor",
+          "Email: privacy@catsensor.ca",
+          "Region: Quebec, Canada"
+        ]
+      },
+      {
+        "title": "Transfers Outside Quebec Or Canada",
+        "items": [
+          "We aim to use providers that offer appropriate safeguards for personal information.",
+          "If a service provider stores or processes data outside Quebec or Canada, the information may become subject to the laws of that jurisdiction.",
+          "When applicable, we limit access contractually and require reasonable protection measures."
+        ]
+      }
+    ],
+    "commitments": {
+      "eyebrow": "Loi 25",
+      "title": "How this site applies privacy by default.",
+      "description": "This page is written in plain language and is linked directly from the website. Non-essential tracking is off by default, and any future tracking that needs consent must stay inactive until the user opts in.",
+      "items": [
+        {
+          "title": "Accessible Policy",
+          "body": "The policy is available from the public website in both English and French so visitors can review it before sharing information."
+        },
+        {
+          "title": "Explicit Consent",
+          "body": "If analytics, advertising pixels, or similar non-essential tools are introduced, consent must be requested before those technologies are activated."
+        },
+        {
+          "title": "High Privacy Defaults",
+          "body": "By default, the site limits collection to what is necessary for core operation and functional preferences only."
+        }
+      ]
+    }
+  },
   "nav": {
     "links": [
       { "label": "Why CatSensor", "href": "#problem" },
@@ -117,11 +219,11 @@
     }
   },
   "footer": {
-     "links": [
+    "links": [
       { "label": "Why CatSensor", "href": "#problem" },
       { "label": "How It Works", "href": "#how" },
       { "label": "Features", "href": "#features" },
-      { "label": "Privacy", "href": "#" }
+      { "label": "Privacy", "href": "privacy" }
     ]
   }
 }

@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n'
 
 import type { FooterLink } from '@/pages/home/content'
 import logoMark from '@/assets/catsensor-logo-white.png'
-const { t, tm } = useI18n()
+const { tm } = useI18n()
 const footerLinks = computed(() => tm('footer.links') as FooterLink[])
 </script>
 

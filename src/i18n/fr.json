@@ -2,6 +2,108 @@
   "meta": {
     "title": "CatSensor - Suivez la santé de votre chat, chaque jour"
   },
+  "privacy": {
+    "meta": {
+      "title": "Politique de confidentialité | CatSensor"
+    },
+    "header": {
+      "backHome": "Retour à l'accueil"
+    },
+    "hero": {
+      "eyebrow": "Politique de confidentialité",
+      "titleStart": "Une confidentialité claire,",
+      "titleAccent": "un suivi minimal,",
+      "titleEnd": "une protection élevée par défaut.",
+      "description": "Cette politique explique quelles informations CatSensor collecte, pourquoi elles sont collectées et comment les utilisateurs au Québec et au Canada peuvent demander l'accès, la correction ou la suppression de leurs données conformément à la Loi 25."
+    },
+    "effectiveDateLabel": "Date d'entrée en vigueur",
+    "effectiveDate": "5 mai 2026",
+    "cards": [
+      {
+        "title": "Données collectées",
+        "items": [
+          "Si vous demandez l'accès anticipé, nous collectons l'adresse courriel que vous soumettez volontairement.",
+          "Nous conservons votre préférence de langue localement dans votre navigateur afin d'ouvrir le site en français ou en anglais.",
+          "Notre fournisseur d'hébergement peut traiter des données techniques de base comme l'adresse IP, le type de navigateur et les journaux d'accès pour garder le site sécuritaire et disponible."
+        ]
+      },
+      {
+        "title": "Pourquoi nous les collectons",
+        "items": [
+          "Pour gérer la liste d'attente CatSensor et vous contacter lors du lancement ou de la disponibilité du produit.",
+          "Pour mémoriser la langue choisie et assurer le bon fonctionnement du site.",
+          "Pour prévenir les abus, diagnostiquer les problèmes techniques et maintenir la sécurité du site."
+        ]
+      },
+      {
+        "title": "Cookies et outils de suivi",
+        "items": [
+          "Aucun cookie publicitaire, de profilage ou d'analytique n'est activé par défaut sur ce site.",
+          "Le site utilise actuellement seulement un paramètre fonctionnel de stockage local pour la préférence de langue.",
+          "Si des cookies non essentiels ou des outils de suivi sont ajoutés plus tard, ils resteront désactivés jusqu'à ce que vous donniez un consentement explicite."
+        ]
+      },
+      {
+        "title": "Services tiers",
+        "items": [
+          "Les données peuvent être traitées par notre fournisseur d'hébergement afin d'afficher le site et de maintenir les journaux de sécurité.",
+          "Si un service de liste d'attente ou d'envoi de courriels est ajouté plus tard, il ne recevra que les informations nécessaires pour gérer les inscriptions et les communications de lancement.",
+          "Nous ne vendons pas les renseignements personnels à des annonceurs ni à des courtiers en données."
+        ]
+      },
+      {
+        "title": "Durée de conservation",
+        "items": [
+          "Les coordonnées de la liste d'attente sont conservées seulement le temps nécessaire pour gérer les communications de prélancement ou jusqu'à ce que vous demandiez leur suppression.",
+          "Les journaux techniques sont conservés pour une durée limitée adaptée aux besoins de sécurité et d'exploitation.",
+          "Les données de préférence fonctionnelle demeurent dans votre navigateur jusqu'à ce que vous les effaciez ou changiez le paramètre."
+        ]
+      },
+      {
+        "title": "Accès et suppression",
+        "items": [
+          "Vous pouvez demander l'accès à vos renseignements personnels, demander une correction ou demander la suppression en tout temps.",
+          "Envoyez votre demande à privacy@catsensor.ca en fournissant assez d'information pour que nous puissions identifier votre dossier.",
+          "Nous répondrons dans le délai prévu par la loi applicable en matière de protection des renseignements personnels."
+        ]
+      },
+      {
+        "title": "Responsable de la protection des renseignements personnels",
+        "items": [
+          "Responsable : CatSensor",
+          "Courriel : privacy@catsensor.ca",
+          "Région : Québec, Canada"
+        ]
+      },
+      {
+        "title": "Transferts hors Québec ou hors Canada",
+        "items": [
+          "Nous cherchons à utiliser des fournisseurs offrant des mesures de protection appropriées pour les renseignements personnels.",
+          "Si un fournisseur traite ou héberge des données à l'extérieur du Québec ou du Canada, ces renseignements peuvent être assujettis aux lois de cette autre juridiction.",
+          "Lorsque c'est applicable, nous limitons l'accès par contrat et exigeons des mesures de protection raisonnables."
+        ]
+      }
+    ],
+    "commitments": {
+      "eyebrow": "Loi 25",
+      "title": "Comment ce site applique la confidentialité par défaut.",
+      "description": "Cette page est rédigée en langage clair et accessible directement depuis le site. Les outils de suivi non essentiels sont désactivés par défaut et tout outil futur qui exige un consentement devra rester inactif tant que l'utilisateur n'aura pas accepté.",
+      "items": [
+        {
+          "title": "Politique accessible",
+          "body": "La politique est disponible sur le site public en français et en anglais afin que les visiteurs puissent la consulter avant de transmettre des renseignements."
+        },
+        {
+          "title": "Consentement explicite",
+          "body": "Si des outils d'analytique, des pixels publicitaires ou d'autres technologies non essentielles sont ajoutés, le consentement devra être demandé avant leur activation."
+        },
+        {
+          "title": "Paramètres élevés par défaut",
+          "body": "Par défaut, le site limite la collecte à ce qui est nécessaire à son fonctionnement essentiel et aux préférences fonctionnelles seulement."
+        }
+      ]
+    }
+  },
   "nav": {
     "links": [
       { "label": "Pourquoi CatSensor", "href": "#problem" },
@@ -121,7 +223,7 @@
       { "label": "Pourquoi CatSensor", "href": "#problem" },
       { "label": "Fonctionnement", "href": "#how" },
       { "label": "Fonctionnalités", "href": "#features" },
-      { "label": "Confidentialité", "href": "#" }
+      { "label": "Confidentialité", "href": "privacy" }
     ]
   }
 }

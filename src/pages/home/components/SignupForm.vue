@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { RouterLink } from 'vue-router'
 
 type FormStatus = 'idle' | 'loading' | 'success'
 
@@ -10,6 +11,7 @@ const email = ref('')
 const error = ref('')
 const status = ref<FormStatus>('idle')
 const position = ref<number | null>(null)
+const privacyHref = '/privacy'
 
 const successFoot = computed(() => `${t('cta.form.successFoot')}`)
 
@@ -86,7 +88,7 @@ onBeforeUnmount(() => {
     <p v-if="error" class="mb-2 text-xs text-[oklch(50%_0.12_30)]">{{ error }}</p>
     <p class="text-xs text-[oklch(72%_0.006_240)]">
       {{ t('cta.form.privacyLead') }}
-      <a href="#" class="text-[oklch(44%_0.095_158)] no-underline">{{ t('cta.form.privacyLink') }}</a>
+      <RouterLink :to="privacyHref" class="text-[oklch(44%_0.095_158)] no-underline">{{ t('cta.form.privacyLink') }}</RouterLink>
     </p>
   </div>
 </template>
