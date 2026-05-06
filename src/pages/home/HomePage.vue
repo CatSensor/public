@@ -4,8 +4,6 @@ import { useI18n } from 'vue-i18n'
 import AOS from 'aos'
 
 import { syncDocumentLanguage } from '@/i18n'
-import SiteFooter from '@/pages/home/sections/SiteFooter.vue'
-import SiteHeader from '@/pages/home/sections/SiteHeader.vue'
 import CtaSection from '@/pages/home/sections/CtaSection.vue'
 import FeaturesSection from '@/pages/home/sections/FeaturesSection.vue'
 import HeroSection from '@/pages/home/sections/HeroSection.vue'
@@ -61,17 +59,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="min-h-screen overflow-x-hidden">
-    <SiteHeader />
-
-    <main>
-      <HeroSection />
-      <ProblemSection />
-      <HowItWorksSection />
-      <FeaturesSection />
-      <CtaSection />
-    </main>
-
-    <SiteFooter />
-  </div>
+  <HeroSection />
+  <ProblemSection />
+  <HowItWorksSection />
+  <FeaturesSection />
+  <CtaSection />
 </template>

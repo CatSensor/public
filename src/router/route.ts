@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import MarketingLayout from '@/layouts/MarketingLayout.vue'
+import PolicyLayout from '@/layouts/PolicyLayout.vue'
 import HomePage from '@/pages/home/HomePage.vue'
 import PrivacyPage from '@/pages/privacy/PrivacyPage.vue'
 
@@ -8,13 +10,25 @@ export const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomePage,
+      component: MarketingLayout,
+      children: [
+        {
+          path: '',
+          name: 'home',
+          component: HomePage,
+        },
+      ],
     },
     {
-      path: '/privacy',
-      name: 'privacy',
-      component: PrivacyPage,
+      path: '/',
+      component: PolicyLayout,
+      children: [
+        {
+          path: 'privacy',
+          name: 'privacy',
+          component: PrivacyPage,
+        },
+      ],
     },
   ],
   scrollBehavior(to, _from, savedPosition) {
