@@ -18,6 +18,7 @@ const { locale, t, tm } = useI18n()
 
 const policyCards = computed(() => tm('privacy.cards') as PolicyCard[])
 const commitments = computed(() => tm('privacy.commitments.items') as PolicyCommitment[])
+const titleLineClass = computed(() => (locale.value === 'fr' ? 'xl:whitespace-nowrap' : 'sm:whitespace-nowrap'))
 
 watch(
   locale,
@@ -36,10 +37,10 @@ watch(
         <span class="mb-4 block text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(44%_0.095_158)]">
           {{ t('privacy.hero.eyebrow') }}
         </span>
-        <h1 class="max-w-[12ch] text-[clamp(34px,8vw,72px)] leading-[0.98] font-semibold tracking-[-0.05em] text-[oklch(13%_0.01_240)]">
-          {{ t('privacy.hero.titleStart') }}
-          <span class="mt-2 block font-light text-[oklch(44%_0.095_158)]">{{ t('privacy.hero.titleAccent') }}</span>
-          <span class="mt-2 block text-[oklch(28%_0.01_240)]">{{ t('privacy.hero.titleEnd') }}</span>
+        <h1 class="text-[clamp(34px,8vw,72px)] leading-[0.98] font-semibold tracking-[-0.05em] text-[oklch(13%_0.01_240)]">
+          <span :class="['block', titleLineClass]">{{ t('privacy.hero.titleStart') }}</span>
+          <span :class="['mt-2 block font-light text-[oklch(44%_0.095_158)]', titleLineClass]">{{ t('privacy.hero.titleAccent') }}</span>
+          <span :class="['mt-2 block text-[oklch(28%_0.01_240)]', titleLineClass]">{{ t('privacy.hero.titleEnd') }}</span>
         </h1>
         <p class="mt-6 max-w-[620px] text-[15px] leading-[1.75] font-light text-[oklch(48%_0.008_240)] sm:text-[17px]">
           {{ t('privacy.hero.description') }}
