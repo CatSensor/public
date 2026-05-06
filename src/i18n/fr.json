@@ -2,6 +2,13 @@
   "meta": {
     "title": "CatSensor - Suivez la santé de votre chat, chaque jour"
   },
+  "cookie": {
+    "title": "Paramètres de confidentialité",
+    "body": "Nous utilisons seulement un stockage de préférences essentiel par défaut. Les cookies d'analytique ou de marketing facultatifs restent désactivés tant que vous n'avez pas consenti. Consultez notre ",
+    "link": "politique de confidentialité.",
+    "essential": "Essentiel seulement",
+    "accept": "Tout accepter"
+  },
   "privacy": {
     "meta": {
       "title": "Politique de confidentialité | CatSensor"

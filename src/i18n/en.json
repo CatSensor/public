@@ -2,6 +2,13 @@
   "meta": {
     "title": "CatSensor - Know Your Cat's Health, Every Day"
   },
+  "cookie": {
+    "title": "Privacy settings",
+    "body": "We use only essential preference storage by default. Optional analytics or marketing cookies stay off unless you consent. See our ",
+    "link": "privacy policy.",
+    "essential": "Essential only",
+    "accept": "Accept all"
+  },
   "privacy": {
     "meta": {
       "title": "Privacy Policy | CatSensor"
