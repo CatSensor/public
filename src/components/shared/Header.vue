@@ -1,28 +1,36 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { RouterLink } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-black.png'
 import { useLocale } from '@/composables/useLocale'
-import type { NavLink } from '@/pages/home/content'
+
+type PageKind = 'home' | 'privacy'
+
+type NavLink = {
+  label: string
+  href: string
+}
+
+const props = withDefaults(
+  defineProps<{
+    page?: PageKind
+  }>(),
+  {
+    page: 'home',
+  },
+)
 
 const { t, tm } = useI18n()
 const { toggleLocale } = useLocale()
 const isScrolled = ref(true)
-const isMenuOpen = ref(false)
-const navLinks = computed(() => tm('nav.links') as NavLink[])
+const navLinks = computed(() => (props.page === 'home' ? (tm('nav.links') as NavLink[]) : []))
+const homeRoute = { name: 'home', hash: '#hero' }
+const primaryLabel = computed(() => (props.page === 'home' ? t('nav.preorder') : t('privacy.header.backHome')))
 
 function updateScrollState() {
   isScrolled.value = window.scrollY > 40
-}
-
-function scrollToCta() {
-  isMenuOpen.value = false
-  document.querySelector('#cta')?.scrollIntoView({ behavior: 'smooth' })
-}
-
-function closeMenu() {
-  isMenuOpen.value = false
 }
 
 onMounted(() => {
@@ -43,9 +51,11 @@ onBeforeUnmount(() => {
     ]"
   >
     <div class="mx-auto flex max-w-[1320px] items-center justify-between gap-3">
-      <a
-        href="#hero"
-        class="group flex shrink-0 items-center gap-2 text-[15px] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] no-underline sm:gap-3 sm:text-[17px]"
+      <component
+        :is="props.page === 'privacy' ? RouterLink : 'a'"
+        :to="props.page === 'privacy' ? homeRoute : undefined"
+        :href="props.page === 'home' ? '#hero' : undefined"
+        class="group flex cursor-pointer shrink-0 items-center gap-2 text-[15px] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] no-underline sm:gap-3 sm:text-[17px]"
         aria-label="CatSensor home"
       >
         <img
@@ -56,9 +66,12 @@ onBeforeUnmount(() => {
         <span class="leading-none">
           CatSensor
         </span>
-      </a>
+      </component>
 
-      <nav class="hidden items-center gap-6 lg:flex">
+      <nav
+        v-if="navLinks.length > 0"
+        class="hidden items-center gap-6 lg:flex"
+      >
         <a
           v-for="link in navLinks"
           :key="link.href"
@@ -73,26 +86,19 @@ onBeforeUnmount(() => {
         <button
           type="button"
           :aria-label="t('nav.localeAria')"
-          class="inline-flex items-center justify-center rounded-[6px] border border-black/12 bg-white/70 px-2.5 py-2.5 text-xs font-semibold tracking-[0.04em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:px-3 sm:py-[11px] sm:text-sm"
+          class="inline-flex cursor-pointer items-center justify-center rounded-[6px] border border-black/12 bg-white/70 px-2.5 py-2.5 text-xs font-semibold tracking-[0.04em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:px-3 sm:py-[11px] sm:text-sm"
           @click="toggleLocale"
         >
           {{ t('nav.localeButton') }}
         </button>
-        <a
-          href="#cta"
-          class="hidden items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 md:inline-flex"
-          @click="closeMenu"
+        <component
+          :is="props.page === 'privacy' ? RouterLink : 'a'"
+          :to="props.page === 'privacy' ? homeRoute : undefined"
+          :href="props.page === 'home' ? '#cta' : undefined"
+          class="inline-flex cursor-pointer items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
         >
-          {{ t('nav.preorder') }}
-        </a>
-        <button
-          type="button"
-          class="hidden rounded-[6px] bg-[oklch(44%_0.095_158)] px-4 py-2.5 text-[13px] font-medium text-white sm:inline-flex md:hidden"
-          @click="scrollToCta"
-        >
-          {{ t('nav.preorder') }}
-        </button>
-      
+          {{ primaryLabel }}
+        </component>
       </div>
     </div>
   </header>

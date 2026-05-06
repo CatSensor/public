@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import HomePage from '@/pages/home/HomePage.vue'
+import CookieConsent from '@/components/shared/CookieConsent.vue'
 </script>
 
 <template>
-  <HomePage />
+  <RouterView />
+  <CookieConsent />
 </template>
