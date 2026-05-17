@@ -209,6 +209,18 @@
       }
     ]
   },
+  "partners": {
+    "eyebrow": "Our Partners",
+    "title": "Built with support from the organizations around us.",
+    "description": "CatSensor is being shaped alongside legal, academic, and startup partners who help us move faster with better foundations.",
+    "items": [
+      { "key": "cegepst", "name": "Cégep de Sorel-Tracy" },
+      { "key": "colosse", "name": "Colosse" },
+      { "key": "tonequipier", "name": "Ton Équipier" },
+      { "key": "hub", "name": "Hub" },
+      { "key": "leviat", "name": "Leviat Legal" }
+    ]
+  },
   "cta": {
     "eyebrow": "Early Access",
     "titleStart": "Be the first to know",

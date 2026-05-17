@@ -209,6 +209,18 @@
       }
     ]
   },
+  "partners": {
+    "eyebrow": "Nos partenaires",
+    "title": "Construit avec l'appui des organisations qui nous entourent.",
+    "description": "CatSensor évolue avec des partenaires juridiques, académiques et entrepreneuriaux qui nous aident à avancer plus vite sur de meilleures bases.",
+    "items": [
+      { "key": "cegepst", "name": "Cégep de Sorel-Tracy" },
+      { "key": "colosse", "name": "Colosse" },
+      { "key": "tonequipier", "name": "Ton Équipier" },
+      { "key": "hub", "name": "Hub" },
+      { "key": "leviat", "name": "Leviat Legal" }
+    ]
+  },
   "cta": {
     "eyebrow": "Accès anticipé",
     "titleStart": "Soyez parmi les premiers à savoir",
