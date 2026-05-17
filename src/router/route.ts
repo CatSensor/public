@@ -1,50 +1,132 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import type { RouteRecordRaw, RouterScrollBehavior } from 'vue-router'
 
+import type { AppLocale } from '@/i18n'
 import MarketingLayout from '@/layouts/MarketingLayout.vue'
 import PolicyLayout from '@/layouts/PolicyLayout.vue'
 import HomePage from '@/pages/home/HomePage.vue'
 import PrivacyPage from '@/pages/privacy/PrivacyPage.vue'
 
-export const router = createRouter({
-  history: createWebHistory(),
-  routes: [
-    {
-      path: '/',
-      component: MarketingLayout,
-      children: [
-        {
-          path: '',
-          name: 'home',
-          component: HomePage,
-        },
-      ],
-    },
-    {
-      path: '/',
-      component: PolicyLayout,
-      children: [
-        {
-          path: 'privacy',
-          name: 'privacy',
-          component: PrivacyPage,
-        },
-      ],
-    },
-  ],
-  scrollBehavior(to, _from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    }
+export type PageId = 'home' | 'privacy'
 
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-      }
-    }
+export type SeoRouteMeta = {
+  locale: AppLocale
+  pageId: PageId
+  titleKey: 'meta.title' | 'privacy.meta.title'
+  descriptionKey: 'meta.description' | 'privacy.meta.description'
+  canonicalPath: string
+}
 
-    return {
-      top: 0,
-    }
+export const SITE_URL = 'https://catsensor.ca'
+export const DEFAULT_OG_IMAGE_URL = `${SITE_URL}/favicon.svg`
+
+export function getLocalizedRouteName(pageId: PageId, locale: AppLocale) {
+  return `${pageId}-${locale}` as const
+}
+
+export function buildPagePath(pageId: PageId, locale: AppLocale) {
+  if (pageId === 'home') {
+    return locale === 'fr' ? '/fr' : '/'
+  }
+
+  return locale === 'fr' ? '/fr/privacy' : '/privacy'
+}
+
+export function buildCanonicalUrl(path: string) {
+  return new URL(path, `${SITE_URL}/`).toString()
+}
+
+export function getAlternateLocale(locale: AppLocale): AppLocale {
+  return locale === 'en' ? 'fr' : 'en'
+}
+
+export const routes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    component: MarketingLayout,
+    children: [
+      {
+        path: '',
+        name: getLocalizedRouteName('home', 'en'),
+        component: HomePage,
+        meta: {
+          locale: 'en',
+          pageId: 'home',
+          titleKey: 'meta.title',
+          descriptionKey: 'meta.description',
+          canonicalPath: '/',
+        } satisfies SeoRouteMeta,
+      },
+    ],
   },
-})
+  {
+    path: '/fr',
+    component: MarketingLayout,
+    children: [
+      {
+        path: '',
+        name: getLocalizedRouteName('home', 'fr'),
+        component: HomePage,
+        meta: {
+          locale: 'fr',
+          pageId: 'home',
+          titleKey: 'meta.title',
+          descriptionKey: 'meta.description',
+          canonicalPath: '/fr',
+        } satisfies SeoRouteMeta,
+      },
+    ],
+  },
+  {
+    path: '/',
+    component: PolicyLayout,
+    children: [
+      {
+        path: 'privacy',
+        name: getLocalizedRouteName('privacy', 'en'),
+        component: PrivacyPage,
+        meta: {
+          locale: 'en',
+          pageId: 'privacy',
+          titleKey: 'privacy.meta.title',
+          descriptionKey: 'privacy.meta.description',
+          canonicalPath: '/privacy',
+        } satisfies SeoRouteMeta,
+      },
+    ],
+  },
+  {
+    path: '/fr',
+    component: PolicyLayout,
+    children: [
+      {
+        path: 'privacy',
+        name: getLocalizedRouteName('privacy', 'fr'),
+        component: PrivacyPage,
+        meta: {
+          locale: 'fr',
+          pageId: 'privacy',
+          titleKey: 'privacy.meta.title',
+          descriptionKey: 'privacy.meta.description',
+          canonicalPath: '/fr/privacy',
+        } satisfies SeoRouteMeta,
+      },
+    ],
+  },
+]
+
+export const scrollBehavior: RouterScrollBehavior = (to, _from, savedPosition) => {
+  if (savedPosition) {
+    return savedPosition
+  }
+
+  if (to.hash) {
+    return {
+      el: to.hash,
+      behavior: 'smooth',
+    }
+  }
+
+  return {
+    top: 0,
+  }
+}

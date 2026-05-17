@@ -7,9 +7,13 @@ export type AppLocale = 'en' | 'fr'
 
 const STORAGE_KEY = 'catsenser-locale'
 
-const messages = {
+export const messages = {
   en,
   fr,
+}
+
+export function getLocaleFromPath(pathname: string): AppLocale {
+  return pathname === '/fr' || pathname.startsWith('/fr/') ? 'fr' : 'en'
 }
 
 function getBrowserLocale(): AppLocale {
@@ -23,6 +27,12 @@ function getBrowserLocale(): AppLocale {
 function getInitialLocale(): AppLocale {
   if (typeof window === 'undefined') {
     return 'en'
+  }
+
+  const routeLocale = getLocaleFromPath(window.location.pathname)
+
+  if (routeLocale) {
+    return routeLocale
   }
 
   const storedLocale = window.localStorage.getItem(STORAGE_KEY)

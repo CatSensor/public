@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { computed, watch } from 'vue'
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { syncDocumentLanguage } from '@/i18n'
+import { usePageSeo } from '@/composables/usePageSeo'
 
 type PolicyCard = {
   title: string
@@ -15,19 +15,11 @@ type PolicyCommitment = {
 }
 
 const { locale, t, tm } = useI18n()
+usePageSeo()
 
 const policyCards = computed(() => tm('privacy.cards') as PolicyCard[])
 const commitments = computed(() => tm('privacy.commitments.items') as PolicyCommitment[])
 const titleLineClass = computed(() => (locale.value === 'fr' ? 'xl:whitespace-nowrap' : 'sm:whitespace-nowrap'))
-
-watch(
-  locale,
-  (value) => {
-    document.title = t('privacy.meta.title')
-    syncDocumentLanguage(value as 'en' | 'fr')
-  },
-  { immediate: true },
-)
 </script>
 
 <template>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://catsensor.ca/sitemap.xml

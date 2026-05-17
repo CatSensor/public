@@ -3,7 +3,7 @@ import { nextTick, onBeforeUnmount, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AOS from 'aos'
 
-import { syncDocumentLanguage } from '@/i18n'
+import { usePageSeo } from '@/composables/usePageSeo'
 import CtaSection from '@/pages/home/sections/CtaSection.vue'
 import FeaturesSection from '@/pages/home/sections/FeaturesSection.vue'
 import HeroSection from '@/pages/home/sections/HeroSection.vue'
@@ -11,16 +11,15 @@ import HowItWorksSection from '@/pages/home/sections/HowItWorksSection.vue'
 import PartnersSection from '@/pages/home/sections/PartnersSection.vue'
 import ProblemSection from '@/pages/home/sections/ProblemSection.vue'
 
-const { locale, t } = useI18n()
+const { locale } = useI18n()
+usePageSeo()
 
 let floatAnimations: Animation[] = []
 let aosReady = false
 
 watch(
   locale,
-  async (value) => {
-    document.title = t('meta.title')
-    syncDocumentLanguage(value as 'en' | 'fr')
+  async () => {
     if (aosReady) {
       await nextTick()
       AOS.refresh()

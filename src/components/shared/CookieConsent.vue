@@ -1,17 +1,23 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
+
+import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
 
 type ConsentChoice = 'essential' | 'all'
 
 const STORAGE_KEY = 'catsensor-cookie-consent'
 
 const { t } = useI18n()
+const route = useRoute()
 const consent = ref<ConsentChoice | null>(null)
 const isReady = ref(false)
 
 const isVisible = computed(() => isReady.value && consent.value === null)
+const privacyRoute = computed(() => ({
+  name: getLocalizedRouteName('privacy', ((route.meta as SeoRouteMeta).locale ?? 'en')),
+}))
 
 function saveConsent(choice: ConsentChoice) {
   consent.value = choice
@@ -50,7 +56,7 @@ onMounted(() => {
         </div>
         <p class="text-[13px] leading-[1.65] font-light text-[oklch(45%_0.01_240)] sm:text-[14px]">
           {{ t('cookie.body') }}
-          <RouterLink :to="{ name: 'privacy' }" class="text-[oklch(44%_0.095_158)] no-underline">
+          <RouterLink :to="privacyRoute" class="text-[oklch(44%_0.095_158)] no-underline">
             {{ t('cookie.link') }}
           </RouterLink>
         </p>
