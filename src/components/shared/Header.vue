@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router'
 import logoMark from '@/assets/catsensor-logo-black.png'
 import { useLocale } from '@/composables/useLocale'
 
-type PageKind = 'home' | 'privacy'
+type PageKind = 'home' | 'privacy' | 'about'
 
 type NavLink = {
   label: string
@@ -27,7 +27,18 @@ const { toggleLocale } = useLocale()
 const isScrolled = ref(true)
 const navLinks = computed(() => (props.page === 'home' ? (tm('nav.links') as NavLink[]) : []))
 const homeRoute = { name: 'home', hash: '#hero' }
-const primaryLabel = computed(() => (props.page === 'home' ? t('nav.preorder') : t('privacy.header.backHome')))
+const isSecondaryPage = computed(() => props.page !== 'home')
+const primaryLabel = computed(() => {
+  if (props.page === 'home') {
+    return t('nav.preorder')
+  }
+
+  if (props.page === 'about') {
+    return t('about.header.backHome')
+  }
+
+  return t('privacy.header.backHome')
+})
 
 function updateScrollState() {
   isScrolled.value = window.scrollY > 40
@@ -52,8 +63,8 @@ onBeforeUnmount(() => {
   >
     <div class="mx-auto flex max-w-[1320px] items-center justify-between gap-3">
       <component
-        :is="props.page === 'privacy' ? RouterLink : 'a'"
-        :to="props.page === 'privacy' ? homeRoute : undefined"
+        :is="isSecondaryPage ? RouterLink : 'a'"
+        :to="isSecondaryPage ? homeRoute : undefined"
         :href="props.page === 'home' ? '#hero' : undefined"
         class="group flex cursor-pointer shrink-0 items-center gap-2 text-[15px] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] no-underline sm:gap-3 sm:text-[17px]"
         aria-label="CatSensor home"
@@ -72,14 +83,16 @@ onBeforeUnmount(() => {
         v-if="navLinks.length > 0"
         class="hidden items-center gap-6 lg:flex"
       >
-        <a
+        <component
           v-for="link in navLinks"
           :key="link.href"
-          :href="link.href"
-          class="text-sm font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
+          :is="link.href.startsWith('/') ? RouterLink : 'a'"
+          :to="link.href.startsWith('/') ? link.href : undefined"
+          :href="link.href.startsWith('/') ? undefined : link.href"
+          class="text-sm cursor-pointer font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
         >
           {{ link.label }}
-        </a>
+        </component>
       </nav>
 
       <div class="flex items-center gap-2 sm:gap-3">
@@ -92,8 +105,8 @@ onBeforeUnmount(() => {
           {{ t('nav.localeButton') }}
         </button>
         <component
-          :is="props.page === 'privacy' ? RouterLink : 'a'"
-          :to="props.page === 'privacy' ? homeRoute : undefined"
+          :is="isSecondaryPage ? RouterLink : 'a'"
+          :to="isSecondaryPage ? homeRoute : undefined"
           :href="props.page === 'home' ? '#cta' : undefined"
           class="inline-flex cursor-pointer items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
         >

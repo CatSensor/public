@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import MarketingLayout from '@/layouts/MarketingLayout.vue'
+import AboutPage from '@/pages/about/AboutPage.vue'
 import PolicyLayout from '@/layouts/PolicyLayout.vue'
 import HomePage from '@/pages/home/HomePage.vue'
 import PrivacyPage from '@/pages/privacy/PrivacyPage.vue'
@@ -16,6 +17,11 @@ export const router = createRouter({
           path: '',
           name: 'home',
           component: HomePage,
+        },
+        {
+          path: 'about',
+          name: 'about',
+          component: AboutPage,
         },
       ],
     },
