@@ -214,7 +214,7 @@
     "title": "Built with support from the organizations around us.",
     "description": "CatSensor is being shaped alongside legal, academic, and startup partners who help us move faster with better foundations.",
     "items": [
-      { "key": "cegepst", "name": "Cegep de Saint-Hyacinthe" },
+      { "key": "cegepst", "name": "Cegep de Sorel-Tracy" },
       { "key": "colosse", "name": "Colosse" },
       { "key": "tonequipier", "name": "Ton Équipier" },
       { "key": "hub", "name": "Hub" },

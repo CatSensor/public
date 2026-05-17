@@ -214,7 +214,7 @@
     "title": "Construit avec l'appui des organisations qui nous entourent.",
     "description": "CatSensor évolue avec des partenaires juridiques, académiques et entrepreneuriaux qui nous aident à avancer plus vite sur de meilleures bases.",
     "items": [
-      { "key": "cegepst", "name": "Cegep de Saint-Hyacinthe" },
+      { "key": "cegepst", "name": "Cegep de Sorel-Tracy" },
       { "key": "colosse", "name": "Colosse" },
       { "key": "tonequipier", "name": "Ton Équipier" },
       { "key": "hub", "name": "Hub" },
