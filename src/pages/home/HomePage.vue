@@ -8,6 +8,7 @@ import CtaSection from '@/pages/home/sections/CtaSection.vue'
 import FeaturesSection from '@/pages/home/sections/FeaturesSection.vue'
 import HeroSection from '@/pages/home/sections/HeroSection.vue'
 import HowItWorksSection from '@/pages/home/sections/HowItWorksSection.vue'
+import PartnersSection from '@/pages/home/sections/PartnersSection.vue'
 import ProblemSection from '@/pages/home/sections/ProblemSection.vue'
 
 const { locale, t } = useI18n()
@@ -63,5 +64,6 @@ onBeforeUnmount(() => {
   <ProblemSection />
   <HowItWorksSection />
   <FeaturesSection />
+  <PartnersSection />
   <CtaSection />
 </template>

@@ -11,7 +11,7 @@ const featureItems = computed(() => tm('features.items') as FeatureItem[])
 </script>
 
 <template>
-  <section id="features" class="bg-white px-4 py-16 sm:px-7 md:px-14 md:py-28">
+  <section id="features" class="px-4 py-16 sm:px-7 md:px-14 md:py-28">
     <div class="mx-auto max-w-[1320px]">
       <div class="mb-12 grid gap-5 md:mb-14 md:grid-cols-2 md:items-end md:gap-16">
         <div>
