@@ -204,6 +204,10 @@
         "href": "#features"
       },
       {
+        "label": "Nous soutenir",
+        "href": "#donation"
+      },
+      {
         "label": "À propos de nous",
         "href": "/about"
       }
@@ -326,6 +330,30 @@
       }
     ]
   },
+  "donation": {
+    "eyebrow": "Nous soutenir",
+    "title": "Aidez-nous à faire avancer CatSensor.",
+    "description": "Si vous souhaitez soutenir CatSensor, vous pouvez faire votre don via notre formulaire Zeffy. Si vous voulez recevoir un reçu fiscal d'environ 25% de votre don, utilisez les informations ci-dessous en remplissant le formulaire.",
+    "primaryCta": "Faire un don avec Zeffy",
+    "secondaryNote": "Paiement sécurisé via Zeffy",
+    "instructionsEyebrow": "Instructions commandite",
+    "instructionsLead": "Dans le formulaire, utilisez les champs suivants :",
+    "steps": [
+      {
+        "field": "Don dédié pour : *",
+        "value": "HUB"
+      },
+      {
+        "field": "Durée de l'engagement du don ou de la commandite",
+        "value": "1 an (don unique)"
+      },
+      {
+        "field": "Commentaires ou autres informations",
+        "value": "Bourse entrepreneuriale Parcours Startup - CatSensor"
+      }
+    ],
+    "instructionsFoot": "Le donateur peut ensuite choisir d'ajouter, ou non, une contribution à Zeffy au moment du paiement."
+  },
   "cta": {
     "eyebrow": "Accès anticipé",
     "titleStart": "Soyez parmi les premiers à savoir",
@@ -356,6 +384,10 @@
       {
         "label": "Fonctionnalités",
         "href": "#features"
+      },
+      {
+        "label": "Nous soutenir",
+        "href": "#donation"
       },
       {
         "label": "À propos de nous",
