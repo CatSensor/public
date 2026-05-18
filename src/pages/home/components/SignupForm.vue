@@ -15,7 +15,7 @@ const error = ref('')
 const status = ref<FormStatus>('idle')
 const position = ref<number | null>(null)
 const privacyRoute = computed(() => ({
-  name: getLocalizedRouteName('privacy', ((route.meta as SeoRouteMeta).locale ?? 'en')),
+  name: getLocalizedRouteName('privacy', ((route.meta as SeoRouteMeta).locale ?? 'fr')),
 }))
 
 const successFoot = computed(() => `${t('cta.form.successFoot')}`)

@@ -113,7 +113,7 @@ export function usePageSeo() {
         key: 'alternate-default',
         rel: 'alternate',
         hreflang: 'x-default',
-        href: buildCanonicalUrl(buildPagePath(seoMeta.value.pageId, 'en')),
+        href: buildCanonicalUrl(buildPagePath(seoMeta.value.pageId, 'fr')),
       },
     ],
     script: [

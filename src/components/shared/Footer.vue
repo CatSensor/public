@@ -25,7 +25,7 @@ const props = withDefaults(
 const { tm } = useI18n()
 const route = useRoute()
 const footerLinks = computed(() => tm('footer.links') as FooterLink[])
-const currentLocale = computed(() => ((route.meta as SeoRouteMeta).locale ?? 'en'))
+const currentLocale = computed(() => ((route.meta as SeoRouteMeta).locale ?? 'fr'))
 
 function isRouterLink(href: string) {
   return href === 'privacy' || href === 'about' || ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#'))
@@ -37,7 +37,7 @@ function resolveHref(href: string) {
   }
 
   if (href === 'about') {
-    return '/about'
+    return undefined
   }
 
   if ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#')) {
@@ -53,7 +53,7 @@ function resolveRouterTo(href: string) {
   }
 
   if (href === 'about') {
-    return { name: 'about' }
+    return { name: getLocalizedRouteName('about', currentLocale.value) }
   }
 
   if ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#')) {

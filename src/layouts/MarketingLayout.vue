@@ -6,7 +6,7 @@ import SiteFooter from '@/components/shared/Footer.vue'
 import SiteHeader from '@/components/shared/Header.vue'
 
 const route = useRoute()
-const currentPage = computed(() => (route.name === 'about' ? 'about' : 'home'))
+const currentPage = computed(() => (String(route.name ?? '').startsWith('about-') ? 'about' : 'home'))
 </script>
 
 <template>
