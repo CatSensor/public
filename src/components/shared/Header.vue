@@ -28,7 +28,9 @@ const { toggleLocale } = useLocale()
 const route = useRoute()
 const isScrolled = ref(true)
 const navLinks = computed(() => (props.page === 'home' ? (tm('nav.links') as NavLink[]) : []))
-const homeRoute = { name: 'home', hash: '#hero' }
+const currentLocale = computed(() => ((route.meta as Partial<SeoRouteMeta>).locale ?? 'en'))
+const homeHeroRoute = computed(() => ({ name: getLocalizedRouteName('home', currentLocale.value), hash: '#hero' }))
+const homeCtaRoute = computed(() => ({ name: getLocalizedRouteName('home', currentLocale.value), hash: '#cta' }))
 const isSecondaryPage = computed(() => props.page !== 'home')
 const primaryLabel = computed(() => {
   if (props.page === 'home') {
@@ -64,10 +66,9 @@ onBeforeUnmount(() => {
     ]"
   >
     <div class="mx-auto flex max-w-[1320px] items-center justify-between gap-3">
-      <component
-        :is="isSecondaryPage ? RouterLink : 'a'"
-        :to="isSecondaryPage ? homeRoute : undefined"
-        :href="props.page === 'home' ? '#hero' : undefined"
+      <RouterLink
+        v-if="isSecondaryPage"
+        :to="homeHeroRoute"
         class="group flex cursor-pointer shrink-0 items-center gap-2 text-[15px] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] no-underline sm:gap-3 sm:text-[17px]"
         aria-label="CatSensor home"
       >
@@ -121,10 +122,16 @@ onBeforeUnmount(() => {
         >
           {{ t('nav.localeButton') }}
         </button>
-        <component
-          :is="isSecondaryPage ? RouterLink : 'a'"
-          :to="isSecondaryPage ? homeRoute : undefined"
-          :href="props.page === 'home' ? '#cta' : undefined"
+        <RouterLink
+          v-if="isSecondaryPage"
+          :to="homeCtaRoute"
+          class="inline-flex cursor-pointer items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
+        >
+          {{ primaryLabel }}
+        </RouterLink>
+        <a
+          v-else
+          href="#cta"
           class="inline-flex cursor-pointer items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
         >
           {{ primaryLabel }}

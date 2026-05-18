@@ -28,7 +28,7 @@ const footerLinks = computed(() => tm('footer.links') as FooterLink[])
 const currentLocale = computed(() => ((route.meta as SeoRouteMeta).locale ?? 'en'))
 
 function isRouterLink(href: string) {
-  return href === 'privacy' || (props.page === 'privacy' && href.startsWith('#'))
+  return href === 'privacy' || href === 'about' || ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#'))
 }
 
 function resolveHref(href: string) {
@@ -49,7 +49,7 @@ function resolveHref(href: string) {
 
 function resolveRouterTo(href: string) {
   if (href === 'privacy') {
-    return { name: 'privacy' }
+    return { name: getLocalizedRouteName('privacy', currentLocale.value) }
   }
 
   if (href === 'about') {
@@ -57,7 +57,7 @@ function resolveRouterTo(href: string) {
   }
 
   if ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#')) {
-    return { name: 'home', hash: href }
+    return { name: getLocalizedRouteName('home', currentLocale.value), hash: href }
   }
 
   return { name: getLocalizedRouteName('home', currentLocale.value), hash: href }
@@ -79,10 +79,6 @@ function resolveRouterTo(href: string) {
         <template
           v-for="link in footerLinks"
           :key="link.label"
-          :is="link.href === 'privacy' || link.href === 'about' || ((props.page === 'privacy' || props.page === 'about') && link.href.startsWith('#')) ? RouterLink : 'a'"
-          :to="resolveTo(link.href)"
-          :href="resolveHref(link.href)"
-          class="text-[13px] font-light text-[oklch(80%_0.06_155)] no-underline transition hover:text-white"
         >
           <RouterLink
             v-if="isRouterLink(link.href)"
