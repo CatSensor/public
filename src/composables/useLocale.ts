@@ -2,7 +2,7 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 import { i18n, type AppLocale } from '@/i18n'
-import { getAlternateLocale, getLocalizedRouteName, type PageId, type SeoRouteMeta } from '@/router/route'
+import { getAlternateLocale, getLocalizedRouteName, type LocalizedPageId, type SeoRouteMeta } from '@/router/route'
 
 export function useLocale() {
   const route = useRoute()
@@ -16,7 +16,10 @@ export function useLocale() {
 
   async function toggleLocale() {
     const currentRouteMeta = route.meta as SeoRouteMeta
-    const currentPage = currentRouteMeta.pageId ?? ('home' as PageId)
+    const routeName = typeof route.name === 'string' ? route.name : ''
+    const currentPage: LocalizedPageId = routeName.startsWith('about-')
+      ? 'about'
+      : (currentRouteMeta.pageId ?? 'home')
     const nextLocale = getAlternateLocale(locale.value)
 
     await router.push({
