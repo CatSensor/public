@@ -8,6 +8,7 @@ import HomePage from '@/pages/home/HomePage.vue'
 import PrivacyPage from '@/pages/privacy/PrivacyPage.vue'
 
 export type PageId = 'home' | 'privacy'
+export type LocalizedPageId = PageId | 'about'
 
 export type SeoRouteMeta = {
   locale: AppLocale
@@ -20,13 +21,17 @@ export type SeoRouteMeta = {
 export const SITE_URL = 'https://catsensor.ca'
 export const DEFAULT_OG_IMAGE_URL = `${SITE_URL}/favicon.svg`
 
-export function getLocalizedRouteName(pageId: PageId, locale: AppLocale) {
+export function getLocalizedRouteName(pageId: LocalizedPageId, locale: AppLocale) {
   return `${pageId}-${locale}` as const
 }
 
-export function buildPagePath(pageId: PageId, locale: AppLocale) {
+export function buildPagePath(pageId: LocalizedPageId, locale: AppLocale) {
   if (pageId === 'home') {
     return locale === 'fr' ? '/fr' : '/'
+  }
+
+  if (pageId === 'about') {
+    return locale === 'fr' ? '/fr/about' : '/about'
   }
 
   return locale === 'fr' ? '/fr/privacy' : '/privacy'
@@ -59,7 +64,7 @@ export const routes: RouteRecordRaw[] = [
       },
       {
         path: 'about',
-        name: 'about',
+        name: getLocalizedRouteName('about', 'en'),
         component: AboutPage,
       },
     ],
@@ -79,6 +84,11 @@ export const routes: RouteRecordRaw[] = [
           descriptionKey: 'meta.description',
           canonicalPath: '/fr',
         } satisfies SeoRouteMeta,
+      },
+      {
+        path: 'about',
+        name: getLocalizedRouteName('about', 'fr'),
+        component: AboutPage,
       },
     ],
   },
