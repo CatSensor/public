@@ -2,46 +2,12 @@ import type { RouteRecordRaw, RouterScrollBehavior } from 'vue-router'
 
 import type { AppLocale } from '@/i18n'
 import MarketingLayout from '@/layouts/MarketingLayout.vue'
-import AboutPage from '@/pages/about/AboutPage.vue'
 import PolicyLayout from '@/layouts/PolicyLayout.vue'
+import AboutPage from '@/pages/about/AboutPage.vue'
 import HomePage from '@/pages/home/HomePage.vue'
 import PrivacyPage from '@/pages/privacy/PrivacyPage.vue'
 
-export const router = createRouter({
-  history: createWebHistory(),
-  routes: [
-    {
-      path: '/',
-      component: MarketingLayout,
-      children: [
-        {
-          path: '',
-          name: 'home',
-          component: HomePage,
-        },
-        {
-          path: 'about',
-          name: 'about',
-          component: AboutPage,
-        },
-      ],
-    },
-    {
-      path: '/',
-      component: PolicyLayout,
-      children: [
-        {
-          path: 'privacy',
-          name: 'privacy',
-          component: PrivacyPage,
-        },
-      ],
-    },
-  ],
-  scrollBehavior(to, _from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    }
+export type PageId = 'home' | 'privacy'
 
 export type SeoRouteMeta = {
   locale: AppLocale
@@ -90,6 +56,11 @@ export const routes: RouteRecordRaw[] = [
           descriptionKey: 'meta.description',
           canonicalPath: '/',
         } satisfies SeoRouteMeta,
+      },
+      {
+        path: 'about',
+        name: 'about',
+        component: AboutPage,
       },
     ],
   },
