@@ -112,11 +112,101 @@
       ]
     }
   },
+  "about": {
+    "meta": {
+      "title": "À propos de nous | CatSensor"
+    },
+    "header": {
+      "backHome": "Retour à l'accueil"
+    },
+    "timeline": {
+      "eyebrow": "Chronologie",
+      "title": "De l'idée au prototype.",
+      "description": "Les étapes clés qui ont structuré la naissance de CatSensor en 2026.",
+      "proofDefaultLabel": "Voir la preuve",
+      "items": [
+        {
+          "period": "Février 2026",
+          "title": "Association et validation terrain",
+          "summary": "William et Samuel s'associent pendant le cours de Développement de Système et identifient la problématique à l'origine de CatSensor.",
+          "details": [
+            "Entrevues avec des vétérinaires, des propriétaires de chats et des professionnels du milieu de la bio-impédance.",
+            "Validation quantitative via un sondage d'environ 100 répondants.",
+            "Les résultats confirment la pertinence du besoin et orientent les priorités produit."
+          ]
+        },
+        {
+          "period": "14 mai 2026",
+          "title": "1re place - Startup Phase 2 Validation",
+          "summary": "William et Samuel remportent la première place au Projet Startup Phase 2 - Validation avec CatSensor.",
+          "details": [
+            "Reconnaissance officielle de la qualité de la validation et du potentiel du projet.",
+            "Accélération de la feuille de route pour passer à l'étape matérielle."
+          ],
+          "proofUrl": "https://www.linkedin.com/posts/hubcst_cegepsoreltracy-hubcst-parcoursstartup-activity-7461512242224865280-jZRo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5S4a4BBvvxBlOBgyt16n31XRQ09lCCibc",
+          "proofLabel": "Publication"
+        },
+        {
+          "period": "Été 2026",
+          "title": "Développement matériel",
+          "summary": "L'été est consacré au développement du dispositif et de la partie matériel.",
+          "details": [
+            "Conception et itérations techniques en prévision de l'intégration à l'automne.",
+            "Préparation des bases pour la phase suivante du produit."
+          ]
+        }
+      ]
+    },
+    "team": {
+      "eyebrow": "À propos de nous",
+      "title": "Créé par des propriétaires de chats, pour des propriétaires de chats.",
+      "description": "Nous construisons CatSensor pour rendre les premiers signaux de santé simples, visibles et actionnables à la maison.",
+      "members": [
+        {
+          "name": "Samuel",
+          "role": "Cofondateur",
+          "bio": "Samuel s'occupe du UI/UX et pilote la vision du produit pour que CatSensor reste simple, clair et utile au quotidien."
+        },
+        {
+          "name": "William",
+          "role": "Cofondateur",
+          "bio": "William s'occupe de la partie technique et des relations publiques pour faire avancer CatSensor côté produit et sur le terrain."
+        }
+      ]
+    },
+    "story": {
+      "eyebrow": "L'équipe derrière",
+      "brandLead": "CAT",
+      "brandTail": "SENSOR",
+      "imageAltTall": "Fondateur CatSensor avec un chat",
+      "imageAltTop": "Moment d'équipe CatSensor",
+      "imageAltBottom": "Prototype CatSensor",
+      "missionLabel": "Notre mission",
+      "missionTitle": "La santé de votre chat, avant tout.",
+      "missionBody": "Né d'une passion profonde pour le bien-être animal, CatSensor réunit vétérinaire, ingénierie et design pour détecter plus tôt les signaux qui comptent.",
+      "approachLabel": "Notre approche",
+      "approachTitle": "Simple, discrète et fiable.",
+      "approachBody": "Chaque décision est guidée par une seule question : est-ce que cela facilite la vie du chat et de son humain ? Si la réponse est non, on recommence."
+    }
+  },
   "nav": {
     "links": [
-      { "label": "Pourquoi CatSensor", "href": "#problem" },
-      { "label": "Fonctionnement", "href": "#how" },
-      { "label": "Fonctionnalités", "href": "#features" }
+      {
+        "label": "Pourquoi CatSensor",
+        "href": "#problem"
+      },
+      {
+        "label": "Fonctionnement",
+        "href": "#how"
+      },
+      {
+        "label": "Fonctionnalités",
+        "href": "#features"
+      },
+      {
+        "label": "À propos de nous",
+        "href": "/about"
+      }
     ],
     "preorder": "Précommander",
     "localeButton": "EN",
@@ -240,10 +330,26 @@
   },
   "footer": {
     "links": [
-      { "label": "Pourquoi CatSensor", "href": "#problem" },
-      { "label": "Fonctionnement", "href": "#how" },
-      { "label": "Fonctionnalités", "href": "#features" },
-      { "label": "Confidentialité", "href": "privacy" }
+      {
+        "label": "Pourquoi CatSensor",
+        "href": "#problem"
+      },
+      {
+        "label": "Fonctionnement",
+        "href": "#how"
+      },
+      {
+        "label": "Fonctionnalités",
+        "href": "#features"
+      },
+      {
+        "label": "À propos de nous",
+        "href": "about"
+      },
+      {
+        "label": "Confidentialité",
+        "href": "privacy"
+      }
     ]
   }
 }

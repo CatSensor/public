@@ -1,6 +1,7 @@
 {
   "meta": {
-    "title": "CatSensor - Know Your Cat's Health, Every Day"
+    "title": "CatSensor - Know Your Cat's Health, Every Day",
+    "description": "CatSensor helps cat owners monitor weight, body composition, and health trends daily so changes can be caught earlier."
   },
   "cookie": {
     "title": "Privacy settings",
@@ -11,7 +12,8 @@
   },
   "privacy": {
     "meta": {
-      "title": "Privacy Policy | CatSensor"
+      "title": "Privacy Policy | CatSensor",
+      "description": "Read how CatSensor handles privacy, language preferences, and waitlist information for visitors in Quebec and Canada."
     },
     "header": {
       "backHome": "Back Home"
@@ -112,11 +114,101 @@
       ]
     }
   },
+  "about": {
+    "meta": {
+      "title": "About Us | CatSensor"
+    },
+    "header": {
+      "backHome": "Back Home"
+    },
+    "timeline": {
+      "eyebrow": "Timeline",
+      "title": "From idea to prototype.",
+      "description": "Key milestones that shaped CatSensor's early journey in 2026.",
+      "proofDefaultLabel": "View proof",
+      "items": [
+        {
+          "period": "February 2026",
+          "title": "Partnership and field validation",
+          "summary": "William and Samuel teamed up during their Systems Development course and identified the problem that would become CatSensor.",
+          "details": [
+            "Interviews were conducted with veterinarians, cat owners, and professionals in bio-impedance.",
+            "A quantitative validation survey was run with around 100 respondents.",
+            "The results confirmed the need and helped define product priorities."
+          ]
+        },
+        {
+          "period": "May 14, 2026",
+          "title": "1st place - Startup Phase 2 Validation",
+          "summary": "William and Samuel won first place at Projet Startup Phase 2 - Validation with CatSensor.",
+          "details": [
+            "The project received official recognition for validation quality and potential.",
+            "The roadmap accelerated toward hardware execution."
+          ],
+          "proofUrl": "https://www.linkedin.com/posts/hubcst_cegepsoreltracy-hubcst-parcoursstartup-activity-7461512242224865280-jZRo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5S4a4BBvvxBlOBgyt16n31XRQ09lCCibc",
+          "proofLabel": "Publication"
+        },
+        {
+          "period": "Summer 2026",
+          "title": "Hardware development",
+          "summary": "The summer was focused on building the device and hardware stack.",
+          "details": [
+            "Technical design and iterations were prepared ahead of fall integration.",
+            "Core foundations were set for the next product phase."
+          ]
+        }
+      ]
+    },
+    "team": {
+      "eyebrow": "About us",
+      "title": "Built by cat owners, for cat owners.",
+      "description": "We are building CatSensor to make early health signals simple, visible, and actionable at home.",
+      "members": [
+        {
+          "name": "Samuel",
+          "role": "Co-founder",
+          "bio": "Samuel leads UI/UX and drives the product vision so CatSensor stays simple, clear, and useful in everyday life."
+        },
+        {
+          "name": "William",
+          "role": "Co-founder",
+          "bio": "William handles the technical side and public relations to move CatSensor forward both in product execution and in the field."
+        }
+      ]
+    },
+    "story": {
+      "eyebrow": "The team behind",
+      "brandLead": "CAT",
+      "brandTail": "SENSOR",
+      "imageAltTall": "CatSensor founder with a cat",
+      "imageAltTop": "CatSensor team moment",
+      "imageAltBottom": "CatSensor prototype",
+      "missionLabel": "Our mission",
+      "missionTitle": "Your cat's health, first.",
+      "missionBody": "Born from a deep focus on animal wellbeing, CatSensor brings together veterinary care, engineering, and design to spot meaningful signals earlier.",
+      "approachLabel": "Our approach",
+      "approachTitle": "Simple, discreet, and reliable.",
+      "approachBody": "Every decision follows one question: does this make life easier for the cat and their human? If not, we rework it."
+    }
+  },
   "nav": {
     "links": [
-      { "label": "Why CatSensor", "href": "#problem" },
-      { "label": "How It Works", "href": "#how" },
-      { "label": "Features", "href": "#features" }
+      {
+        "label": "Why CatSensor",
+        "href": "#problem"
+      },
+      {
+        "label": "How It Works",
+        "href": "#how"
+      },
+      {
+        "label": "Features",
+        "href": "#features"
+      },
+      {
+        "label": "About Us",
+        "href": "/about"
+      }
     ],
     "preorder": "Pre-order",
     "localeButton": "FR",
@@ -240,10 +332,26 @@
   },
   "footer": {
     "links": [
-      { "label": "Why CatSensor", "href": "#problem" },
-      { "label": "How It Works", "href": "#how" },
-      { "label": "Features", "href": "#features" },
-      { "label": "Privacy", "href": "privacy" }
+      {
+        "label": "Why CatSensor",
+        "href": "#problem"
+      },
+      {
+        "label": "How It Works",
+        "href": "#how"
+      },
+      {
+        "label": "Features",
+        "href": "#features"
+      },
+      {
+        "label": "About Us",
+        "href": "about"
+      },
+      {
+        "label": "Privacy",
+        "href": "privacy"
+      }
     ]
   }
 }
