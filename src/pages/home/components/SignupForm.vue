@@ -1,17 +1,22 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
+
+import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
 
 type FormStatus = 'idle' | 'loading' | 'success'
 
 const { t } = useI18n()
+const route = useRoute()
 
 const email = ref('')
 const error = ref('')
 const status = ref<FormStatus>('idle')
 const position = ref<number | null>(null)
-const privacyHref = '/privacy'
+const privacyRoute = computed(() => ({
+  name: getLocalizedRouteName('privacy', ((route.meta as SeoRouteMeta).locale ?? 'en')),
+}))
 
 const successFoot = computed(() => `${t('cta.form.successFoot')}`)
 
@@ -88,7 +93,7 @@ onBeforeUnmount(() => {
     <p v-if="error" class="mb-2 text-xs text-[oklch(50%_0.12_30)]">{{ error }}</p>
     <p class="text-xs text-[oklch(72%_0.006_240)]">
       {{ t('cta.form.privacyLead') }}
-      <RouterLink :to="privacyHref" class="text-[oklch(44%_0.095_158)] no-underline">{{ t('cta.form.privacyLink') }}</RouterLink>
+      <RouterLink :to="privacyRoute" class="text-[oklch(44%_0.095_158)] no-underline">{{ t('cta.form.privacyLink') }}</RouterLink>
     </p>
   </div>
 </template>

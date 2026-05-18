@@ -1,6 +1,7 @@
 {
   "meta": {
-    "title": "CatSensor - Know Your Cat's Health, Every Day"
+    "title": "CatSensor - Know Your Cat's Health, Every Day",
+    "description": "CatSensor helps cat owners monitor weight, body composition, and health trends daily so changes can be caught earlier."
   },
   "cookie": {
     "title": "Privacy settings",
@@ -11,7 +12,8 @@
   },
   "privacy": {
     "meta": {
-      "title": "Privacy Policy | CatSensor"
+      "title": "Privacy Policy | CatSensor",
+      "description": "Read how CatSensor handles privacy, language preferences, and waitlist information for visitors in Quebec and Canada."
     },
     "header": {
       "backHome": "Back Home"

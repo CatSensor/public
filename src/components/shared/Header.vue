@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-black.png'
 import { useLocale } from '@/composables/useLocale'
+import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
 
 type PageKind = 'home' | 'privacy' | 'about'
 
@@ -24,6 +25,7 @@ const props = withDefaults(
 
 const { t, tm } = useI18n()
 const { toggleLocale } = useLocale()
+const route = useRoute()
 const isScrolled = ref(true)
 const navLinks = computed(() => (props.page === 'home' ? (tm('nav.links') as NavLink[]) : []))
 const homeRoute = { name: 'home', hash: '#hero' }
@@ -77,7 +79,22 @@ onBeforeUnmount(() => {
         <span class="leading-none">
           CatSensor
         </span>
-      </component>
+      </RouterLink>
+      <a
+        v-else
+        href="#hero"
+        class="group flex cursor-pointer shrink-0 items-center gap-2 text-[15px] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] no-underline sm:gap-3 sm:text-[17px]"
+        aria-label="CatSensor home"
+      >
+        <img
+          :src="logoMark"
+          alt="CatSensor logo"
+          class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04] sm:h-12"
+        />
+        <span class="leading-none">
+          CatSensor
+        </span>
+      </a>
 
       <nav
         v-if="navLinks.length > 0"
@@ -111,7 +128,7 @@ onBeforeUnmount(() => {
           class="inline-flex cursor-pointer items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
         >
           {{ primaryLabel }}
-        </component>
+        </a>
       </div>
     </div>
   </header>

@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-white.png'
+import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
 
 type PageKind = 'home' | 'privacy' | 'about'
 
@@ -22,11 +23,17 @@ const props = withDefaults(
 )
 
 const { tm } = useI18n()
+const route = useRoute()
 const footerLinks = computed(() => tm('footer.links') as FooterLink[])
+const currentLocale = computed(() => ((route.meta as SeoRouteMeta).locale ?? 'en'))
+
+function isRouterLink(href: string) {
+  return href === 'privacy' || (props.page === 'privacy' && href.startsWith('#'))
+}
 
 function resolveHref(href: string) {
   if (href === 'privacy') {
-    return '/privacy'
+    return undefined
   }
 
   if (href === 'about') {
@@ -40,7 +47,7 @@ function resolveHref(href: string) {
   return href
 }
 
-function resolveTo(href: string) {
+function resolveRouterTo(href: string) {
   if (href === 'privacy') {
     return { name: 'privacy' }
   }
@@ -53,7 +60,7 @@ function resolveTo(href: string) {
     return { name: 'home', hash: href }
   }
 
-  return undefined
+  return { name: getLocalizedRouteName('home', currentLocale.value), hash: href }
 }
 </script>
 
@@ -69,7 +76,7 @@ function resolveTo(href: string) {
         CatSensor
       </div>
       <div class="flex flex-wrap justify-center gap-5 sm:gap-7">
-        <component
+        <template
           v-for="link in footerLinks"
           :key="link.label"
           :is="link.href === 'privacy' || link.href === 'about' || ((props.page === 'privacy' || props.page === 'about') && link.href.startsWith('#')) ? RouterLink : 'a'"
@@ -77,8 +84,21 @@ function resolveTo(href: string) {
           :href="resolveHref(link.href)"
           class="text-[13px] font-light text-[oklch(80%_0.06_155)] no-underline transition hover:text-white"
         >
-          {{ link.label }}
-        </component>
+          <RouterLink
+            v-if="isRouterLink(link.href)"
+            :to="resolveRouterTo(link.href)"
+            class="text-[13px] font-light text-[oklch(80%_0.06_155)] no-underline transition hover:text-white"
+          >
+            {{ link.label }}
+          </RouterLink>
+          <a
+            v-else
+            :href="resolveHref(link.href)"
+            class="text-[13px] font-light text-[oklch(80%_0.06_155)] no-underline transition hover:text-white"
+          >
+            {{ link.label }}
+          </a>
+        </template>
       </div>
       <div class="text-xs font-light text-[oklch(72%_0.06_155)]">&copy; {{ new Date().getFullYear() }} CatSensor</div>
     </div>
