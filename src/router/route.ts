@@ -20,11 +20,11 @@ export type SeoRouteMeta = {
 export const SITE_URL = 'https://catsensor.ca'
 export const DEFAULT_OG_IMAGE_URL = `${SITE_URL}/favicon.svg`
 
-export function getLocalizedRouteName(pageId: PageId, locale: AppLocale) {
+export function getLocalizedRouteName(pageId: LocalizedPageId, locale: AppLocale) {
   return `${pageId}-${locale}` as const
 }
 
-export function buildPagePath(pageId: PageId, locale: AppLocale) {
+export function buildPagePath(pageId: LocalizedPageId, locale: AppLocale) {
   if (pageId === 'home') {
     return locale === 'fr' ? '/' : '/en'
   }

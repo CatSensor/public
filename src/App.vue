@@ -3,7 +3,7 @@ import { watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 
 import CookieConsent from '@/components/shared/CookieConsent.vue'
-import { i18n, persistLocale, syncDocumentLanguage, type AppLocale } from '@/i18n'
+import { getLocaleFromPath, i18n, persistLocale, syncDocumentLanguage, type AppLocale } from '@/i18n'
 import type { SeoRouteMeta } from '@/router/route'
 
 const route = useRoute()

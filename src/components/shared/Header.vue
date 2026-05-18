@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-black.png'
 import { useLocale } from '@/composables/useLocale'
-import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
+import { i18n } from '@/i18n'
+import { getLocalizedRouteName } from '@/router/route'
 
 type PageKind = 'home' | 'privacy' | 'about'
 
@@ -25,12 +26,11 @@ const props = withDefaults(
 
 const { t, tm } = useI18n()
 const { toggleLocale } = useLocale()
-const route = useRoute()
 const isScrolled = ref(true)
 const navLinks = computed(() => (props.page === 'home' ? (tm('nav.links') as NavLink[]) : []))
 const currentLocale = computed(() => ((route.meta as Partial<SeoRouteMeta>).locale ?? 'fr'))
 const homeHeroRoute = computed(() => ({ name: getLocalizedRouteName('home', currentLocale.value), hash: '#hero' }))
-const homeCtaRoute = computed(() => ({ name: getLocalizedRouteName('home', currentLocale.value), hash: '#cta' }))
+const homeRoute = computed(() => ({ name: getLocalizedRouteName('home', currentLocale.value) }))
 const isSecondaryPage = computed(() => props.page !== 'home')
 const primaryLabel = computed(() => {
   if (props.page === 'home') {
@@ -46,6 +46,14 @@ const primaryLabel = computed(() => {
 
 function updateScrollState() {
   isScrolled.value = window.scrollY > 40
+}
+
+function resolveNavTo(href: string) {
+  if (href === '/about') {
+    return { name: getLocalizedRouteName('about', currentLocale.value) }
+  }
+
+  return href
 }
 
 onMounted(() => {
@@ -105,7 +113,7 @@ onBeforeUnmount(() => {
           v-for="link in navLinks"
           :key="link.href"
           :is="link.href.startsWith('/') ? RouterLink : 'a'"
-          :to="link.href.startsWith('/') ? link.href : undefined"
+          :to="link.href.startsWith('/') ? resolveNavTo(link.href) : undefined"
           :href="link.href.startsWith('/') ? undefined : link.href"
           class="text-sm cursor-pointer font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
         >
@@ -124,7 +132,7 @@ onBeforeUnmount(() => {
         </button>
         <RouterLink
           v-if="isSecondaryPage"
-          :to="homeCtaRoute"
+          :to="homeRoute"
           class="inline-flex cursor-pointer items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
         >
           {{ primaryLabel }}
