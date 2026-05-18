@@ -1,0 +1,852 @@
+{
+  "\u0000rolldown/runtime.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "\u0000vite/modulepreload-polyfill.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "index.html": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@intlify/core-base/dist/core-base.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@intlify/message-compiler/dist/message-compiler.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@intlify/shared/dist/shared.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@unhead/vue/dist/client.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@unhead/vue/dist/shared/vue.Cr7xSEtD.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@unhead/vue/dist/shared/vue.N9zWjxoK.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/aos/dist/aos.css": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/aos/dist/aos.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/hookable/dist/index.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/unhead/dist/client.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/unhead/dist/shared/unhead.B3VbJo7Y.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/unhead/dist/shared/unhead.CaI5ZD4O.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/unhead/dist/shared/unhead.CbpEuj3y.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/unhead/dist/shared/unhead.yem5I2v_.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/vite-ssg/dist/index.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/vite-ssg/dist/shared/vite-ssg.C6pK7rvr.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/vite-ssg/dist/shared/vite-ssg.ETIvV-80.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/vue-i18n/dist/vue-i18n.mjs": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/vue-router/dist/devtools-BuSwVM2w.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/vue-router/dist/useApi-BNm6g9O9.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/vue-router/dist/vue-router.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "node_modules/vue/dist/vue.runtime.esm-bundler.js": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/App.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/App.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/assets/catsenser/pasted-1777735292784-0.png": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/assets/catsensor-logo-black.png": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/assets/catsensor-logo-white.png": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/assets/partner-logo/COLOSSE_LOGO_AJUSTE.svg": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/assets/partner-logo/cegepst.png": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/assets/partner-logo/hub-logo.webp": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/assets/partner-logo/leviat-legal.jpg": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/assets/partner-logo/ton-equipier.png": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/components/shared/CookieConsent.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/components/shared/CookieConsent.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/components/shared/Footer.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/components/shared/Footer.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/components/shared/Header.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/components/shared/Header.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/composables/useLocale.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/composables/usePageSeo.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/i18n/en.json": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/i18n/fr.json": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/i18n/index.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/layouts/MarketingLayout.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/layouts/MarketingLayout.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/layouts/PolicyLayout.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/layouts/PolicyLayout.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/main.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/about/AboutPage.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/about/AboutPage.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/about/content.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/about/sections/AboutUsSection.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/about/sections/AboutUsSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/about/sections/TimelineSection.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/about/sections/TimelineSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/HomePage.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/HomePage.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/components/FeatureIcon.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/components/FeatureIcon.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/components/SignupForm.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/components/SignupForm.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/content.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/CtaSection.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/CtaSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/FeaturesSection.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/FeaturesSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/HeroSection.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/HeroSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/HowItWorksSection.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/HowItWorksSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/PartnersSection.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/PartnersSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/ProblemSection.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/home/sections/ProblemSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/privacy/PrivacyPage.vue": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/pages/privacy/PrivacyPage.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/router/route.ts": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ],
+  "src/styles/app.css": [
+    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/pasted-1777735292784-0-gyoGU6Xo.png",
+    "/assets/cegepst--9BSJvQN.png",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-mjQnSi5J.png",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-ADxByH5T.jpg"
+  ]
+}
