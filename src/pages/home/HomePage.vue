@@ -5,6 +5,7 @@ import AOS from 'aos'
 
 import { usePageSeo } from '@/composables/usePageSeo'
 import CtaSection from '@/pages/home/sections/CtaSection.vue'
+import DonationSection from '@/pages/home/sections/DonationSection.vue'
 import FeaturesSection from '@/pages/home/sections/FeaturesSection.vue'
 import HeroSection from '@/pages/home/sections/HeroSection.vue'
 import HowItWorksSection from '@/pages/home/sections/HowItWorksSection.vue'
@@ -64,5 +65,6 @@ onBeforeUnmount(() => {
   <HowItWorksSection />
   <FeaturesSection />
   <PartnersSection />
+  <DonationSection />
   <CtaSection />
 </template>

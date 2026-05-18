@@ -14,7 +14,9 @@ let aosReady = false
 watch(
   locale,
   async (value) => {
-    document.title = t('about.meta.title')
+    if (typeof document !== 'undefined') {
+      document.title = t('about.meta.title')
+    }
     syncDocumentLanguage(value as 'en' | 'fr')
     if (aosReady) {
       await nextTick()
