@@ -206,6 +206,10 @@
         "href": "#features"
       },
       {
+        "label": "Support Us",
+        "href": "#donation"
+      },
+      {
         "label": "About Us",
         "href": "/about"
       }
@@ -313,6 +317,30 @@
       { "key": "leviat", "name": "Leviat Legal" }
     ]
   },
+  "donation": {
+    "eyebrow": "Support Us",
+    "title": "Help move CatSensor forward.",
+    "description": "If you'd like to support CatSensor, you can make your donation through our Zeffy form. If you want to receive a tax receipt for about 25% of your donation, use the details below when completing the form.",
+    "primaryCta": "Donate with Zeffy",
+    "secondaryNote": "Secure payment via Zeffy",
+    "instructionsEyebrow": "Sponsorship instructions",
+    "instructionsLead": "Use the following entries in the form:",
+    "steps": [
+      {
+        "field": "Dedicated donation for: *",
+        "value": "HUB"
+      },
+      {
+        "field": "Length of the donation or sponsorship commitment",
+        "value": "1 year (one-time donation)"
+      },
+      {
+        "field": "Comments or other information",
+        "value": "Bourse entrepreneuriale Parcours Startup - CatSensor"
+      }
+    ],
+    "instructionsFoot": "The donor can then decide whether or not to add a Zeffy contribution at the end of checkout."
+  },
   "cta": {
     "eyebrow": "Early Access",
     "titleStart": "Be the first to know",
@@ -343,6 +371,10 @@
       {
         "label": "Features",
         "href": "#features"
+      },
+      {
+        "label": "Support Us",
+        "href": "#donation"
       },
       {
         "label": "About Us",
