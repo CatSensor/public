@@ -6,7 +6,7 @@ import { RouterLink, useRoute } from 'vue-router'
 import logoMark from '@/assets/catsensor-logo-white.png'
 import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
 
-type PageKind = 'home' | 'privacy'
+type PageKind = 'home' | 'privacy' | 'about'
 
 type FooterLink = {
   label: string
@@ -36,8 +36,12 @@ function resolveHref(href: string) {
     return undefined
   }
 
-  if (props.page === 'privacy' && href.startsWith('#')) {
-    return undefined
+  if (href === 'about') {
+    return '/about'
+  }
+
+  if ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#')) {
+    return `/${href}`
   }
 
   return href
@@ -45,7 +49,15 @@ function resolveHref(href: string) {
 
 function resolveRouterTo(href: string) {
   if (href === 'privacy') {
-    return { name: getLocalizedRouteName('privacy', currentLocale.value) }
+    return { name: 'privacy' }
+  }
+
+  if (href === 'about') {
+    return { name: 'about' }
+  }
+
+  if ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#')) {
+    return { name: 'home', hash: href }
   }
 
   return { name: getLocalizedRouteName('home', currentLocale.value), hash: href }
@@ -67,6 +79,10 @@ function resolveRouterTo(href: string) {
         <template
           v-for="link in footerLinks"
           :key="link.label"
+          :is="link.href === 'privacy' || link.href === 'about' || ((props.page === 'privacy' || props.page === 'about') && link.href.startsWith('#')) ? RouterLink : 'a'"
+          :to="resolveTo(link.href)"
+          :href="resolveHref(link.href)"
+          class="text-[13px] font-light text-[oklch(80%_0.06_155)] no-underline transition hover:text-white"
         >
           <RouterLink
             v-if="isRouterLink(link.href)"
