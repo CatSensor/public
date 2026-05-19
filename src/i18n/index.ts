@@ -13,7 +13,7 @@ export const messages = {
 }
 
 export function getLocaleFromPath(pathname: string): AppLocale {
-  return pathname === '/fr' || pathname.startsWith('/fr/') ? 'fr' : 'en'
+  return pathname === '/en' || pathname.startsWith('/en/') ? 'en' : 'fr'
 }
 
 function getBrowserLocale(): AppLocale {
@@ -26,7 +26,7 @@ function getBrowserLocale(): AppLocale {
 
 function getInitialLocale(): AppLocale {
   if (typeof window === 'undefined') {
-    return 'en'
+    return 'fr'
   }
 
   const routeLocale = getLocaleFromPath(window.location.pathname)
@@ -59,7 +59,7 @@ export function persistLocale(locale: AppLocale) {
 export const i18n = createI18n({
   legacy: false,
   locale: getInitialLocale(),
-  fallbackLocale: 'en',
+  fallbackLocale: 'fr',
   messages,
 })
 

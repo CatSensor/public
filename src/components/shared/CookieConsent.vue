@@ -16,7 +16,7 @@ const isReady = ref(false)
 
 const isVisible = computed(() => isReady.value && consent.value === null)
 const privacyRoute = computed(() => ({
-  name: getLocalizedRouteName('privacy', ((route.meta as SeoRouteMeta).locale ?? 'en')),
+  name: getLocalizedRouteName('privacy', ((route.meta as SeoRouteMeta).locale ?? 'fr')),
 }))
 
 function saveConsent(choice: ConsentChoice) {

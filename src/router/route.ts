@@ -7,8 +7,8 @@ import AboutPage from '@/pages/about/AboutPage.vue'
 import HomePage from '@/pages/home/HomePage.vue'
 import PrivacyPage from '@/pages/privacy/PrivacyPage.vue'
 
-export type PageId = 'home' | 'privacy'
-export type LocalizedPageId = PageId | 'about'
+export type PageId = 'home' | 'privacy' | 'about'
+export type LocalizedPageId = PageId
 
 export type SeoRouteMeta = {
   locale: AppLocale
@@ -27,14 +27,14 @@ export function getLocalizedRouteName(pageId: LocalizedPageId, locale: AppLocale
 
 export function buildPagePath(pageId: LocalizedPageId, locale: AppLocale) {
   if (pageId === 'home') {
-    return locale === 'fr' ? '/fr' : '/'
+    return locale === 'fr' ? '/' : '/en'
   }
 
   if (pageId === 'about') {
-    return locale === 'fr' ? '/fr/about' : '/about'
+    return locale === 'fr' ? '/about' : '/en/about'
   }
 
-  return locale === 'fr' ? '/fr/privacy' : '/privacy'
+  return locale === 'fr' ? '/privacy' : '/en/privacy'
 }
 
 export function buildCanonicalUrl(path: string) {
@@ -52,10 +52,10 @@ export const routes: RouteRecordRaw[] = [
     children: [
       {
         path: '',
-        name: getLocalizedRouteName('home', 'en'),
+        name: getLocalizedRouteName('home', 'fr'),
         component: HomePage,
         meta: {
-          locale: 'en',
+          locale: 'fr',
           pageId: 'home',
           titleKey: 'meta.title',
           descriptionKey: 'meta.description',
@@ -64,54 +64,44 @@ export const routes: RouteRecordRaw[] = [
       },
       {
         path: 'about',
-        name: getLocalizedRouteName('about', 'en'),
+        name: getLocalizedRouteName('about', 'fr'),
         component: AboutPage,
+        meta: {
+          locale: 'fr',
+          pageId: 'about',
+        },
       },
     ],
   },
   {
-    path: '/fr',
+    path: '/en',
     component: MarketingLayout,
     children: [
       {
         path: '',
-        name: getLocalizedRouteName('home', 'fr'),
+        name: getLocalizedRouteName('home', 'en'),
         component: HomePage,
         meta: {
-          locale: 'fr',
+          locale: 'en',
           pageId: 'home',
           titleKey: 'meta.title',
           descriptionKey: 'meta.description',
-          canonicalPath: '/fr',
+          canonicalPath: '/en',
         } satisfies SeoRouteMeta,
       },
       {
         path: 'about',
-        name: getLocalizedRouteName('about', 'fr'),
+        name: getLocalizedRouteName('about', 'en'),
         component: AboutPage,
+        meta: {
+          locale: 'en',
+          pageId: 'about',
+        },
       },
     ],
   },
   {
     path: '/',
-    component: PolicyLayout,
-    children: [
-      {
-        path: 'privacy',
-        name: getLocalizedRouteName('privacy', 'en'),
-        component: PrivacyPage,
-        meta: {
-          locale: 'en',
-          pageId: 'privacy',
-          titleKey: 'privacy.meta.title',
-          descriptionKey: 'privacy.meta.description',
-          canonicalPath: '/privacy',
-        } satisfies SeoRouteMeta,
-      },
-    ],
-  },
-  {
-    path: '/fr',
     component: PolicyLayout,
     children: [
       {
@@ -123,7 +113,25 @@ export const routes: RouteRecordRaw[] = [
           pageId: 'privacy',
           titleKey: 'privacy.meta.title',
           descriptionKey: 'privacy.meta.description',
-          canonicalPath: '/fr/privacy',
+          canonicalPath: '/privacy',
+        } satisfies SeoRouteMeta,
+      },
+    ],
+  },
+  {
+    path: '/en',
+    component: PolicyLayout,
+    children: [
+      {
+        path: 'privacy',
+        name: getLocalizedRouteName('privacy', 'en'),
+        component: PrivacyPage,
+        meta: {
+          locale: 'en',
+          pageId: 'privacy',
+          titleKey: 'privacy.meta.title',
+          descriptionKey: 'privacy.meta.description',
+          canonicalPath: '/en/privacy',
         } satisfies SeoRouteMeta,
       },
     ],
