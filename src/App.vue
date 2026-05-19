@@ -9,7 +9,7 @@ import type { SeoRouteMeta } from '@/router/route'
 const route = useRoute()
 
 watchEffect(() => {
-  const locale = ((route.meta as Partial<SeoRouteMeta>).locale ?? getLocaleFromPath(route.path)) as AppLocale
+  const locale = ((route.meta as Partial<SeoRouteMeta>).locale ?? 'fr') as AppLocale
   i18n.global.locale.value = locale
   persistLocale(locale)
   syncDocumentLanguage(locale)

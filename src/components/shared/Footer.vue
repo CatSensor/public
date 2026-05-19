@@ -25,7 +25,7 @@ const props = withDefaults(
 
 const { tm } = useI18n()
 const footerLinks = computed(() => tm('footer.links') as FooterLink[])
-const currentLocale = computed(() => i18n.global.locale.value as 'en' | 'fr')
+const currentLocale = computed(() => ((route.meta as SeoRouteMeta).locale ?? 'fr'))
 
 function isRouterLink(href: string) {
   return href === 'privacy' || href === 'about' || ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#'))
@@ -37,7 +37,7 @@ function resolveHref(href: string) {
   }
 
   if (href === 'about') {
-    return '/about'
+    return undefined
   }
 
   if ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#')) {
