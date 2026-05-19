@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-black.png'
 import { useLocale } from '@/composables/useLocale'
-import { i18n } from '@/i18n'
-import { getLocalizedRouteName } from '@/router/route'
+import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
 
 type PageKind = 'home' | 'privacy' | 'about'
 
@@ -25,6 +24,7 @@ const props = withDefaults(
 )
 
 const { t, tm } = useI18n()
+const route = useRoute()
 const { toggleLocale } = useLocale()
 const isScrolled = ref(true)
 const navLinks = computed(() => (props.page === 'home' ? (tm('nav.links') as NavLink[]) : []))

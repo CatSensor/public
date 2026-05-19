@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-white.png'
-import { i18n } from '@/i18n'
-import { getLocalizedRouteName } from '@/router/route'
+import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
 
 type PageKind = 'home' | 'privacy' | 'about'
 
@@ -24,6 +23,7 @@ const props = withDefaults(
 )
 
 const { tm } = useI18n()
+const route = useRoute()
 const footerLinks = computed(() => tm('footer.links') as FooterLink[])
 const currentLocale = computed(() => ((route.meta as SeoRouteMeta).locale ?? 'fr'))
 
