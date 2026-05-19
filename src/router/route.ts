@@ -8,6 +8,7 @@ import HomePage from '@/pages/home/HomePage.vue'
 import PrivacyPage from '@/pages/privacy/PrivacyPage.vue'
 
 export type PageId = 'home' | 'privacy' | 'about'
+export type LocalizedPageId = PageId
 
 export type SeoRouteMeta = {
   locale: AppLocale
