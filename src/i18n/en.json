@@ -57,7 +57,7 @@
         "title": "Third-Party Services",
         "items": [
           "Data may be processed by our website hosting provider to serve pages and maintain security logs.",
-          "If a waitlist or email delivery service is connected later, it will receive only the information needed to manage signups and launch communications.",
+          "The waitlist registration service receives only the information needed to manage signups and launch communications.",
           "We do not sell personal information to advertisers or data brokers."
         ]
       },
@@ -351,6 +351,7 @@
       "button": "Get Early Access",
       "loading": "Joining",
       "error": "Please enter a valid email.",
+      "submitError": "We couldn't complete your signup. Please try again.",
       "successTitle": "You're on the list.",
       "successBody": "We'll reach out the moment CatSensor is ready to ship.",
       "successFoot": "Early access confirmed",
