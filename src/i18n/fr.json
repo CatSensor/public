@@ -55,7 +55,7 @@
         "title": "Services tiers",
         "items": [
           "Les données peuvent être traitées par notre fournisseur d'hébergement afin d'afficher le site et de maintenir les journaux de sécurité.",
-          "Si un service de liste d'attente ou d'envoi de courriels est ajouté plus tard, il ne recevra que les informations nécessaires pour gérer les inscriptions et les communications de lancement.",
+          "Le service d'inscription à la liste d'attente reçoit seulement les informations nécessaires pour gérer les inscriptions et les communications de lancement.",
           "Nous ne vendons pas les renseignements personnels à des annonceurs ni à des courtiers en données."
         ]
       },
@@ -364,6 +364,7 @@
       "button": "Obtenir l'accès anticipé",
       "loading": "Inscription",
       "error": "Veuillez entrer un email valide.",
+      "submitError": "Nous n'avons pas pu compléter votre inscription. Veuillez réessayer.",
       "successTitle": "Vous êtes sur la liste.",
       "successBody": "Nous vous contacterons dès que CatSensor sera prêt à être expédié.",
       "successFoot": "Accès anticipé confirmé",

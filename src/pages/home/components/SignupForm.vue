@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { RouterLink, useRoute } from 'vue-router'
 
 import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
 
 type FormStatus = 'idle' | 'loading' | 'success'
+
+const REGISTER_ENDPOINT = 'https://mail-service.catsensor.ca/register'
 
 const { t } = useI18n()
 const route = useRoute()
@@ -20,10 +22,10 @@ const privacyRoute = computed(() => ({
 
 const successFoot = computed(() => `${t('cta.form.successFoot')}`)
 
-let submitTimer: ReturnType<typeof setTimeout> | null = null
+async function submit() {
+  const submittedEmail = email.value.trim().toLowerCase()
 
-function submit() {
-  if (!email.value || !email.value.includes('@')) {
+  if (!submittedEmail || !submittedEmail.includes('@')) {
     error.value = t('cta.form.error')
     return
   }
@@ -31,17 +33,36 @@ function submit() {
   error.value = ''
   status.value = 'loading'
 
-  submitTimer = window.setTimeout(() => {
-    position.value = Math.floor(Math.random() * 40) + 510
-    status.value = 'success'
-  }, 1000)
-}
+  try {
+    const response = await fetch(REGISTER_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: submittedEmail,
+        timestamp: new Date().toISOString(),
+        device: navigator.userAgent,
+        metadata: {
+          locale: (route.meta as SeoRouteMeta).locale ?? 'fr',
+          path: route.fullPath,
+        },
+      }),
+    })
 
-onBeforeUnmount(() => {
-  if (submitTimer) {
-    window.clearTimeout(submitTimer)
+    const data = await response.json().catch(() => null)
+
+    if (!response.ok) {
+      throw new Error(data?.error || t('cta.form.submitError'))
+    }
+
+    position.value = Number(data?.number ?? data?.id ?? 0) || null
+    status.value = 'success'
+  } catch (submitError) {
+    error.value = submitError instanceof Error ? submitError.message : t('cta.form.submitError')
+    status.value = 'idle'
   }
-})
+}
 </script>
 
 <template>
