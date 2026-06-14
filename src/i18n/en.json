@@ -141,11 +141,25 @@
           "period": "May 14, 2026",
           "title": "1st place - Startup Phase 2 Validation",
           "summary": "William and Samuel won first place at Projet Startup Phase 2 - Validation with CatSensor.",
+          "image": "/images/us/winner.png",
           "details": [
             "The project received official recognition for validation quality and potential.",
             "The roadmap accelerated toward hardware execution."
           ],
           "proofUrl": "https://www.linkedin.com/posts/hubcst_cegepsoreltracy-hubcst-parcoursstartup-activity-7461512242224865280-jZRo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5S4a4BBvvxBlOBgyt16n31XRQ09lCCibc",
+          "proofLabel": "Publication"
+        },
+        {
+          "period": "June 2026",
+          "title": "Visibility and fundraising at the golf tournament",
+          "summary": "CatSensor was highlighted during the Beauchemin, Fleury, Beauvillier and Aube-Kube golf classic with support from the Fondation du Cegep de Sorel-Tracy and its partners.",
+          "image": "/images/us/golf.jpg",
+          "details": [
+            "Genevieve Menard from Descartes Systems Group helped bring attention to the project during the event.",
+            "The Foundation's gratitude space made it possible to send interns William Beaudin and Samuel Courchesne.",
+            "Funds raised help support the HUB and innovation projects such as CatSensor, winner of the Parcours Startup Validation block."
+          ],
+          "proofUrl": "https://www.facebook.com/share/p/1DCTe6zKcu/",
           "proofLabel": "Publication"
         },
         {
