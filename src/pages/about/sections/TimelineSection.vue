@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { timelineHighlightImage, type TimelineEntry } from '@/pages/about/content'
+import { type TimelineEntry } from '@/pages/about/content'
 
 const { t, tm } = useI18n()
 
@@ -10,7 +10,6 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
 const timelineRows = computed(() =>
   timelineEntries.value.map((entry, index) => ({
     ...entry,
-    image: index === 1 ? timelineHighlightImage : null,
     side: index % 2 === 0 ? 'left' : 'right',
   })),
 )
