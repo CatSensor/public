@@ -3,11 +3,10 @@ export type TimelineEntry = {
   title: string
   summary: string
   details: string[]
+  image?: string
   proofUrl?: string
   proofLabel?: string
 }
-
-export const timelineHighlightImage = '/images/us/winner.png'
 
 export type TeamMemberText = {
   name: string
