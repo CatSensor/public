@@ -2,11 +2,11 @@ import { computed, watchEffect } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useRoute } from 'vue-router'
 
+import brandIconUrl from '@/assets/catsenser/icon.png'
 import { i18n, messages, persistLocale, syncDocumentLanguage } from '@/i18n'
 import {
   buildCanonicalUrl,
   buildPagePath,
-  DEFAULT_OG_IMAGE_URL,
   getAlternateLocale,
   SITE_URL,
   type SeoRouteMeta,
@@ -22,14 +22,6 @@ const ogLocaleMap = {
   fr: 'fr_CA',
 } as const
 
-const seoCopyOverrides: Partial<Record<keyof typeof messages, Partial<Record<SeoRouteMeta['titleKey'] | SeoRouteMeta['descriptionKey'], string>>>> = {
-  fr: {
-    'meta.description': "CatSensor aide les proprietaires a suivre le poids, la composition corporelle et les tendances de sante de leur chat au quotidien.",
-    'privacy.meta.description':
-      "Consultez la facon dont CatSensor gere la confidentialite, les preferences de langue et les informations de liste d'attente.",
-  },
-}
-
 export function usePageSeo() {
   const route = useRoute()
 
@@ -40,26 +32,49 @@ export function usePageSeo() {
   const description = computed(() => resolveSeoCopy(locale.value, seoMeta.value.descriptionKey))
   const canonicalUrl = computed(() => buildCanonicalUrl(seoMeta.value.canonicalPath))
   const alternateUrl = computed(() => buildCanonicalUrl(buildPagePath(seoMeta.value.pageId, alternateLocale.value)))
+  const brandImageUrl = new URL(brandIconUrl, `${SITE_URL}/`).toString()
   const jsonLd = computed(() =>
     JSON.stringify({
       '@context': 'https://schema.org',
       '@graph': [
+        ...(seoMeta.value.pageId === 'home' && locale.value === 'fr'
+          ? [
+              {
+                '@type': 'Organization',
+                '@id': `${SITE_URL}/#organization`,
+                name: 'CatSensor',
+                url: `${SITE_URL}/`,
+                description: resolveSeoCopy('fr', 'meta.description'),
+                email: 'contact@catsensor.ca',
+                foundingDate: '2026',
+                areaServed: {
+                  '@type': 'Country',
+                  name: 'Canada',
+                },
+                founder: [
+                  { '@type': 'Person', name: 'Samuel Courchesne' },
+                  { '@type': 'Person', name: 'William Beaudin' },
+                ],
+                logo: {
+                  '@type': 'ImageObject',
+                  url: brandImageUrl,
+                  width: 400,
+                  height: 400,
+                },
+                sameAs: ['https://github.com/CatSensor'],
+              },
+              {
+                '@type': 'WebSite',
+                '@id': `${SITE_URL}/#website`,
+                name: 'CatSensor',
+                url: `${SITE_URL}/`,
+                publisher: { '@id': `${SITE_URL}/#organization` },
+                inLanguage: ['fr-CA', 'en-CA'],
+              },
+            ]
+          : []),
         {
-          '@type': 'Organization',
-          '@id': `${SITE_URL}/#organization`,
-          name: 'CatSensor',
-          url: SITE_URL,
-          logo: `${SITE_URL}/favicon.svg`,
-        },
-        {
-          '@type': 'WebSite',
-          '@id': `${SITE_URL}/#website`,
-          name: 'CatSensor',
-          url: SITE_URL,
-          inLanguage: localeCodeMap[locale.value],
-        },
-        {
-          '@type': 'WebPage',
+          '@type': seoMeta.value.pageId === 'about' ? 'AboutPage' : 'WebPage',
           '@id': `${canonicalUrl.value}#webpage`,
           url: canonicalUrl.value,
           name: title.value,
@@ -86,13 +101,20 @@ export function usePageSeo() {
     },
     meta: [
       { key: 'description', name: 'description', content: description.value },
-      { key: 'robots', name: 'robots', content: 'index, follow' },
+      {
+        key: 'robots',
+        name: 'robots',
+        content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+      },
       { key: 'og:type', property: 'og:type', content: 'website' },
       { key: 'og:site_name', property: 'og:site_name', content: 'CatSensor' },
       { key: 'og:title', property: 'og:title', content: title.value },
       { key: 'og:description', property: 'og:description', content: description.value },
       { key: 'og:url', property: 'og:url', content: canonicalUrl.value },
-      { key: 'og:image', property: 'og:image', content: DEFAULT_OG_IMAGE_URL },
+      { key: 'og:image', property: 'og:image', content: brandImageUrl },
+      { key: 'og:image:type', property: 'og:image:type', content: 'image/png' },
+      { key: 'og:image:width', property: 'og:image:width', content: '400' },
+      { key: 'og:image:height', property: 'og:image:height', content: '400' },
       { key: 'og:image:alt', property: 'og:image:alt', content: 'CatSensor logo' },
       { key: 'og:locale', property: 'og:locale', content: ogLocaleMap[locale.value] },
       {
@@ -100,10 +122,11 @@ export function usePageSeo() {
         property: 'og:locale:alternate',
         content: ogLocaleMap[alternateLocale.value],
       },
-      { key: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      { key: 'twitter:card', name: 'twitter:card', content: 'summary' },
       { key: 'twitter:title', name: 'twitter:title', content: title.value },
       { key: 'twitter:description', name: 'twitter:description', content: description.value },
-      { key: 'twitter:image', name: 'twitter:image', content: DEFAULT_OG_IMAGE_URL },
+      { key: 'twitter:image', name: 'twitter:image', content: brandImageUrl },
+      { key: 'twitter:image:alt', name: 'twitter:image:alt', content: 'CatSensor logo' },
     ],
     link: [
       { key: 'canonical', rel: 'canonical', href: canonicalUrl.value },
@@ -130,12 +153,6 @@ function resolveSeoCopy(
   locale: keyof typeof messages,
   key: SeoRouteMeta['titleKey'] | SeoRouteMeta['descriptionKey'],
 ) {
-  const overrideValue = seoCopyOverrides[locale]?.[key]
-
-  if (typeof overrideValue === 'string') {
-    return overrideValue
-  }
-
   const localizedValue = readMessageValue(messages[locale], key)
 
   if (typeof localizedValue === 'string') {

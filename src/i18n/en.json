@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "CatSensor - Know Your Cat's Health, Every Day",
+    "title": "CatSensor | Daily Cat Health Monitoring",
     "description": "CatSensor helps cat owners monitor weight, body composition, and health trends daily so changes can be caught earlier."
   },
   "cookie": {
@@ -116,7 +116,8 @@
   },
   "about": {
     "meta": {
-      "title": "About Us | CatSensor"
+      "title": "About CatSensor | Our Team and Mission",
+      "description": "Meet the CatSensor team, learn about our mission for feline health monitoring, and follow the milestones behind our prototype."
     },
     "header": {
       "backHome": "Back Home"
@@ -141,7 +142,7 @@
           "period": "May 14, 2026",
           "title": "1st place - Startup Phase 2 Validation",
           "summary": "William and Samuel won first place at Projet Startup Phase 2 - Validation with CatSensor.",
-          "image": "/images/us/winner.png",
+          "image": "/images/us/winner.webp",
           "details": [
             "The project received official recognition for validation quality and potential.",
             "The roadmap accelerated toward hardware execution."
@@ -153,7 +154,7 @@
           "period": "June 2026",
           "title": "Visibility and fundraising at the golf tournament",
           "summary": "CatSensor was highlighted during the Beauchemin, Fleury, Beauvillier and Aube-Kube golf classic with support from the Fondation du Cegep de Sorel-Tracy and its partners.",
-          "image": "/images/us/golf.jpg",
+          "image": "/images/us/golf.webp",
           "details": [
             "Genevieve Menard from Descartes Systems Group helped bring attention to the project during the event.",
             "The Foundation's gratitude space made it possible to send interns William Beaudin and Samuel Courchesne.",
@@ -179,12 +180,12 @@
       "description": "We are building CatSensor to make early health signals simple, visible, and actionable at home.",
       "members": [
         {
-          "name": "Samuel",
+          "name": "Samuel Courchesne",
           "role": "Co-founder",
           "bio": "Samuel leads UI/UX and drives the product vision so CatSensor stays simple, clear, and useful in everyday life."
         },
         {
-          "name": "William",
+          "name": "William Beaudin",
           "role": "Co-founder",
           "bio": "William handles the technical side and public relations to move CatSensor forward both in product execution and in the field."
         }
@@ -244,25 +245,25 @@
     "eyebrow": "The Problem",
     "titleStart": "Cats hide pain.",
     "titleEnd": "You shouldn't have to guess.",
-    "description": "By the time symptoms appear, issues have usually been progressing for weeks. Earlier data changes the outcome.",
+    "description": "Subtle changes can be difficult to notice between veterinary visits. Regular monitoring helps make long-term trends visible.",
     "items": [
       {
         "number": "01 -",
         "title": "Silent suffering",
         "body": "Cats instinctively mask illness - a survival trait. By the time you notice something is wrong, it's often already serious.",
-        "stat": "85% of owners miss early signs"
+        "stat": "Early changes can be difficult to see"
       },
       {
         "number": "02 -",
         "title": "Expensive surprises",
-        "body": "Emergency vet visits cost 3-5x more than preventive care. Most owners only discover issues when the cat stops eating.",
-        "stat": "Avg. emergency: $800-$1,500"
+        "body": "Problems discovered late can require more complex and expensive care. A health history gives your veterinarian useful context.",
+        "stat": "More context before the appointment"
       },
       {
         "number": "03 -",
         "title": "No data at home",
-        "body": "Your cat sees the vet once a year. Between visits, there is no way to track health trends or detect gradual changes.",
-        "stat": "~1 vet visit per year on average"
+        "body": "Between veterinary visits, it is difficult to objectively follow changes in your cat's weight and body composition.",
+        "stat": "A continuous history between visits"
       }
     ]
   },
@@ -277,7 +278,7 @@
       },
       {
         "title": "Bio-impedance analysis",
-        "body": "Embedded sensors measure electrical resistance through your cat's body, calculating muscle mass, hydration, and fat percentage in seconds."
+        "body": "Embedded sensors measure electrical resistance to estimate and track body-composition trends, including hydration, muscle mass, and body fat."
       },
       {
         "title": "Insights in your pocket",
@@ -299,7 +300,7 @@
     "items": [
       {
         "title": "Early Detection",
-        "description": "Catch weight loss, dehydration, or muscle loss weeks before visible symptoms. Get notified when patterns shift.",
+        "description": "Track weight and body-composition changes over time. Get notified when measured trends shift.",
         "icon": "clock"
       },
       {
@@ -317,7 +318,8 @@
         "description": "No training required. CatSensor integrates into your cat's existing feeding routine - they never notice it's there.",
         "icon": "routine"
       }
-    ]
+    ],
+    "disclaimer": "CatSensor is a wellness-monitoring tool in development. It does not diagnose disease or replace veterinary advice or care."
   },
   "partners": {
     "eyebrow": "Our Partners",
@@ -398,6 +400,10 @@
       {
         "label": "Privacy",
         "href": "privacy"
+      },
+      {
+        "label": "Contact us",
+        "href": "mailto:contact@catsensor.ca"
       }
     ]
   }

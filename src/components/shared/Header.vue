@@ -5,7 +5,7 @@ import { RouterLink, useRoute } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-black.png'
 import { useLocale } from '@/composables/useLocale'
-import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
+import { buildPagePath, type SeoRouteMeta } from '@/router/route'
 
 type PageKind = 'home' | 'privacy' | 'about'
 
@@ -29,8 +29,8 @@ const { toggleLocale } = useLocale()
 const isScrolled = ref(true)
 const navLinks = computed(() => (props.page === 'home' ? (tm('nav.links') as NavLink[]) : []))
 const currentLocale = computed(() => ((route.meta as Partial<SeoRouteMeta>).locale ?? 'fr'))
-const homeHeroRoute = computed(() => ({ name: getLocalizedRouteName('home', currentLocale.value), hash: '#hero' }))
-const homeRoute = computed(() => ({ name: getLocalizedRouteName('home', currentLocale.value) }))
+const homeHeroRoute = computed(() => ({ path: buildPagePath('home', currentLocale.value), hash: '#hero' }))
+const homeRoute = computed(() => ({ path: buildPagePath('home', currentLocale.value) }))
 const isSecondaryPage = computed(() => props.page !== 'home')
 const primaryLabel = computed(() => {
   if (props.page === 'home') {
@@ -50,7 +50,7 @@ function updateScrollState() {
 
 function resolveNavTo(href: string) {
   if (href === '/about') {
-    return { name: getLocalizedRouteName('about', currentLocale.value) }
+    return { path: buildPagePath('about', currentLocale.value) }
   }
 
   return href
@@ -83,6 +83,8 @@ onBeforeUnmount(() => {
         <img
           :src="logoMark"
           alt="CatSensor logo"
+          width="48"
+          height="48"
           class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04] sm:h-12"
         />
         <span class="leading-none">
@@ -98,6 +100,8 @@ onBeforeUnmount(() => {
         <img
           :src="logoMark"
           alt="CatSensor logo"
+          width="48"
+          height="48"
           class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04] sm:h-12"
         />
         <span class="leading-none">
@@ -109,16 +113,25 @@ onBeforeUnmount(() => {
         v-if="navLinks.length > 0"
         class="hidden items-center gap-6 lg:flex"
       >
-        <component
+        <template
           v-for="link in navLinks"
           :key="link.href"
-          :is="link.href.startsWith('/') ? RouterLink : 'a'"
-          :to="link.href.startsWith('/') ? resolveNavTo(link.href) : undefined"
-          :href="link.href.startsWith('/') ? undefined : link.href"
-          class="text-sm cursor-pointer font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
         >
-          {{ link.label }}
-        </component>
+          <RouterLink
+            v-if="link.href.startsWith('/')"
+            :to="resolveNavTo(link.href)"
+            class="text-sm cursor-pointer font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
+          >
+            {{ link.label }}
+          </RouterLink>
+          <a
+            v-else
+            :href="link.href"
+            class="text-sm cursor-pointer font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
+          >
+            {{ link.label }}
+          </a>
+        </template>
       </nav>
 
       <div class="flex items-center gap-2 sm:gap-3">
