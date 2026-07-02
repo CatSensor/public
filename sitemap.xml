@@ -4,15 +4,18 @@
     <loc>https://catsensor.ca/</loc>
   </url>
   <url>
-    <loc>https://catsensor.ca/about</loc>
+    <loc>https://catsensor.ca/about/</loc>
   </url>
   <url>
-    <loc>https://catsensor.ca/privacy</loc>
+    <loc>https://catsensor.ca/privacy/</loc>
   </url>
   <url>
-    <loc>https://catsensor.ca/fr</loc>
+    <loc>https://catsensor.ca/en/</loc>
   </url>
   <url>
-    <loc>https://catsensor.ca/fr/privacy</loc>
+    <loc>https://catsensor.ca/en/about/</loc>
+  </url>
+  <url>
+    <loc>https://catsensor.ca/en/privacy/</loc>
   </url>
 </urlset>
