@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { RouterLink, useRoute } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-white.png'
-import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
+import { buildPagePath, type SeoRouteMeta } from '@/router/route'
 
 type PageKind = 'home' | 'privacy' | 'about'
 
@@ -49,18 +49,18 @@ function resolveHref(href: string) {
 
 function resolveRouterTo(href: string) {
   if (href === 'privacy') {
-    return { name: getLocalizedRouteName('privacy', currentLocale.value) }
+    return { path: buildPagePath('privacy', currentLocale.value) }
   }
 
   if (href === 'about') {
-    return { name: getLocalizedRouteName('about', currentLocale.value) }
+    return { path: buildPagePath('about', currentLocale.value) }
   }
 
   if ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#')) {
-    return { name: getLocalizedRouteName('home', currentLocale.value), hash: href }
+    return { path: buildPagePath('home', currentLocale.value), hash: href }
   }
 
-  return { name: getLocalizedRouteName('home', currentLocale.value), hash: href }
+  return { path: buildPagePath('home', currentLocale.value), hash: href }
 }
 </script>
 
@@ -71,6 +71,10 @@ function resolveRouterTo(href: string) {
         <img
           :src="logoMark"
           alt="CatSensor logo"
+          width="48"
+          height="48"
+          loading="lazy"
+          decoding="async"
           class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04] sm:h-12"
         />
         CatSensor

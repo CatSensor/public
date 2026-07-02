@@ -15,9 +15,9 @@ export type TeamMemberText = {
 }
 
 export const aboutImages = {
-  collageTall: '/images/us/vertical_1.png',
-  collageTop: '/images/us/winner.png',
-  collageBottom: '/images/us/wide.png',
-  samuel: '/images/us/Samuel.png',
-  william: '/images/us/William.png',
+  collageTall: '/images/us/vertical_1.webp',
+  collageTop: '/images/us/winner.webp',
+  collageBottom: '/images/us/wide.webp',
+  samuel: '/images/us/Samuel.webp',
+  william: '/images/us/William.webp',
 }

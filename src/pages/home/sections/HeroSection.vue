@@ -85,7 +85,11 @@ const heroNowrapClass = computed(() => (isFrench.value ? '2xl:whitespace-nowrap'
       <img
         data-float
         :src="productImages.line"
-        alt="CatSenser device"
+        alt="CatSensor feline health monitoring device"
+        width="900"
+        height="864"
+        fetchpriority="high"
+        decoding="async"
         class="w-full max-w-[380px] drop-shadow-[0_24px_48px_rgba(0,0,0,0.10)] 2xl:max-w-[460px] 2xl:drop-shadow-[0_32px_64px_rgba(0,0,0,0.10)]"
       />
     </div>

@@ -60,7 +60,11 @@ const howSteps = computed(() => tm('how.steps') as HowStep[])
         <div data-aos="fade-up" data-aos-delay="160" class="group relative flex aspect-[0.95] items-center justify-center overflow-hidden rounded-[24px] bg-[oklch(95%_0.032_150)] sm:aspect-square">
           <img
             :src="productImages.line"
-            alt="CatSenser device"
+            alt="CatSensor feline health monitoring device"
+            width="900"
+            height="864"
+            loading="lazy"
+            decoding="async"
             class="w-[80%] drop-shadow-[0_16px_32px_rgba(0,0,0,0.12)] transition-transform duration-500 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
           />
           <div class="absolute bottom-4 left-4 right-4 min-w-0 bg-white px-4 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.10)] sm:bottom-6 sm:left-auto sm:right-6 sm:min-w-44 sm:px-[22px] sm:py-[18px]">

@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { RouterLink, useRoute } from 'vue-router'
 
-import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
+import { buildPagePath, type SeoRouteMeta } from '@/router/route'
 
 type FormStatus = 'idle' | 'loading' | 'success'
 
@@ -16,9 +16,7 @@ const email = ref('')
 const error = ref('')
 const status = ref<FormStatus>('idle')
 const position = ref<number | null>(null)
-const privacyRoute = computed(() => ({
-  name: getLocalizedRouteName('privacy', ((route.meta as SeoRouteMeta).locale ?? 'fr')),
-}))
+const privacyRoute = computed(() => buildPagePath('privacy', ((route.meta as SeoRouteMeta).locale ?? 'fr')))
 
 const successFoot = computed(() => `${t('cta.form.successFoot')}`)
 

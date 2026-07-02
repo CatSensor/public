@@ -80,6 +80,8 @@ const timelineRows = computed(() =>
               <img
                 :src="entry.image"
                 :alt="entry.title"
+                loading="lazy"
+                decoding="async"
                 class="aspect-[16/10] h-full w-full object-cover"
               />
             </div>

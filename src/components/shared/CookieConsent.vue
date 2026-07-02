@@ -3,7 +3,7 @@ import { computed, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { RouterLink, useRoute } from 'vue-router'
 
-import { getLocalizedRouteName, type SeoRouteMeta } from '@/router/route'
+import { buildPagePath, type SeoRouteMeta } from '@/router/route'
 
 type ConsentChoice = 'essential' | 'all'
 
@@ -15,9 +15,7 @@ const consent = ref<ConsentChoice | null>(null)
 const isReady = ref(false)
 
 const isVisible = computed(() => isReady.value && consent.value === null)
-const privacyRoute = computed(() => ({
-  name: getLocalizedRouteName('privacy', ((route.meta as SeoRouteMeta).locale ?? 'fr')),
-}))
+const privacyRoute = computed(() => buildPagePath('privacy', ((route.meta as SeoRouteMeta).locale ?? 'fr')))
 
 function saveConsent(choice: ConsentChoice) {
   consent.value = choice

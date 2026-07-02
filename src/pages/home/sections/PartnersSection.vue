@@ -2,11 +2,11 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import cegepstLogo from '@/assets/partner-logo/cegepst.png'
+import cegepstLogo from '@/assets/partner-logo/cegepst.webp'
 import colosseLogo from '@/assets/partner-logo/COLOSSE_LOGO_AJUSTE.svg'
-import tonEquipier from '@/assets/partner-logo/ton-equipier.png'
+import tonEquipier from '@/assets/partner-logo/ton-equipier.webp'
 import hubLogo from '@/assets/partner-logo/hub-logo.webp'
-import leviatLegalLogo from '@/assets/partner-logo/leviat-legal.jpg'
+import leviatLegalLogo from '@/assets/partner-logo/leviat-legal.webp'
 
 type PartnerCopy = {
   key: string
@@ -53,7 +53,7 @@ const partners = computed(() =>
         <article v-for="(partner, index) in partners" :key="partner.key" data-aos="fade-up" :data-aos-delay="index * 80"
           class="group flex min-h-[140px] items-center justify-center rounded-[6px] border border-black/8 bg-[#fbfaf8] px-6 py-8 shadow-[0_18px_44px_rgba(0,0,0,0.05)] transition-transform duration-300 hover:-translate-y-1 hover:bg-white">
           <a :href="partner.logo.url">
-            <img :src="partner.logo.logo" :alt="partner.name"
+            <img :src="partner.logo.logo" :alt="partner.name" loading="lazy" decoding="async"
               class="max-h-14 w-full object-contain opacity-65 grayscale transition duration-300 group-hover:opacity-100 group-hover:grayscale-0">
           </a>
         </article>

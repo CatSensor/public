@@ -1,30 +1,12 @@
 <script setup lang="ts">
-import { nextTick, onMounted, watch } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { nextTick, onMounted } from 'vue'
 import AOS from 'aos'
 
-import { syncDocumentLanguage } from '@/i18n'
+import { usePageSeo } from '@/composables/usePageSeo'
 import AboutUsSection from '@/pages/about/sections/AboutUsSection.vue'
 import TimelineSection from '@/pages/about/sections/TimelineSection.vue'
 
-const { locale, t } = useI18n()
-
-let aosReady = false
-
-watch(
-  locale,
-  async (value) => {
-    if (typeof document !== 'undefined') {
-      document.title = t('about.meta.title')
-    }
-    syncDocumentLanguage(value as 'en' | 'fr')
-    if (aosReady) {
-      await nextTick()
-      AOS.refresh()
-    }
-  },
-  { immediate: true },
-)
+usePageSeo()
 
 onMounted(async () => {
   AOS.init({
@@ -34,7 +16,6 @@ onMounted(async () => {
     offset: 30,
   })
 
-  aosReady = true
   await nextTick()
   AOS.refreshHard()
 })

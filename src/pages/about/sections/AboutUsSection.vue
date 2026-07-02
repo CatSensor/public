@@ -25,13 +25,13 @@ const teamMembers = computed(() =>
         >
           {{ t('about.story.eyebrow') }}
         </span>
-        <h2
+        <h1
           data-aos="fade-up"
           data-aos-delay="80"
           class="text-[clamp(46px,9vw,112px)] leading-[0.9] font-semibold tracking-[-0.045em] text-[oklch(34%_0.1_155)]"
         >
           <span>{{ t('about.story.brandLead') }}</span>{{ t('about.story.brandTail') }}
-        </h2>
+        </h1>
       </div>
 
       <div class="grid items-start gap-10 pt-10 lg:grid-cols-[0.95fr_1fr] lg:gap-14 lg:pt-12">
@@ -43,6 +43,10 @@ const teamMembers = computed(() =>
             <img
               :src="aboutImages.collageTall"
               :alt="t('about.story.imageAltTall')"
+              width="480"
+              height="720"
+              fetchpriority="high"
+              decoding="async"
               class="h-full w-full object-cover"
             />
           </div>
@@ -50,6 +54,10 @@ const teamMembers = computed(() =>
             <img
               :src="aboutImages.collageTop"
               :alt="t('about.story.imageAltTop')"
+              width="960"
+              height="640"
+              loading="lazy"
+              decoding="async"
               class="aspect-square h-full w-full object-cover"
             />
           </div>
@@ -57,6 +65,10 @@ const teamMembers = computed(() =>
             <img
               :src="aboutImages.collageBottom"
               :alt="t('about.story.imageAltBottom')"
+              width="960"
+              height="640"
+              loading="lazy"
+              decoding="async"
               class="aspect-square h-full w-full object-cover"
             />
           </div>
@@ -112,6 +124,10 @@ const teamMembers = computed(() =>
             <img
               :src="member.image"
               :alt="member.name"
+              width="400"
+              height="400"
+              loading="lazy"
+              decoding="async"
               class="aspect-[4/3] h-full w-full object-cover"
             />
           </div>
