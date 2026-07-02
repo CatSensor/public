@@ -39,6 +39,9 @@ const featureItems = computed(() => tm('features.items') as FeatureItem[])
           <p class="text-[13px] leading-[1.7] font-light text-[oklch(48%_0.008_240)]">{{ feature.description }}</p>
         </article>
       </div>
+      <p class="mt-5 max-w-[780px] text-xs leading-[1.7] text-[oklch(56%_0.008_240)]">
+        {{ t('features.disclaimer') }}
+      </p>
     </div>
   </section>
 </template>

@@ -13,13 +13,12 @@ export type LocalizedPageId = PageId
 export type SeoRouteMeta = {
   locale: AppLocale
   pageId: PageId
-  titleKey: 'meta.title' | 'privacy.meta.title'
-  descriptionKey: 'meta.description' | 'privacy.meta.description'
+  titleKey: 'meta.title' | 'about.meta.title' | 'privacy.meta.title'
+  descriptionKey: 'meta.description' | 'about.meta.description' | 'privacy.meta.description'
   canonicalPath: string
 }
 
 export const SITE_URL = 'https://catsensor.ca'
-export const DEFAULT_OG_IMAGE_URL = `${SITE_URL}/favicon.svg`
 
 export function getLocalizedRouteName(pageId: LocalizedPageId, locale: AppLocale) {
   return `${pageId}-${locale}` as const
@@ -27,14 +26,14 @@ export function getLocalizedRouteName(pageId: LocalizedPageId, locale: AppLocale
 
 export function buildPagePath(pageId: LocalizedPageId, locale: AppLocale) {
   if (pageId === 'home') {
-    return locale === 'fr' ? '/' : '/en'
+    return locale === 'fr' ? '/' : '/en/'
   }
 
   if (pageId === 'about') {
-    return locale === 'fr' ? '/about' : '/en/about'
+    return locale === 'fr' ? '/about/' : '/en/about/'
   }
 
-  return locale === 'fr' ? '/privacy' : '/en/privacy'
+  return locale === 'fr' ? '/privacy/' : '/en/privacy/'
 }
 
 export function buildCanonicalUrl(path: string) {
@@ -69,7 +68,10 @@ export const routes: RouteRecordRaw[] = [
         meta: {
           locale: 'fr',
           pageId: 'about',
-        },
+          titleKey: 'about.meta.title',
+          descriptionKey: 'about.meta.description',
+          canonicalPath: '/about/',
+        } satisfies SeoRouteMeta,
       },
     ],
   },
@@ -86,7 +88,7 @@ export const routes: RouteRecordRaw[] = [
           pageId: 'home',
           titleKey: 'meta.title',
           descriptionKey: 'meta.description',
-          canonicalPath: '/en',
+          canonicalPath: '/en/',
         } satisfies SeoRouteMeta,
       },
       {
@@ -96,16 +98,19 @@ export const routes: RouteRecordRaw[] = [
         meta: {
           locale: 'en',
           pageId: 'about',
-        },
+          titleKey: 'about.meta.title',
+          descriptionKey: 'about.meta.description',
+          canonicalPath: '/en/about/',
+        } satisfies SeoRouteMeta,
       },
     ],
   },
   {
-    path: '/',
+    path: '/privacy',
     component: PolicyLayout,
     children: [
       {
-        path: 'privacy',
+        path: '',
         name: getLocalizedRouteName('privacy', 'fr'),
         component: PrivacyPage,
         meta: {
@@ -113,17 +118,17 @@ export const routes: RouteRecordRaw[] = [
           pageId: 'privacy',
           titleKey: 'privacy.meta.title',
           descriptionKey: 'privacy.meta.description',
-          canonicalPath: '/privacy',
+          canonicalPath: '/privacy/',
         } satisfies SeoRouteMeta,
       },
     ],
   },
   {
-    path: '/en',
+    path: '/en/privacy',
     component: PolicyLayout,
     children: [
       {
-        path: 'privacy',
+        path: '',
         name: getLocalizedRouteName('privacy', 'en'),
         component: PrivacyPage,
         meta: {
@@ -131,7 +136,7 @@ export const routes: RouteRecordRaw[] = [
           pageId: 'privacy',
           titleKey: 'privacy.meta.title',
           descriptionKey: 'privacy.meta.description',
-          canonicalPath: '/en/privacy',
+          canonicalPath: '/en/privacy/',
         } satisfies SeoRouteMeta,
       },
     ],

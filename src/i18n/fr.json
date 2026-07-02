@@ -1,6 +1,7 @@
 {
   "meta": {
-    "title": "CatSensor - Suivez la santé de votre chat, chaque jour"
+    "title": "CatSensor | Suivi quotidien de la santé de votre chat",
+    "description": "CatSensor aide les propriétaires à suivre le poids, la composition corporelle et les tendances de santé de leur chat au quotidien."
   },
   "cookie": {
     "title": "Paramètres de confidentialité",
@@ -11,7 +12,8 @@
   },
   "privacy": {
     "meta": {
-      "title": "Politique de confidentialité | CatSensor"
+      "title": "Politique de confidentialité | CatSensor",
+      "description": "Consultez la façon dont CatSensor gère la confidentialité, les préférences de langue et les informations de liste d'attente."
     },
     "header": {
       "backHome": "Retour à l'accueil"
@@ -114,7 +116,8 @@
   },
   "about": {
     "meta": {
-      "title": "À propos de nous | CatSensor"
+      "title": "À propos de CatSensor | Notre équipe et notre mission",
+      "description": "Découvrez l'équipe CatSensor, notre mission pour le suivi de la santé féline et les étapes qui ont mené au développement de notre prototype."
     },
     "header": {
       "backHome": "Retour à l'accueil"
@@ -139,7 +142,7 @@
           "period": "14 mai 2026",
           "title": "1re place - Startup Phase 2 Validation",
           "summary": "William et Samuel remportent la première place au Projet Startup Phase 2 - Validation avec CatSensor.",
-          "image": "/images/us/winner.png",
+          "image": "/images/us/winner.webp",
           "details": [
             "Reconnaissance officielle de la qualité de la validation et du potentiel du projet.",
             "Accélération de la feuille de route pour passer à l'étape matérielle."
@@ -151,7 +154,7 @@
           "period": "Juin 2026",
           "title": "Visibilité et collecte de fonds au tournoi de golf",
           "summary": "CatSensor a été mis de l'avant lors de la Classique de golf Beauchemin, Fleury, Beauvillier et Aubé-Kubé grâce à l'appui de la Fondation du Cégep de Sorel-Tracy et de ses partenaires.",
-          "image": "/images/us/golf.jpg",
+          "image": "/images/us/golf.webp",
           "details": [
             "Genevieve Menard de Descartes Systems Group a contribué à faire rayonner le projet pendant l'événement.",
             "L'espace de gratitude de la Fondation a permis d'y envoyer les stagiaires William Beaudin et Samuel Courchesne.",
@@ -177,12 +180,12 @@
       "description": "Nous construisons CatSensor pour rendre les premiers signaux de santé simples, visibles et actionnables à la maison.",
       "members": [
         {
-          "name": "Samuel",
+          "name": "Samuel Courchesne",
           "role": "Cofondateur",
           "bio": "Samuel s'occupe du UI/UX et pilote la vision du produit pour que CatSensor reste simple, clair et utile au quotidien."
         },
         {
-          "name": "William",
+          "name": "William Beaudin",
           "role": "Cofondateur",
           "bio": "William s'occupe de la partie technique et des relations publiques pour faire avancer CatSensor côté produit et sur le terrain."
         }
@@ -242,25 +245,25 @@
     "eyebrow": "Le problème",
     "titleStart": "Les chats cachent leur douleur.",
     "titleEnd": "Vous ne devriez pas avoir à deviner.",
-    "description": "Quand les symptômes apparaissent, le problème évolue souvent depuis des semaines. Des données plus tôt changent l'issue.",
+    "description": "Les changements subtils peuvent être difficiles à remarquer entre les visites vétérinaires. Un suivi régulier aide à rendre les tendances visibles.",
     "items": [
       {
         "number": "01 -",
         "title": "Souffrance silencieuse",
         "body": "Les chats masquent instinctivement la maladie - un réflexe de survie. Quand vous remarquez qu'il y a un problème, il est souvent déjà sérieux.",
-        "stat": "85 % des propriétaires manquent les premiers signes"
+        "stat": "Les premiers changements peuvent être difficiles à voir"
       },
       {
         "number": "02 -",
         "title": "Mauvaises surprises coûteuses",
-        "body": "Les visites d'urgence coûtent 3 à 5x plus cher que les soins préventifs. La plupart des propriétaires découvrent les problèmes quand le chat arrête de manger.",
-        "stat": "Urgence moyenne : 800 $ à 1 500 $"
+        "body": "Les problèmes découverts tardivement peuvent entraîner des soins plus complexes et plus coûteux. Un historique aide à donner du contexte au vétérinaire.",
+        "stat": "Davantage de contexte avant la consultation"
       },
       {
         "number": "03 -",
         "title": "Aucune donnée à domicile",
-        "body": "Votre chat voit le vétérinaire une fois par an. Entre les visites, il n'existe aucun moyen de suivre les tendances de santé ou de détecter les changements progressifs.",
-        "stat": "~1 visite vétérinaire par an en moyenne"
+        "body": "Entre les visites vétérinaires, il est difficile de suivre objectivement les tendances de poids et de composition corporelle de votre chat.",
+        "stat": "Un historique continu entre les visites"
       }
     ]
   },
@@ -275,7 +278,7 @@
       },
       {
         "title": "Analyse par bio-impédance",
-        "body": "Des capteurs intégrés mesurent la résistance électrique dans le corps de votre chat pour calculer la masse musculaire, l'hydratation et le taux de graisse en quelques secondes."
+        "body": "Des capteurs intégrés mesurent la résistance électrique pour estimer et suivre les tendances de composition corporelle, notamment l'hydratation, la masse musculaire et la masse grasse."
       },
       {
         "title": "Les infos dans votre poche",
@@ -297,7 +300,7 @@
     "items": [
       {
         "title": "Détection précoce",
-        "description": "Repérez une perte de poids, une déshydratation ou une perte musculaire des semaines avant les symptômes visibles. Recevez une alerte quand les tendances changent.",
+        "description": "Suivez les changements de poids et de composition corporelle dans le temps. Recevez une alerte lorsque les tendances mesurées évoluent.",
         "icon": "clock"
       },
       {
@@ -315,7 +318,8 @@
         "description": "Aucun entraînement requis. CatSensor s'intègre à la routine d'alimentation existante de votre chat - il ne s'en rend même pas compte.",
         "icon": "routine"
       }
-    ]
+    ],
+    "disclaimer": "CatSensor est un outil de suivi du bien-être en développement. Il ne pose aucun diagnostic et ne remplace pas les conseils ou les soins d'un vétérinaire."
   },
   "partners": {
     "eyebrow": "Nos partenaires",
@@ -411,6 +415,10 @@
       {
         "label": "Confidentialité",
         "href": "privacy"
+      },
+      {
+        "label": "Nous contacter",
+        "href": "mailto:contact@catsensor.ca"
       }
     ]
   }

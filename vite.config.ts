@@ -12,6 +12,7 @@ export default defineConfig(() => ({
   ssgOptions: {
     dirStyle: 'nested',
     script: 'async',
+    includedRoutes: () => ['/', '/about', '/privacy', '/en', '/en/about', '/en/privacy'],
   },
   resolve: {
     alias: {

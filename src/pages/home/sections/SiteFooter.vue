@@ -13,9 +13,9 @@ const footerLinks = computed(() => tm('footer.links') as FooterLink[])
     <div
       class="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-4 text-center md:flex-row md:flex-wrap md:gap-5 md:text-left">
       <div class="flex items-center gap-[9px] text-base font-semibold text-white">
-        <img :src="logoMark" alt="CatSensor logo"
+        <img :src="logoMark" alt="CatSensor logo" width="48" height="48" loading="lazy" decoding="async"
           class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04] sm:h-12" />
-        CatSenser
+        CatSensor
       </div>
       <div class="flex flex-wrap justify-center gap-5 sm:gap-7">
         <a v-for="link in footerLinks" :key="link.label" :href="link.href"

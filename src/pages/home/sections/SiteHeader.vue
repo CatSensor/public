@@ -51,6 +51,8 @@ onBeforeUnmount(() => {
         <img
           :src="logoMark"
           alt="CatSensor logo"
+          width="48"
+          height="48"
           class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04] sm:h-12"
         />
         <span class="leading-none">

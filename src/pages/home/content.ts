@@ -1,4 +1,4 @@
-import lineRender from '@/assets/catsenser/pasted-1777735292784-0.png'
+import lineRender from '@/assets/catsenser/catsensor-device.webp'
 
 export type NavLink = {
   label: string
