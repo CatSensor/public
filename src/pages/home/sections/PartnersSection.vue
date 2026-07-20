@@ -7,6 +7,7 @@ import colosseLogo from '@/assets/partner-logo/COLOSSE_LOGO_AJUSTE.svg'
 import tonEquipier from '@/assets/partner-logo/ton-equipier.webp'
 import hubLogo from '@/assets/partner-logo/hub-logo.webp'
 import leviatLegalLogo from '@/assets/partner-logo/leviat-legal.webp'
+import sapdsrLogo from '@/assets/partner-logo/sapdsr.png'
 
 type PartnerCopy = {
   key: string
@@ -18,6 +19,7 @@ const { t, tm } = useI18n()
 const partnerLogoMap = {
   cegepst: { logo: cegepstLogo, url: 'https://www.cegepst.qc.ca/' },
   colosse: { logo: colosseLogo, url: 'https://www.colosse.ca/' },
+  sapdsr: { logo: sapdsrLogo, url: 'https://sapdsr.ca/' },
   tonequipier: { logo: tonEquipier, url: 'https://www.tonequipier.com/' },
   hub: { logo: hubLogo, url: 'https://hub-sorel-tracy.mathiscote.ca/' },
   leviat: { logo: leviatLegalLogo, url: 'https://www.leviatlegal.com/' }
@@ -49,7 +51,7 @@ const partners = computed(() =>
         </p>
       </div>
 
-      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-6">
         <article v-for="(partner, index) in partners" :key="partner.key" data-aos="fade-up" :data-aos-delay="index * 80"
           class="group flex min-h-[140px] items-center justify-center rounded-[6px] border border-black/8 bg-[#fbfaf8] px-6 py-8 shadow-[0_18px_44px_rgba(0,0,0,0.05)] transition-transform duration-300 hover:-translate-y-1 hover:bg-white">
           <a :href="partner.logo.url">
