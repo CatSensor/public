@@ -328,6 +328,7 @@
     "items": [
       { "key": "cegepst", "name": "Cégep de Sorel-Tracy" },
       { "key": "colosse", "name": "Colosse" },
+      { "key": "sapdsr", "name": "Service animalier Pierre-De Saurel et régions" },
       { "key": "tonequipier", "name": "Ton Équipier" },
       { "key": "hub", "name": "Hub" },
       { "key": "leviat", "name": "Leviat Legal" }
