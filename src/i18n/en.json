@@ -171,6 +171,18 @@
             "Technical design and iterations were prepared ahead of fall integration.",
             "Core foundations were set for the next product phase."
           ]
+        },
+        {
+          "period": "July 20, 2026",
+          "title": "Partnership with the Pierre-De Saurel animal shelter",
+          "summary": "The Service animalier Pierre-De Saurel et régions (SAPDSR) agreed to collaborate with CatSensor through an exchange of data about cats.",
+          "details": [
+            "The collaboration will help CatSensor better understand the realities faced by shelters and continue validating its solution using concrete data.",
+            "The goal is to accelerate the development of feline-health monitoring tools built on reliable, longitudinal data.",
+            "The partnership was made possible with support from the HUB at Cégep de Sorel-Tracy and Jean-Philippe Hébert."
+          ],
+          "proofUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7485098188832415745",
+          "proofLabel": "Post"
         }
       ]
     },
@@ -182,7 +194,7 @@
         {
           "name": "Samuel Courchesne",
           "role": "Co-founder",
-          "bio": "Samuel leads UI/UX and drives the product vision so CatSensor stays simple, clear, and useful in everyday life."
+          "bio": "Samuel develops the embedded software for our prototype, leads CatSensor's IoT integration, and also builds the payment portal."
         },
         {
           "name": "William Beaudin",

@@ -171,6 +171,18 @@
             "Conception et itérations techniques en prévision de l'intégration à l'automne.",
             "Préparation des bases pour la phase suivante du produit."
           ]
+        },
+        {
+          "period": "20 juillet 2026",
+          "title": "Partenariat avec le Refuge animalier Pierre-De Saurel",
+          "summary": "Le Service animalier Pierre-De Saurel et régions (SAPDSR) accepte de collaborer avec CatSensor dans le cadre d'un échange de données sur les chats.",
+          "details": [
+            "Cette collaboration aidera CatSensor à mieux comprendre les réalités vécues par les refuges et à poursuivre la validation de sa solution à partir de données concrètes.",
+            "L'objectif est d'accélérer le développement d'outils de suivi de la santé féline fondés sur des données fiables et longitudinales.",
+            "Le partenariat a été rendu possible grâce à l'accompagnement du HUB du Cégep de Sorel-Tracy et de Jean-Philippe Hébert."
+          ],
+          "proofUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7485098188832415745",
+          "proofLabel": "Publication"
         }
       ]
     },
@@ -182,7 +194,7 @@
         {
           "name": "Samuel Courchesne",
           "role": "Cofondateur",
-          "bio": "Samuel s'occupe du UI/UX et pilote la vision du produit pour que CatSensor reste simple, clair et utile au quotidien."
+          "bio": "Samuel développe la partie logicielle embarquée de notre prototype, assure l'intégration IoT de CatSensor et prend également en charge le portail de paiement."
         },
         {
           "name": "William Beaudin",
