@@ -12,14 +12,6 @@ const { t } = useI18n()
 
     <div class="relative mx-auto grid min-h-[calc(100svh-174px)] max-w-[1400px] items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-10 xl:gap-16">
       <div class="relative z-10 max-w-[790px]">
-        <span
-          data-aos="fade-up"
-          class="mb-7 inline-flex items-center gap-3 rounded-full border border-[oklch(38%_0.09_158_/_0.18)] bg-white/55 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)] backdrop-blur-sm sm:text-[11px]"
-        >
-          <span aria-hidden="true" class="size-1.5 rounded-full bg-[oklch(59%_0.11_153)]"></span>
-          {{ t('hero.eyebrow') }}
-        </span>
-
         <h1
           data-aos="fade-up"
           data-aos-delay="70"

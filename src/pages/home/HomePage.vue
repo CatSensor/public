@@ -5,7 +5,6 @@ import AOS from 'aos'
 
 import OrganicWave from '@/components/shared/OrganicWave.vue'
 import { usePageSeo } from '@/composables/usePageSeo'
-import CtaSection from '@/pages/home/sections/CtaSection.vue'
 import DonationSection from '@/pages/home/sections/DonationSection.vue'
 import FeaturesSection from '@/pages/home/sections/FeaturesSection.vue'
 import HeroSection from '@/pages/home/sections/HeroSection.vue'
@@ -82,13 +81,13 @@ onBeforeUnmount(() => {
   <FeaturesSection />
   <OrganicWave
     from="oklch(97.2% 0.018 150)"
-    to="#15573f"
+    to="oklch(38% 0.09 155)"
     direction="right"
     compact
   />
   <PartnersSection />
   <OrganicWave
-    from="#15573f"
+    from="oklch(38% 0.09 155)"
     to="oklch(98.5% 0.003 90)"
     direction="left"
     compact
@@ -99,5 +98,4 @@ onBeforeUnmount(() => {
     to="oklch(38% 0.09 155)"
     direction="left"
   />
-  <CtaSection />
 </template>

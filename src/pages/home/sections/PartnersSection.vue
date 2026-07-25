@@ -95,7 +95,7 @@ const partners = computed(() =>
 
 <style scoped>
 .partners-section {
-  background: #15573f;
+  background: oklch(38% 0.09 155);
 }
 
 .organic-field {

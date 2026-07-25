@@ -5,6 +5,7 @@ import { RouterLink, useRoute } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-white.png'
 import OrganicWave from '@/components/shared/OrganicWave.vue'
+import SignupForm from '@/pages/home/components/SignupForm.vue'
 import { buildPagePath, type SeoRouteMeta } from '@/router/route'
 
 type PageKind = 'home' | 'privacy' | 'about'
@@ -23,7 +24,7 @@ const props = withDefaults(
   },
 )
 
-const { tm } = useI18n()
+const { t, tm } = useI18n()
 const route = useRoute()
 const footerLinks = computed(() => tm('footer.links') as FooterLink[])
 const currentLocale = computed(() => ((route.meta as SeoRouteMeta).locale ?? 'fr'))
@@ -75,42 +76,86 @@ function resolveRouterTo(href: string) {
     to="oklch(38% 0.09 155)"
     direction="left"
   />
-  <footer class="border-t border-white/10 bg-[oklch(38%_0.09_155)] px-4 py-8 sm:px-7 md:px-14 md:py-9">
-    <div class="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-4 text-center md:flex-row md:flex-wrap md:gap-5 md:text-left">
-      <div class="flex items-center gap-[9px] text-base font-semibold text-white">
-        <img
-          :src="logoMark"
-          alt="CatSensor logo"
-          width="48"
-          height="48"
-          loading="lazy"
-          decoding="async"
-          class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04]"
-        />
-        CatSensor
-      </div>
-      <div class="flex flex-wrap justify-center gap-5 sm:gap-7">
-        <template
-          v-for="link in footerLinks"
-          :key="link.label"
+  <footer class="relative overflow-hidden bg-[oklch(38%_0.09_155)] text-white">
+    <div
+      v-if="page === 'home'"
+      aria-hidden="true"
+      class="pointer-events-none absolute -bottom-28 -right-24 size-[420px] rounded-full bg-white/[0.035] sm:-bottom-44 sm:-right-28 sm:size-[560px]"
+    ></div>
+
+    <section
+      v-if="page === 'home'"
+      id="cta"
+      class="relative px-4 pb-20 pt-16 sm:px-7 md:px-14 md:pb-28 md:pt-24"
+    >
+      <div class="relative z-10 mx-auto max-w-[720px] text-center">
+        <span
+          data-aos="fade-up"
+          class="mb-5 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(78%_0.07_155)] before:h-px before:w-5 before:bg-current"
         >
-          <RouterLink
-            v-if="isRouterLink(link.href)"
-            :to="resolveRouterTo(link.href)"
-            class="text-[13px] font-light text-white/65 no-underline transition hover:text-white"
-          >
-            {{ link.label }}
-          </RouterLink>
-          <a
-            v-else
-            :href="resolveHref(link.href)"
-            class="text-[13px] font-light text-white/65 no-underline transition hover:text-white"
-          >
-            {{ link.label }}
-          </a>
-        </template>
+          {{ t('cta.eyebrow') }}
+        </span>
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="80"
+          class="mx-auto max-w-[15ch] text-[clamp(34px,5vw,66px)] leading-[1.02] font-semibold tracking-[-0.045em]"
+        >
+          <span class="block text-white">{{ t('cta.titleStart') }}</span>
+          <span class="mt-1 block font-light text-[oklch(75%_0.09_150)]">
+            {{ t('cta.titleEnd') }}
+          </span>
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="160"
+          class="mx-auto mt-6 max-w-[580px] text-[15px] leading-[1.75] font-light text-white/65 sm:text-[17px]"
+        >
+          {{ t('cta.description') }}
+        </p>
+
+        <div data-aos="fade-up" data-aos-delay="240" class="mt-8 w-full md:mt-10">
+          <SignupForm />
+        </div>
       </div>
-      <div class="text-xs font-light text-white/45">&copy; {{ new Date().getFullYear() }} CatSensor</div>
+    </section>
+
+    <div class="relative z-10 border-t border-white/10 px-4 py-8 sm:px-7 md:px-14 md:py-9">
+      <div class="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-4 text-center md:flex-row md:flex-wrap md:gap-5 md:text-left">
+        <div class="flex items-center gap-[9px] text-base font-semibold text-white">
+          <img
+            :src="logoMark"
+            alt="CatSensor logo"
+            width="48"
+            height="48"
+            loading="lazy"
+            decoding="async"
+            class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04]"
+          />
+          CatSensor
+        </div>
+        <div class="flex flex-wrap justify-center gap-5 sm:gap-7">
+          <template
+            v-for="link in footerLinks"
+            :key="link.label"
+          >
+            <RouterLink
+              v-if="isRouterLink(link.href)"
+              :to="resolveRouterTo(link.href)"
+              class="text-[13px] font-light text-white/65 no-underline transition hover:text-white"
+            >
+              {{ link.label }}
+            </RouterLink>
+            <a
+              v-else
+              :href="resolveHref(link.href)"
+              class="text-[13px] font-light text-white/65 no-underline transition hover:text-white"
+            >
+              {{ link.label }}
+            </a>
+          </template>
+        </div>
+        <div class="text-xs font-light text-white/45">&copy; {{ new Date().getFullYear() }} CatSensor</div>
+      </div>
     </div>
   </footer>
 </template>
