@@ -99,7 +99,7 @@ async function submit() {
       <button
         type="submit"
         :disabled="status === 'loading'"
-        class="inline-flex w-full items-center justify-center gap-2 rounded-[10px] bg-[oklch(78%_0.07_155)] px-[22px] py-[11px] text-sm font-semibold tracking-[-0.01em] text-[oklch(25%_0.06_155)] transition hover:-translate-y-px hover:bg-[oklch(84%_0.065_155)] active:translate-y-0 disabled:cursor-wait sm:w-auto"
+        class="cursor-pointer inline-flex w-full items-center justify-center gap-2 rounded-[10px] bg-[oklch(78%_0.07_155)] px-[22px] py-[11px] text-sm font-semibold tracking-[-0.01em] text-[oklch(25%_0.06_155)] transition hover:-translate-y-px hover:bg-[oklch(84%_0.065_155)] active:translate-y-0 disabled:cursor-wait sm:w-auto"
       >
         <span v-if="status === 'loading'" class="inline-flex items-center gap-[7px]">
           <span class="inline-block h-[13px] w-[13px] animate-spin rounded-full border-[1.5px] border-white/35 border-t-white"></span>
