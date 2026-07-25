@@ -7,24 +7,40 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section id="cta" class="bg-[oklch(96.5%_0.006_110)] px-4 py-16 sm:px-7 md:px-14 md:py-28">
-    <div class="mx-auto max-w-[1320px] border-t border-[oklch(84%_0.02_150)] pt-10 lg:pt-14">
-      <div class="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(420px,0.8fr)] lg:items-end lg:gap-16 xl:gap-24">
-        <div class="lg:pr-8">
-          <span data-aos="fade-up" class="mb-4 block text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(44%_0.095_158)]">
-            {{ t('cta.eyebrow') }}
-          </span>
-          <h2 data-aos="fade-up" data-aos-delay="80" class="mb-[18px] max-w-[15ch] text-[clamp(30px,3.5vw,50px)] leading-[1.08] font-semibold tracking-[-0.035em]">
-            {{ t('cta.titleStart') }}<br />{{ t('cta.titleEnd') }}
-          </h2>
-          <p data-aos="fade-up" data-aos-delay="160" class="max-w-[620px] text-[15px] leading-[1.7] font-light text-[oklch(48%_0.008_240)] sm:text-[17px]">
-            {{ t('cta.description') }}
-          </p>
-        </div>
+  <section
+    id="cta"
+    class="relative overflow-hidden bg-[oklch(38%_0.09_155)] px-4 pb-20 pt-16 text-white sm:px-7 md:px-14 md:pb-28 md:pt-24"
+  >
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute -bottom-36 -right-20 size-[360px] rounded-full bg-white/[0.035] sm:-bottom-44 sm:-right-24 sm:size-[460px]"
+    ></div>
 
-        <div data-aos="fade-up" data-aos-delay="240" class="w-full lg:pb-1">
-          <SignupForm />
-        </div>
+    <div class="relative z-10 mx-auto max-w-[720px] text-center">
+      <span
+        data-aos="fade-up"
+        class="mb-5 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(78%_0.07_155)] before:h-px before:w-5 before:bg-current"
+      >
+        {{ t('cta.eyebrow') }}
+      </span>
+      <h2
+        data-aos="fade-up"
+        data-aos-delay="80"
+        class="mx-auto max-w-[15ch] text-[clamp(34px,5vw,66px)] leading-[1.02] font-semibold tracking-[-0.045em]"
+      >
+        <span class="block text-white">{{ t('cta.titleStart') }}</span>
+        <span class="mt-1 block font-light text-[oklch(75%_0.09_150)]">{{ t('cta.titleEnd') }}</span>
+      </h2>
+      <p
+        data-aos="fade-up"
+        data-aos-delay="160"
+        class="mx-auto mt-6 max-w-[580px] text-[15px] leading-[1.75] font-light text-white/65 sm:text-[17px]"
+      >
+        {{ t('cta.description') }}
+      </p>
+
+      <div data-aos="fade-up" data-aos-delay="240" class="mt-8 w-full md:mt-10">
+        <SignupForm />
       </div>
     </div>
   </section>

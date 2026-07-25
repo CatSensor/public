@@ -11,4 +11,5 @@ html {
 body {
   margin: 0;
   background: oklch(98.5% 0.003 90);
+  font-family: "Manrope", Helvetica, Arial, sans-serif;
 }

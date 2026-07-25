@@ -96,8 +96,8 @@ onBeforeUnmount(() => {
   <DonationSection />
   <OrganicWave
     from="oklch(98.5% 0.003 90)"
-    to="oklch(96.5% 0.006 110)"
-    direction="right"
+    to="oklch(38% 0.09 155)"
+    direction="left"
   />
   <CtaSection />
 </template>

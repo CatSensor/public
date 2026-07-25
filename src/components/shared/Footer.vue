@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { RouterLink, useRoute } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-white.png'
+import OrganicWave from '@/components/shared/OrganicWave.vue'
 import { buildPagePath, type SeoRouteMeta } from '@/router/route'
 
 type PageKind = 'home' | 'privacy' | 'about'
@@ -26,6 +27,9 @@ const { tm } = useI18n()
 const route = useRoute()
 const footerLinks = computed(() => tm('footer.links') as FooterLink[])
 const currentLocale = computed(() => ((route.meta as SeoRouteMeta).locale ?? 'fr'))
+const footerWaveFrom = computed(() =>
+  props.page === 'about' ? 'oklch(96.5% 0.018 150)' : 'oklch(98.5% 0.003 90)',
+)
 
 function isRouterLink(href: string) {
   return href === 'privacy' || href === 'about' || ((props.page === 'privacy' || props.page === 'about') && href.startsWith('#'))
@@ -65,7 +69,13 @@ function resolveRouterTo(href: string) {
 </script>
 
 <template>
-  <footer class="border-t border-[oklch(34%_0.09_155)] bg-[oklch(38%_0.09_155)] px-4 py-10 sm:px-7 md:px-14 md:py-12">
+  <OrganicWave
+    v-if="page !== 'home'"
+    :from="footerWaveFrom"
+    to="oklch(38% 0.09 155)"
+    direction="left"
+  />
+  <footer class="border-t border-white/10 bg-[oklch(38%_0.09_155)] px-4 py-8 sm:px-7 md:px-14 md:py-9">
     <div class="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-4 text-center md:flex-row md:flex-wrap md:gap-5 md:text-left">
       <div class="flex items-center gap-[9px] text-base font-semibold text-white">
         <img
@@ -75,7 +85,7 @@ function resolveRouterTo(href: string) {
           height="48"
           loading="lazy"
           decoding="async"
-          class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04] sm:h-12"
+          class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04]"
         />
         CatSensor
       </div>
@@ -87,20 +97,20 @@ function resolveRouterTo(href: string) {
           <RouterLink
             v-if="isRouterLink(link.href)"
             :to="resolveRouterTo(link.href)"
-            class="text-[13px] font-light text-[oklch(80%_0.06_155)] no-underline transition hover:text-white"
+            class="text-[13px] font-light text-white/65 no-underline transition hover:text-white"
           >
             {{ link.label }}
           </RouterLink>
           <a
             v-else
             :href="resolveHref(link.href)"
-            class="text-[13px] font-light text-[oklch(80%_0.06_155)] no-underline transition hover:text-white"
+            class="text-[13px] font-light text-white/65 no-underline transition hover:text-white"
           >
             {{ link.label }}
           </a>
         </template>
       </div>
-      <div class="text-xs font-light text-[oklch(72%_0.06_155)]">&copy; {{ new Date().getFullYear() }} CatSensor</div>
+      <div class="text-xs font-light text-white/45">&copy; {{ new Date().getFullYear() }} CatSensor</div>
     </div>
   </footer>
 </template>

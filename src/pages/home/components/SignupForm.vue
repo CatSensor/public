@@ -66,40 +66,40 @@ async function submit() {
 <template>
   <div
     v-if="status === 'success'"
-    class="w-full max-w-[420px] bg-white px-6 py-7 shadow-[0_4px_24px_rgba(0,0,0,0.06)] sm:px-10 sm:py-9"
+    class="mx-auto w-full max-w-[660px] rounded-[8px] border border-white/14 bg-white/[0.07] px-6 py-7 text-left shadow-[0_18px_50px_rgba(0,0,0,0.08)] backdrop-blur-sm sm:px-10 sm:py-9"
   >
-    <div class="mb-4 flex h-9 w-9 items-center justify-center bg-[oklch(95%_0.032_150)] text-[oklch(44%_0.095_158)]">
+    <div class="mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-[oklch(78%_0.07_155)] text-[oklch(30%_0.08_155)]">
       <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" class="h-[18px] w-[18px]">
         <polyline points="3,9 7,13 15,5" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </div>
 
-    <div class="mb-2 text-[20px] font-semibold tracking-[-0.02em] text-[oklch(13%_0.01_240)]">
+    <div class="mb-2 text-[20px] font-semibold tracking-[-0.02em] text-white">
       {{ t('cta.form.successTitle') }}
     </div>
-    <div class="text-sm font-light leading-[1.6] text-[oklch(48%_0.008_240)]">
+    <div class="text-sm font-light leading-[1.6] text-white/65">
       {{ t('cta.form.successBody') }}
     </div>
-    <div class="mt-[14px] text-xs font-semibold uppercase tracking-[0.04em] text-[oklch(44%_0.095_158)]">
+    <div class="mt-[14px] text-xs font-semibold uppercase tracking-[0.04em] text-[oklch(78%_0.07_155)]">
       #{{ position }} &middot; {{ successFoot }}
     </div>
   </div>
 
-  <div v-else>
-    <form class="mb-4 flex max-w-[420px] flex-col gap-[10px] sm:flex-row" @submit.prevent="submit">
-      <label class="sr-only" for="email">Email</label>
+  <div v-else class="mx-auto w-full max-w-[660px] border-y border-white/14 py-6 text-left">
+    <label class="mb-3 block text-xs font-semibold text-white" for="email">Email</label>
+    <form class="flex flex-col gap-[10px] sm:flex-row" @submit.prevent="submit">
       <input
         id="email"
         v-model="email"
         type="email"
         autocomplete="email"
         :placeholder="t('cta.form.placeholder')"
-        class="min-w-0 flex-1 rounded-[6px] border border-black/14 bg-white px-[18px] py-[13px] text-sm text-[oklch(13%_0.01_240)] outline-none transition focus:border-[oklch(44%_0.095_158)]"
+        class="min-w-0 flex-1 rounded-full border border-white/35 bg-white/[0.08] px-[18px] py-[13px] text-sm text-white outline-none transition placeholder:text-white/40 focus:border-[oklch(78%_0.07_155)] focus:bg-white/[0.11]"
       />
       <button
         type="submit"
         :disabled="status === 'loading'"
-        class="inline-flex w-full items-center justify-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 disabled:cursor-wait sm:w-auto"
+        class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[oklch(78%_0.07_155)] px-[22px] py-[11px] text-sm font-semibold tracking-[-0.01em] text-[oklch(25%_0.06_155)] transition hover:-translate-y-px hover:bg-[oklch(84%_0.065_155)] active:translate-y-0 disabled:cursor-wait sm:w-auto"
       >
         <span v-if="status === 'loading'" class="inline-flex items-center gap-[7px]">
           <span class="inline-block h-[13px] w-[13px] animate-spin rounded-full border-[1.5px] border-white/35 border-t-white"></span>
@@ -109,10 +109,10 @@ async function submit() {
       </button>
     </form>
 
-    <p v-if="error" class="mb-2 text-xs text-[oklch(50%_0.12_30)]">{{ error }}</p>
-    <p class="text-xs text-[oklch(72%_0.006_240)]">
+    <p v-if="error" class="mt-3 text-xs text-[oklch(82%_0.1_30)]">{{ error }}</p>
+    <p class="mt-3 text-xs text-white/45">
       {{ t('cta.form.privacyLead') }}
-      <RouterLink :to="privacyRoute" class="text-[oklch(44%_0.095_158)] no-underline">{{ t('cta.form.privacyLink') }}</RouterLink>
+      <RouterLink :to="privacyRoute" class="text-[oklch(78%_0.07_155)] no-underline transition hover:text-white">{{ t('cta.form.privacyLink') }}</RouterLink>
     </p>
   </div>
 </template>
