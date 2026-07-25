@@ -85,26 +85,55 @@ function findClearPosition(
   idealY: number,
   pageWidth: number,
   blockedRects: ContentRect[],
+  occupiedRects: ContentRect[],
+  previousPosition?: { x: number; y: number },
 ) {
   const pawRadius = pageWidth < 640 ? 16 : 20
   const edge = pageWidth < 640 ? 6 : 18
-  const horizontalCandidates = Array.from({ length: pageWidth < 640 ? 9 : 15 }, (_, index) => {
-    const divisions = pageWidth < 640 ? 8 : 14
+  const candidateCount = pageWidth < 640 ? 15 : 25
+  const horizontalCandidates = Array.from({ length: candidateCount }, (_, index) => {
+    const divisions = candidateCount - 1
     return edge + (index / divisions) * (pageWidth - edge * 2)
-  }).sort((first, second) => Math.abs(first - idealX) - Math.abs(second - idealX))
-  const verticalOffsets = [0, -52, 52, -96, 96]
+  }).sort((first, second) => {
+    const firstCost =
+      Math.abs(first - idealX) +
+      (previousPosition ? Math.abs(first - previousPosition.x) * 0.45 : 0)
+    const secondCost =
+      Math.abs(second - idealX) +
+      (previousPosition ? Math.abs(second - previousPosition.x) * 0.45 : 0)
+    return firstCost - secondCost
+  })
+  const verticalOffsets = [0, -28, 28]
+  const lateralLimits = previousPosition
+    ? [pageWidth < 640 ? 82 : 126, pageWidth < 640 ? 126 : 178]
+    : [Number.POSITIVE_INFINITY]
 
-  for (const yOffset of verticalOffsets) {
-    for (const x of horizontalCandidates) {
-      const candidate = {
-        left: x - pawRadius,
-        right: x + pawRadius,
-        top: idealY + yOffset - pawRadius,
-        bottom: idealY + yOffset + pawRadius,
+  for (const lateralLimit of lateralLimits) {
+    for (const yOffset of verticalOffsets) {
+      const y = idealY + yOffset
+
+      if (previousPosition && y - previousPosition.y < (pageWidth < 640 ? 66 : 62)) {
+        continue
       }
 
-      if (!blockedRects.some((rect) => overlaps(candidate, rect))) {
-        return { x, y: idealY + yOffset }
+      for (const x of horizontalCandidates) {
+        if (previousPosition && Math.abs(x - previousPosition.x) > lateralLimit) {
+          continue
+        }
+
+        const candidate = {
+          left: x - pawRadius,
+          right: x + pawRadius,
+          top: y - pawRadius,
+          bottom: y + pawRadius,
+        }
+
+        if (
+          !blockedRects.some((rect) => overlaps(candidate, rect)) &&
+          !occupiedRects.some((rect) => overlaps(candidate, rect))
+        ) {
+          return { x, y }
+        }
       }
     }
   }
@@ -155,41 +184,71 @@ function buildTrail() {
     document.documentElement.scrollHeight,
   )
   const blockedRects = collectContentRects()
-  const spacing = pageWidth < 640 ? 210 : 178
+  const spacing = pageWidth < 640 ? 124 : 112
   const generated: PawPrint[] = []
+  const occupiedRects: ContentRect[] = []
   const revealLine = window.scrollY + window.innerHeight * 0.82
 
   trailHeight.value = pageHeight
 
   for (let y = 210, index = 0; y < pageHeight - 130; y += spacing, index += 1) {
-    const pathProgress = y / (pageWidth < 640 ? 520 : 660)
-    const idealX =
-      pageWidth * (0.5 + (pageWidth < 640 ? 0.42 : 0.45) * Math.sin(pathProgress)) +
-      (index % 2 === 0 ? -12 : 12)
+    const previousPosition = generated.at(-1)
+    const pathProgress = y / (pageWidth < 640 ? 1220 : 1480)
+    const rawPathX =
+      pageWidth * (0.5 + (pageWidth < 640 ? 0.4 : 0.43) * Math.sin(pathProgress))
+    const gaitOffset = index % 2 === 0 ? -12 : 12
+    const idealX = previousPosition
+      ? clamp(
+          rawPathX + gaitOffset,
+          previousPosition.x - (pageWidth < 640 ? 72 : 96),
+          previousPosition.x + (pageWidth < 640 ? 72 : 96),
+        )
+      : rawPathX + gaitOffset
     const position = findClearPosition(
       clamp(idealX, 18, pageWidth - 18),
       y,
       pageWidth,
       blockedRects,
+      occupiedRects,
+      previousPosition,
     )
 
     if (!position) {
       continue
     }
 
-    const slope = (pageWidth * 0.45 * Math.cos(pathProgress)) / 660
-    const rotation = clamp((Math.atan(slope) * 180) / Math.PI, -32, 32)
-
     generated.push({
       id: index,
       x: position.x,
       y: position.y,
-      rotation,
+      rotation: 0,
       mirror: index % 2 === 0 ? 1 : -1,
       revealed: position.y <= revealLine,
       onDark: isDarkArea(position.y),
     })
+    const pawClearance = pageWidth < 640 ? 21 : 25
+    occupiedRects.push({
+      left: position.x - pawClearance,
+      right: position.x + pawClearance,
+      top: position.y - pawClearance,
+      bottom: position.y + pawClearance,
+    })
   }
+
+  generated.forEach((print, index) => {
+    const previous = generated[Math.max(0, index - 1)]
+    const next = generated[Math.min(generated.length - 1, index + 1)]
+    const directionX = next.x - previous.x
+    const directionY = next.y - previous.y
+
+    if (directionX !== 0 || directionY !== 0) {
+      print.rotation = clamp(
+        (Math.atan2(directionY, directionX) * 180) / Math.PI - 90,
+        -58,
+        58,
+      )
+    }
+  })
 
   prints.value = generated
 }
