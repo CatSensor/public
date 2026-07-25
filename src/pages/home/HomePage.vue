@@ -82,13 +82,13 @@ onBeforeUnmount(() => {
   <FeaturesSection />
   <OrganicWave
     from="oklch(97.2% 0.018 150)"
-    to="oklch(96.5% 0.006 110)"
+    to="#15573f"
     direction="right"
     compact
   />
   <PartnersSection />
   <OrganicWave
-    from="oklch(96.5% 0.006 110)"
+    from="#15573f"
     to="oklch(98.5% 0.003 90)"
     direction="left"
     compact
