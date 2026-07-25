@@ -2,96 +2,76 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { type TimelineEntry } from '@/pages/about/content'
+import type { TimelineEntry } from '@/pages/about/content'
 
 const { t, tm } = useI18n()
-
 const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEntry[]).slice().reverse())
-const timelineRows = computed(() =>
-  timelineEntries.value.map((entry, index) => ({
-    ...entry,
-    side: index % 2 === 0 ? 'left' : 'right',
-  })),
-)
 </script>
 
 <template>
   <section
     id="timeline"
-    class="bg-[oklch(96.5%_0.018_150)] px-4 pb-14 pt-8 sm:px-7 md:px-14 md:pb-20 md:pt-10"
+    class="timeline-section overflow-hidden px-4 pb-20 pt-14 sm:px-7 md:px-14 md:pb-28 md:pt-20"
   >
     <div class="mx-auto max-w-[1320px]">
-      <div class="max-w-[780px]">
+      <div class="grid gap-8 lg:grid-cols-[0.42fr_1.58fr] lg:gap-16">
         <span
           data-aos="fade-up"
-          class="mb-4 block text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(44%_0.095_158)]"
+          class="flex items-center gap-3 self-start pt-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)]"
         >
+          <span aria-hidden="true" class="h-px w-6 bg-current"></span>
           {{ t('about.timeline.eyebrow') }}
         </span>
-        <h2
-          data-aos="fade-up"
-          data-aos-delay="80"
-          class="max-w-[15ch] text-[clamp(32px,7vw,64px)] leading-[0.98] font-semibold tracking-[-0.045em] text-[oklch(13%_0.01_240)]"
-        >
-          {{ t('about.timeline.title') }}
-        </h2>
-        <p
-          data-aos="fade-up"
-          data-aos-delay="140"
-          class="mt-5 max-w-[64ch] text-[15px] leading-[1.75] font-light text-[oklch(48%_0.008_240)] sm:text-[17px]"
-        >
-          {{ t('about.timeline.description') }}
-        </p>
+
+        <div>
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="70"
+            class="max-w-[12ch] text-[clamp(44px,6.6vw,88px)] leading-[0.95] font-medium tracking-[-0.06em] text-[oklch(16%_0.02_155)]"
+          >
+            {{ t('about.timeline.title') }}
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="130"
+            class="mt-6 max-w-[640px] text-[16px] leading-[1.75] font-light text-[oklch(43%_0.018_158)] sm:text-lg"
+          >
+            {{ t('about.timeline.description') }}
+          </p>
+        </div>
       </div>
 
-      <div class="relative mt-12 space-y-10 md:space-y-12">
-        <div class="pointer-events-none absolute top-0 left-1/2 hidden h-full w-px -translate-x-1/2 bg-[oklch(84%_0.018_150)] md:block"></div>
-
-        <div
-          v-for="(entry, index) in timelineRows"
+      <ol class="mt-16 border-b border-[oklch(72%_0.045_153_/_0.42)] md:mt-24">
+        <li
+          v-for="(entry, index) in timelineEntries"
           :key="`${entry.period}-${entry.title}`"
           data-aos="fade-up"
-          :data-aos-delay="index * 90 + 120"
-          class="relative grid gap-4 md:grid-cols-[minmax(0,1fr)_56px_minmax(0,1fr)] md:items-stretch md:gap-6"
+          :data-aos-delay="Math.min(index * 70, 210)"
+          class="timeline-entry relative grid gap-7 border-t border-[oklch(72%_0.045_153_/_0.42)] py-10 md:grid-cols-[150px_minmax(0,1fr)_190px] md:gap-10 md:py-12 lg:grid-cols-[190px_minmax(0,1fr)_230px] lg:gap-14 lg:py-14"
         >
-          <div class="pointer-events-none absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:flex">
-            <span class="flex size-6 items-center justify-center rounded-full bg-[oklch(44%_0.095_158_/_0.2)]">
-              <span class="size-2.5 rounded-full bg-[oklch(44%_0.095_158)]"></span>
-            </span>
+          <div class="relative">
+            <span class="mb-3 block size-1.5 rounded-full bg-[oklch(59%_0.1_153)]"></span>
+            <p class="text-[15px] leading-[1.3] font-medium tracking-[-0.02em] text-[oklch(31%_0.07_158)] sm:text-base">
+              {{ entry.period }}
+            </p>
           </div>
 
-          <article
-            :class="[
-              'p-1 sm:p-7 md:row-start-1',
-              entry.side === 'left' ? 'md:col-start-1' : 'md:col-start-3',
-            ]"
-          >
-            <h3 class="text-[22px] leading-[1.12] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] sm:text-[26px]">
+          <article class="max-w-[720px]">
+            <h3 class="text-[clamp(25px,2.8vw,38px)] leading-[1.08] font-medium tracking-[-0.045em] text-[oklch(16%_0.02_155)]">
               {{ entry.title }}
             </h3>
-            <p class="mt-3 text-[15px] leading-[1.75] font-light text-[oklch(45%_0.01_240)] sm:text-[16px]">
+            <p class="mt-4 text-[15px] leading-[1.75] font-light text-[oklch(42%_0.018_158)] sm:text-base">
               {{ entry.summary }}
             </p>
 
-            <div
-              v-if="entry.image"
-              class="mt-4 overflow-hidden rounded-[14px] bg-[oklch(92%_0.01_120)]"
-            >
-              <img
-                :src="entry.image"
-                :alt="entry.title"
-                loading="lazy"
-                decoding="async"
-                class="aspect-[16/10] h-full w-full object-cover"
-              />
-            </div>
-
-            <ul class="mt-4 list-inside list-disc space-y-2 text-[14px] leading-[1.7] font-light text-[oklch(43%_0.01_240)] sm:text-[15px]">
+            <ul class="mt-6 space-y-2.5">
               <li
                 v-for="detail in entry.details"
                 :key="detail"
+                class="flex gap-3 text-[13px] leading-[1.7] font-light text-[oklch(45%_0.018_158)] sm:text-sm"
               >
-                {{ detail }}
+                <span aria-hidden="true" class="mt-[0.78em] h-px w-3 shrink-0 bg-[oklch(48%_0.075_158_/_0.65)]"></span>
+                <span>{{ detail }}</span>
               </li>
             </ul>
 
@@ -100,24 +80,71 @@ const timelineRows = computed(() =>
               :href="entry.proofUrl"
               target="_blank"
               rel="noopener noreferrer"
-              class="mt-5 inline-flex items-center rounded-[10px] border border-[oklch(34%_0.1_155_/_0.35)] bg-[oklch(44%_0.095_158_/_0.08)] px-4 py-2.5 text-sm font-medium text-[oklch(34%_0.1_155)] transition hover:bg-[oklch(44%_0.095_158_/_0.14)]"
+              class="group mt-6 inline-flex items-center gap-2 border-b border-[oklch(38%_0.09_158_/_0.35)] pb-1 text-[13px] font-semibold text-[oklch(35%_0.09_158)] transition hover:border-[oklch(38%_0.09_158)]"
             >
               {{ entry.proofLabel || t('about.timeline.proofDefaultLabel') }}
+              <span aria-hidden="true" class="transition-transform duration-300 group-hover:translate-x-1">↗</span>
             </a>
           </article>
 
-          <div
-            :class="[
-              'hidden px-2 md:row-start-1 md:flex md:items-center',
-              entry.side === 'left' ? 'md:col-start-3 md:justify-start' : 'md:col-start-1 md:justify-end',
-            ]"
-          >
-            <p class="text-[clamp(16px,1.7vw,26px)] leading-[1.15] font-medium tracking-[-0.01em] text-[oklch(13%_0.01_240_/_0.8)]">
-              {{ entry.period }}
-            </p>
+          <div class="timeline-visual flex items-center justify-center md:justify-end">
+            <div
+              v-if="entry.image"
+              class="timeline-image aspect-[0.82] w-full max-w-[180px] overflow-hidden border-[3px] border-[oklch(98%_0.006_120)] bg-[oklch(91%_0.025_150)] shadow-[0_16px_38px_rgba(22,78,56,0.11)] md:max-w-[190px]"
+            >
+              <img
+                :src="entry.image"
+                :alt="entry.title"
+                loading="lazy"
+                decoding="async"
+                class="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.035]"
+              />
+            </div>
+            <div v-else aria-hidden="true" class="timeline-arc"></div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </section>
 </template>
+
+<style scoped>
+.timeline-section {
+  background: oklch(96.5% 0.018 150);
+}
+
+.timeline-image {
+  border-radius: 48% 52% 46% 54% / 43% 48% 52% 57%;
+}
+
+.timeline-entry:nth-child(even) .timeline-image {
+  border-radius: 54% 46% 52% 48% / 49% 43% 57% 51%;
+}
+
+.timeline-arc {
+  width: min(100%, 190px);
+  height: 96px;
+  border-top: 1.5px dashed oklch(52% 0.075 158 / 0.38);
+  border-radius: 50%;
+  transform: rotate(-7deg);
+}
+
+.timeline-entry:nth-child(even) .timeline-arc {
+  transform: rotate(8deg);
+}
+
+@media (max-width: 767px) {
+  .timeline-visual {
+    justify-content: flex-start;
+  }
+
+  .timeline-image {
+    max-width: 210px;
+  }
+
+  .timeline-arc {
+    width: 150px;
+    height: 70px;
+  }
+}
+</style>
