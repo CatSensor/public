@@ -31,14 +31,9 @@ const teamMembers = computed(() =>
           <h1
             data-aos="fade-up"
             data-aos-delay="70"
-            class="text-[clamp(64px,9vw,118px)] leading-[0.78] tracking-[-0.07em]"
+            class="whitespace-nowrap text-[clamp(52px,8vw,96px)] leading-[0.9] tracking-[-0.07em]"
           >
-            <span class="block font-medium text-[oklch(16%_0.02_155)]">
-              {{ t('about.story.brandLead') }}
-            </span>
-            <span class="mt-6 block font-light italic text-[oklch(38%_0.09_158)]">
-              {{ t('about.story.brandTail') }}
-            </span>
+            <span class="font-medium text-[oklch(16%_0.02_155)]">{{ t('about.story.brandLead') }}</span><span class="font-light italic text-[oklch(38%_0.09_158)]">{{ t('about.story.brandTail') }}</span>
           </h1>
 
           <div
