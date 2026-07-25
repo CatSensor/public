@@ -87,6 +87,7 @@ function findClearPosition(
   blockedRects: ContentRect[],
   occupiedRects: ContentRect[],
   previousPosition?: { x: number; y: number },
+  preferredLateralLimit?: number,
 ) {
   const pawRadius = pageWidth < 640 ? 16 : 20
   const edge = pageWidth < 640 ? 6 : 18
@@ -104,8 +105,10 @@ function findClearPosition(
     return firstCost - secondCost
   })
   const verticalOffsets = [0, -28, 28]
+  const baseLateralLimit =
+    preferredLateralLimit ?? (pageWidth < 640 ? 82 : 126)
   const lateralLimits = previousPosition
-    ? [pageWidth < 640 ? 82 : 126, pageWidth < 640 ? 126 : 178]
+    ? [baseLateralLimit, baseLateralLimit + (pageWidth < 640 ? 44 : 52)]
     : [Number.POSITIVE_INFINITY]
 
   for (const lateralLimit of lateralLimits) {
@@ -188,20 +191,46 @@ function buildTrail() {
   const generated: PawPrint[] = []
   const occupiedRects: ContentRect[] = []
   const revealLine = window.scrollY + window.innerHeight * 0.82
+  const hero = document.querySelector<HTMLElement>('#hero')
+  const heroRect = hero?.getBoundingClientRect()
+  const heroTop = heroRect ? heroRect.top + window.scrollY : null
+  const heroBottom = heroRect ? heroRect.bottom + window.scrollY : null
+  const heroCurveStart = heroTop !== null ? heroTop + (pageWidth < 640 ? 108 : 122) : null
+  const firstStepY = heroCurveStart ?? 210
 
   trailHeight.value = pageHeight
 
-  for (let y = 210, index = 0; y < pageHeight - 130; y += spacing, index += 1) {
+  for (let y = firstStepY, index = 0; y < pageHeight - 130; y += spacing, index += 1) {
     const previousPosition = generated.at(-1)
+    const isInHeroCurve =
+      heroCurveStart !== null &&
+      heroBottom !== null &&
+      y >= heroCurveStart &&
+      y <= heroBottom - 22
     const pathProgress = y / (pageWidth < 640 ? 1220 : 1480)
-    const rawPathX =
-      pageWidth * (0.5 + (pageWidth < 640 ? 0.4 : 0.43) * Math.sin(pathProgress))
+    const heroProgress =
+      isInHeroCurve && heroCurveStart !== null && heroBottom !== null
+        ? clamp((y - heroCurveStart) / (heroBottom - heroCurveStart - 22), 0, 1)
+        : 0
+    const rawPathX = isInHeroCurve
+      ? pageWidth *
+        ((pageWidth < 640 ? 0.055 : 0.042) +
+          (pageWidth < 640 ? 0.76 : 0.82) * Math.pow(heroProgress, 2.7))
+      : pageWidth *
+        (0.5 + (pageWidth < 640 ? 0.4 : 0.43) * Math.sin(pathProgress))
     const gaitOffset = index % 2 === 0 ? -12 : 12
+    const maximumStepX = isInHeroCurve
+      ? pageWidth < 640
+        ? 112
+        : 178
+      : pageWidth < 640
+        ? 72
+        : 96
     const idealX = previousPosition
       ? clamp(
           rawPathX + gaitOffset,
-          previousPosition.x - (pageWidth < 640 ? 72 : 96),
-          previousPosition.x + (pageWidth < 640 ? 72 : 96),
+          previousPosition.x - maximumStepX,
+          previousPosition.x + maximumStepX,
         )
       : rawPathX + gaitOffset
     const position = findClearPosition(
@@ -211,6 +240,7 @@ function buildTrail() {
       blockedRects,
       occupiedRects,
       previousPosition,
+      isInHeroCurve ? maximumStepX : undefined,
     )
 
     if (!position) {
