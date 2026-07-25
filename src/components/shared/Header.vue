@@ -27,18 +27,15 @@ const { t, tm } = useI18n()
 const route = useRoute()
 const { toggleLocale } = useLocale()
 const isScrolled = ref(true)
-const navLinks = computed(() => (props.page === 'home' ? (tm('nav.links') as NavLink[]) : []))
+const isMarketingPage = computed(() => props.page !== 'privacy')
+const navLinks = computed(() => (isMarketingPage.value ? (tm('nav.links') as NavLink[]) : []))
 const currentLocale = computed(() => ((route.meta as Partial<SeoRouteMeta>).locale ?? 'fr'))
 const homeHeroRoute = computed(() => ({ path: buildPagePath('home', currentLocale.value), hash: '#hero' }))
 const homeRoute = computed(() => ({ path: buildPagePath('home', currentLocale.value) }))
 const isSecondaryPage = computed(() => props.page !== 'home')
 const primaryLabel = computed(() => {
-  if (props.page === 'home') {
+  if (isMarketingPage.value) {
     return t('nav.preorder')
-  }
-
-  if (props.page === 'about') {
-    return t('about.header.backHome')
   }
 
   return t('privacy.header.backHome')
@@ -53,7 +50,14 @@ function resolveNavTo(href: string) {
     return { path: buildPagePath('about', currentLocale.value) }
   }
 
-  return href
+  return {
+    path: buildPagePath('home', currentLocale.value),
+    hash: href,
+  }
+}
+
+function isRouterNavLink(href: string) {
+  return href.startsWith('/') || (props.page === 'about' && href.startsWith('#'))
 }
 
 onMounted(() => {
@@ -118,7 +122,7 @@ onBeforeUnmount(() => {
           :key="link.href"
         >
           <RouterLink
-            v-if="link.href.startsWith('/')"
+            v-if="isRouterNavLink(link.href)"
             :to="resolveNavTo(link.href)"
             class="text-sm cursor-pointer font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
           >
@@ -144,7 +148,7 @@ onBeforeUnmount(() => {
           {{ t('nav.localeButton') }}
         </button>
         <RouterLink
-          v-if="isSecondaryPage"
+          v-if="!isMarketingPage"
           :to="homeRoute"
           class="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
         >
