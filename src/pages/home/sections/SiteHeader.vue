@@ -75,21 +75,21 @@ onBeforeUnmount(() => {
         <button
           type="button"
           :aria-label="t('nav.localeAria')"
-          class="inline-flex items-center justify-center rounded-[6px] border border-black/12 bg-white/70 px-2.5 py-2.5 text-xs font-semibold tracking-[0.04em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:px-3 sm:py-[11px] sm:text-sm"
+          class="inline-flex items-center justify-center rounded-[10px] border border-black/12 bg-white/70 px-2.5 py-2.5 text-xs font-semibold tracking-[0.04em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:px-3 sm:py-[11px] sm:text-sm"
           @click="toggleLocale"
         >
           {{ t('nav.localeButton') }}
         </button>
         <a
           href="#cta"
-          class="hidden items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 md:inline-flex"
+          class="hidden items-center gap-2 rounded-[10px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 md:inline-flex"
           @click="closeMenu"
         >
           {{ t('nav.preorder') }}
         </a>
         <button
           type="button"
-          class="hidden rounded-[6px] bg-[oklch(44%_0.095_158)] px-4 py-2.5 text-[13px] font-medium text-white sm:inline-flex md:hidden"
+          class="hidden rounded-[10px] bg-[oklch(44%_0.095_158)] px-4 py-2.5 text-[13px] font-medium text-white sm:inline-flex md:hidden"
           @click="scrollToCta"
         >
           {{ t('nav.preorder') }}

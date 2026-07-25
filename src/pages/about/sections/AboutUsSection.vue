@@ -39,7 +39,7 @@ const teamMembers = computed(() =>
           data-aos="fade-up"
           class="mx-auto grid w-full max-w-[520px] grid-cols-2 gap-3 sm:gap-4"
         >
-          <div class="row-span-2 overflow-hidden rounded-[6px] bg-[oklch(91%_0.012_120)]">
+          <div class="row-span-2 overflow-hidden rounded-[14px] bg-[oklch(91%_0.012_120)]">
             <img
               :src="aboutImages.collageTall"
               :alt="t('about.story.imageAltTall')"
@@ -50,7 +50,7 @@ const teamMembers = computed(() =>
               class="h-full w-full object-cover"
             />
           </div>
-          <div class="overflow-hidden rounded-[6px] bg-[oklch(91%_0.012_120)]">
+          <div class="overflow-hidden rounded-[14px] bg-[oklch(91%_0.012_120)]">
             <img
               :src="aboutImages.collageTop"
               :alt="t('about.story.imageAltTop')"
@@ -61,7 +61,7 @@ const teamMembers = computed(() =>
               class="aspect-square h-full w-full object-cover"
             />
           </div>
-          <div class="overflow-hidden rounded-[6px] bg-[oklch(91%_0.012_120)]">
+          <div class="overflow-hidden rounded-[14px] bg-[oklch(91%_0.012_120)]">
             <img
               :src="aboutImages.collageBottom"
               :alt="t('about.story.imageAltBottom')"
@@ -117,7 +117,7 @@ const teamMembers = computed(() =>
         >
           <div
             :class="[
-              'mx-auto w-full max-w-[340px] overflow-hidden rounded-[6px] bg-[oklch(91%_0.012_120)] sm:max-w-[400px] md:max-w-[420px]',
+              'mx-auto w-full max-w-[340px] overflow-hidden rounded-[14px] bg-[oklch(91%_0.012_120)] sm:max-w-[400px] md:max-w-[420px]',
               index % 2 === 0 ? 'md:order-1 md:justify-self-start' : 'md:order-2 md:justify-self-end',
             ]"
           >

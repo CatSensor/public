@@ -39,7 +39,7 @@ const titleLineClass = computed(() => (locale.value === 'fr' ? 'xl:whitespace-no
         </p>
       </div>
 
-      <div class="mt-10 inline-flex items-center gap-3 rounded-[6px] border border-[oklch(84%_0.02_150)] bg-white px-5 py-3 text-sm text-[oklch(38%_0.01_240)] shadow-[0_14px_34px_rgba(0,0,0,0.04)]">
+      <div class="mt-10 inline-flex items-center gap-3 rounded-[14px] border border-[oklch(84%_0.02_150)] bg-white px-5 py-3 text-sm text-[oklch(38%_0.01_240)] shadow-[0_14px_34px_rgba(0,0,0,0.04)]">
         <span class="font-medium text-[oklch(13%_0.01_240)]">{{ t('privacy.effectiveDateLabel') }}</span>
         <span>{{ t('privacy.effectiveDate') }}</span>
       </div>
@@ -52,7 +52,7 @@ const titleLineClass = computed(() => (locale.value === 'fr' ? 'xl:whitespace-no
         <article
           v-for="card in policyCards"
           :key="card.title"
-          class="flex h-full flex-col rounded-[6px] border border-black/8 bg-white p-6 shadow-[0_18px_44px_rgba(0,0,0,0.05)] sm:p-7"
+          class="flex h-full flex-col rounded-[14px] border border-black/8 bg-white p-6 shadow-[0_18px_44px_rgba(0,0,0,0.05)] sm:p-7"
         >
           <h2 class="text-[20px] leading-[1.15] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)]">
             {{ card.title }}
@@ -90,7 +90,7 @@ const titleLineClass = computed(() => (locale.value === 'fr' ? 'xl:whitespace-no
         <article
           v-for="item in commitments"
           :key="item.title"
-          class="rounded-[6px] border border-[oklch(84%_0.02_150)] bg-white p-6 shadow-[0_14px_34px_rgba(0,0,0,0.04)] sm:p-7"
+          class="rounded-[14px] border border-[oklch(84%_0.02_150)] bg-white p-6 shadow-[0_14px_34px_rgba(0,0,0,0.04)] sm:p-7"
         >
           <h3 class="text-[18px] leading-[1.15] font-semibold tracking-[-0.02em] text-[oklch(13%_0.01_240)]">
             {{ item.title }}

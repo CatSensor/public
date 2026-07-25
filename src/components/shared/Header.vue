@@ -138,7 +138,7 @@ onBeforeUnmount(() => {
         <button
           type="button"
           :aria-label="t('nav.localeAria')"
-          class="inline-flex cursor-pointer items-center justify-center rounded-[6px] border border-black/12 bg-white/70 px-2.5 py-2.5 text-xs font-semibold tracking-[0.04em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:px-3 sm:py-[11px] sm:text-sm"
+          class="inline-flex cursor-pointer items-center justify-center rounded-[10px] border border-black/12 bg-white/70 px-2.5 py-2.5 text-xs font-semibold tracking-[0.04em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:px-3 sm:py-[11px] sm:text-sm"
           @click="toggleLocale"
         >
           {{ t('nav.localeButton') }}
@@ -146,14 +146,14 @@ onBeforeUnmount(() => {
         <RouterLink
           v-if="isSecondaryPage"
           :to="homeRoute"
-          class="inline-flex cursor-pointer items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
+          class="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
         >
           {{ primaryLabel }}
         </RouterLink>
         <a
           v-else
           href="#cta"
-          class="inline-flex cursor-pointer items-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
+          class="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
         >
           {{ primaryLabel }}
         </a>

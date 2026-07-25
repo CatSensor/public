@@ -53,7 +53,7 @@ const partners = computed(() =>
 
       <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-6">
         <article v-for="(partner, index) in partners" :key="partner.key" data-aos="fade-up" :data-aos-delay="index * 80"
-          class="group flex min-h-[140px] items-center justify-center rounded-[6px] border border-black/8 bg-[#fbfaf8] px-6 py-8 shadow-[0_18px_44px_rgba(0,0,0,0.05)] transition-transform duration-300 hover:-translate-y-1 hover:bg-white">
+          class="group flex min-h-[140px] items-center justify-center rounded-[14px] border border-black/8 bg-[#fbfaf8] px-6 py-8 shadow-[0_18px_44px_rgba(0,0,0,0.05)] transition-transform duration-300 hover:-translate-y-1 hover:bg-white">
           <a :href="partner.logo.url">
             <img :src="partner.logo.logo" :alt="partner.name" loading="lazy" decoding="async"
               class="max-h-14 w-full object-contain opacity-65 grayscale transition duration-300 group-hover:opacity-100 group-hover:grayscale-0">

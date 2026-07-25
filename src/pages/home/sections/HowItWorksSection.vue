@@ -57,7 +57,7 @@ const howSteps = computed(() => tm('how.steps') as HowStep[])
           </button>
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="160" class="group relative flex aspect-[0.95] items-center justify-center overflow-hidden rounded-[24px] bg-[oklch(95%_0.032_150)] sm:aspect-square">
+        <div data-aos="fade-up" data-aos-delay="160" class="group relative flex aspect-[0.95] items-center justify-center overflow-hidden rounded-[14px] bg-[oklch(95%_0.032_150)] sm:aspect-square">
           <img
             :src="productImages.line"
             alt="CatSensor feline health monitoring device"

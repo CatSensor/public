@@ -43,7 +43,7 @@ const donationSteps = computed(() => tm('donation.steps') as DonationStep[])
               href="https://www.zeffy.com/fr-CA/donation-form/cd11da60-f953-44f0-afdd-15c34dbb6697"
               target="_blank"
               rel="noreferrer"
-              class="inline-flex items-center justify-center rounded-[6px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0"
+              class="inline-flex items-center justify-center rounded-[10px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0"
             >
               {{ t('donation.primaryCta') }}
             </a>

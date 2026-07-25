@@ -48,7 +48,7 @@ onMounted(() => {
       aria-live="polite"
       :aria-label="t('cookie.title')"
     >
-      <div class="rounded-[6px] border border-black/8 bg-[oklch(98.5%_0.003_90_/_0.96)] p-5 shadow-[0_18px_44px_rgba(0,0,0,0.12)] backdrop-blur-[18px] sm:p-6">
+      <div class="rounded-[18px] border border-black/8 bg-[oklch(98.5%_0.003_90_/_0.96)] p-5 shadow-[0_18px_44px_rgba(0,0,0,0.12)] backdrop-blur-[18px] sm:p-6">
         <div class="mb-2 text-[16px] font-semibold tracking-[-0.02em] text-[oklch(13%_0.01_240)]">
           {{ t('cookie.title') }}
         </div>
@@ -62,14 +62,14 @@ onMounted(() => {
         <div class="mt-4 flex flex-col gap-2 sm:flex-row">
           <button
             type="button"
-            class="inline-flex items-center justify-center rounded-[6px] border border-black/12 bg-white px-4 py-2.5 text-sm font-medium text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)]"
+            class="inline-flex items-center justify-center rounded-[10px] border border-black/12 bg-white px-4 py-2.5 text-sm font-medium text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)]"
             @click="saveConsent('essential')"
           >
             {{ t('cookie.essential') }}
           </button>
           <button
             type="button"
-            class="inline-flex items-center justify-center rounded-[6px] bg-[oklch(44%_0.095_158)] px-4 py-2.5 text-sm font-medium text-white transition hover:bg-[oklch(52%_0.095_158)]"
+            class="inline-flex items-center justify-center rounded-[10px] bg-[oklch(44%_0.095_158)] px-4 py-2.5 text-sm font-medium text-white transition hover:bg-[oklch(52%_0.095_158)]"
             @click="saveConsent('all')"
           >
             {{ t('cookie.accept') }}

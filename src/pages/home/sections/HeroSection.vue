@@ -64,13 +64,13 @@ const heroNowrapClass = computed(() => (isFrench.value ? '2xl:whitespace-nowrap'
       >
         <a
           href="#cta"
-          class="inline-flex w-full items-center justify-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:w-auto"
+          class="inline-flex w-full items-center justify-center gap-2 rounded-[10px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:w-auto"
         >
           {{ t('hero.primaryCta') }}
         </a>
         <a
           href="#how"
-          class="inline-flex w-full items-center justify-center gap-2 rounded-[6px] border border-black/18 bg-transparent px-[22px] py-[11px] text-sm font-normal tracking-[-0.01em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:w-auto"
+          class="inline-flex w-full items-center justify-center gap-2 rounded-[10px] border border-black/18 bg-transparent px-[22px] py-[11px] text-sm font-normal tracking-[-0.01em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:w-auto"
         >
           {{ t('hero.secondaryCta') }}
         </a>

@@ -75,7 +75,7 @@ const timelineRows = computed(() =>
 
             <div
               v-if="entry.image"
-              class="mt-4 overflow-hidden rounded-[6px] bg-[oklch(92%_0.01_120)]"
+              class="mt-4 overflow-hidden rounded-[14px] bg-[oklch(92%_0.01_120)]"
             >
               <img
                 :src="entry.image"
@@ -100,7 +100,7 @@ const timelineRows = computed(() =>
               :href="entry.proofUrl"
               target="_blank"
               rel="noopener noreferrer"
-              class="mt-5 inline-flex items-center rounded-[6px] border border-[oklch(34%_0.1_155_/_0.35)] bg-[oklch(44%_0.095_158_/_0.08)] px-4 py-2.5 text-sm font-medium text-[oklch(34%_0.1_155)] transition hover:bg-[oklch(44%_0.095_158_/_0.14)]"
+              class="mt-5 inline-flex items-center rounded-[10px] border border-[oklch(34%_0.1_155_/_0.35)] bg-[oklch(44%_0.095_158_/_0.08)] px-4 py-2.5 text-sm font-medium text-[oklch(34%_0.1_155)] transition hover:bg-[oklch(44%_0.095_158_/_0.14)]"
             >
               {{ entry.proofLabel || t('about.timeline.proofDefaultLabel') }}
             </a>
