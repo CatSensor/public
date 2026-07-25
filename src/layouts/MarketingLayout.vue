@@ -4,9 +4,12 @@ import { useRoute } from 'vue-router'
 
 import SiteHeader from '@/components/shared/Header.vue'
 import SiteFooter from '@/pages/home/sections/SiteFooter.vue'
+import type { SeoRouteMeta } from '@/router/route'
 
 const route = useRoute()
-const currentPage = computed(() => (String(route.name ?? '').startsWith('about-') ? 'about' : 'home'))
+const currentPage = computed(() =>
+  (route.meta as SeoRouteMeta).pageId === 'about' ? 'about' : 'home',
+)
 </script>
 
 <template>

@@ -28,6 +28,7 @@ const { t, tm } = useI18n()
 const route = useRoute()
 const footerLinks = computed(() => tm('footer.links') as FooterLink[])
 const currentLocale = computed(() => ((route.meta as SeoRouteMeta).locale ?? 'fr'))
+const showEarlyAccess = computed(() => props.page !== 'privacy')
 const footerWaveFrom = computed(() =>
   props.page === 'about' ? 'oklch(96.5% 0.018 150)' : 'oklch(98.5% 0.003 90)',
 )
@@ -78,13 +79,13 @@ function resolveRouterTo(href: string) {
   />
   <footer class="relative overflow-hidden bg-[oklch(38%_0.09_155)] text-white">
     <div
-      v-if="page === 'home'"
+      v-if="showEarlyAccess"
       aria-hidden="true"
       class="pointer-events-none absolute -bottom-28 -right-24 size-[420px] rounded-full bg-white/[0.035] sm:-bottom-44 sm:-right-28 sm:size-[560px]"
     ></div>
 
     <section
-      v-if="page === 'home'"
+      v-if="showEarlyAccess"
       id="cta"
       class="relative px-4 pb-20 pt-16 sm:px-7 md:px-14 md:pb-28 md:pt-24"
     >
