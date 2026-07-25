@@ -10,7 +10,7 @@ const howSteps = computed(() => tm('how.steps') as HowStep[])
 </script>
 
 <template>
-  <section id="how" class="px-4 py-16 sm:px-7 md:px-14 md:py-28">
+  <section id="how" class="bg-[oklch(98.5%_0.003_90)] px-4 py-16 sm:px-7 md:px-14 md:py-28">
     <div class="mx-auto max-w-[1320px]">
       <span data-aos="fade-up" class="mb-4 block text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(44%_0.095_158)]">
         {{ t('how.eyebrow') }}

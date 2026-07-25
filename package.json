@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite-ssg build && node scripts/validate-dist.mjs",
+    "build": "vue-tsc -b && vite-ssg build && node scripts/build-sites-worker.mjs && node scripts/validate-dist.mjs",
     "preview": "node scripts/serve-dist.mjs",
     "preview:vite": "vite preview",
     "validate:dist": "node scripts/validate-dist.mjs"

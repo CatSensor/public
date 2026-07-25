@@ -18,7 +18,7 @@ const timelineRows = computed(() =>
 <template>
   <section
     id="timeline"
-    class="px-4 pb-14 pt-8 sm:px-7 md:px-14 md:pb-20 md:pt-10"
+    class="bg-[oklch(96.5%_0.018_150)] px-4 pb-14 pt-8 sm:px-7 md:px-14 md:pb-20 md:pt-10"
   >
     <div class="mx-auto max-w-[1320px]">
       <div class="max-w-[780px]">

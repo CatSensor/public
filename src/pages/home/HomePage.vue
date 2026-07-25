@@ -3,6 +3,7 @@ import { nextTick, onBeforeUnmount, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AOS from 'aos'
 
+import OrganicWave from '@/components/shared/OrganicWave.vue'
 import { usePageSeo } from '@/composables/usePageSeo'
 import CtaSection from '@/pages/home/sections/CtaSection.vue'
 import DonationSection from '@/pages/home/sections/DonationSection.vue'
@@ -61,10 +62,42 @@ onBeforeUnmount(() => {
 
 <template>
   <HeroSection />
+  <OrganicWave
+    from="oklch(98.5% 0.003 90)"
+    to="oklch(96% 0.028 150)"
+    direction="left"
+  />
   <ProblemSection />
+  <OrganicWave
+    from="oklch(96% 0.028 150)"
+    to="oklch(98.5% 0.003 90)"
+    direction="right"
+  />
   <HowItWorksSection />
+  <OrganicWave
+    from="oklch(98.5% 0.003 90)"
+    to="oklch(97.2% 0.018 150)"
+    direction="left"
+  />
   <FeaturesSection />
+  <OrganicWave
+    from="oklch(97.2% 0.018 150)"
+    to="oklch(96.5% 0.006 110)"
+    direction="right"
+    compact
+  />
   <PartnersSection />
+  <OrganicWave
+    from="oklch(96.5% 0.006 110)"
+    to="oklch(98.5% 0.003 90)"
+    direction="left"
+    compact
+  />
   <DonationSection />
+  <OrganicWave
+    from="oklch(98.5% 0.003 90)"
+    to="oklch(96.5% 0.006 110)"
+    direction="right"
+  />
   <CtaSection />
 </template>

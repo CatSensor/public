@@ -2,6 +2,7 @@
 import { nextTick, onMounted } from 'vue'
 import AOS from 'aos'
 
+import OrganicWave from '@/components/shared/OrganicWave.vue'
 import { usePageSeo } from '@/composables/usePageSeo'
 import AboutUsSection from '@/pages/about/sections/AboutUsSection.vue'
 import TimelineSection from '@/pages/about/sections/TimelineSection.vue'
@@ -24,6 +25,11 @@ onMounted(async () => {
 <template>
   <div class="bg-[oklch(98.5%_0.003_90)]">
     <AboutUsSection />
+    <OrganicWave
+      from="oklch(98.5% 0.003 90)"
+      to="oklch(96.5% 0.018 150)"
+      direction="right"
+    />
     <TimelineSection />
   </div>
 </template>

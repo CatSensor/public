@@ -11,7 +11,7 @@ const featureItems = computed(() => tm('features.items') as FeatureItem[])
 </script>
 
 <template>
-  <section id="features" class="px-4 py-16 sm:px-7 md:px-14 md:py-28">
+  <section id="features" class="bg-[oklch(97.2%_0.018_150)] px-4 py-16 sm:px-7 md:px-14 md:py-28">
     <div class="mx-auto max-w-[1320px]">
       <div class="mb-12 grid gap-5 md:mb-14 md:grid-cols-2 md:items-end md:gap-16">
         <div>
@@ -30,7 +30,7 @@ const featureItems = computed(() => tm('features.items') as FeatureItem[])
           :key="feature.title"
           data-aos="fade-up"
           :data-aos-delay="index === 0 ? 0 : index === 1 ? 160 : index === 2 ? 240 : 320"
-          class="bg-[#fbfaf8] px-5 py-7 hover:bg-white sm:px-8 sm:py-9"
+          class="bg-[oklch(97.2%_0.018_150)] px-5 py-7 hover:bg-white/55 sm:px-8 sm:py-9"
         >
           <div class="mb-[22px] h-8 w-8 text-[oklch(44%_0.095_158)]">
             <FeatureIcon :name="feature.icon" />

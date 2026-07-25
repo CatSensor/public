@@ -28,7 +28,7 @@ const heroNowrapClass = computed(() => (isFrench.value ? '2xl:whitespace-nowrap'
   <section
     id="hero"
     :class="[
-      'mx-auto grid min-h-screen max-w-[1320px] grid-cols-1 items-center gap-10 px-4 pb-14 pt-[110px] sm:px-7 sm:pb-16 md:px-14 md:pb-20 md:pt-[130px]',
+      'mx-auto grid min-h-screen max-w-[1320px] grid-cols-1 items-center gap-10 bg-[oklch(98.5%_0.003_90)] px-4 pb-14 pt-[110px] sm:px-7 sm:pb-16 md:px-14 md:pb-20 md:pt-[130px]',
       heroLayoutClass,
     ]"
   >
