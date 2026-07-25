@@ -3,6 +3,7 @@ import { watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 
 import CookieConsent from '@/components/shared/CookieConsent.vue'
+import PawTrail from '@/components/shared/PawTrail.vue'
 import { i18n, persistLocale, syncDocumentLanguage, type AppLocale } from '@/i18n'
 import type { SeoRouteMeta } from '@/router/route'
 
@@ -18,5 +19,6 @@ watchEffect(() => {
 
 <template>
   <RouterView />
+  <PawTrail />
   <CookieConsent />
 </template>
