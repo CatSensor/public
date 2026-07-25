@@ -246,12 +246,14 @@
     "localeAria": "Changer la langue vers anglais"
   },
   "hero": {
+    "eyebrow": "Suivi santé félin à domicile",
     "titleStart": "Sachez quand votre chat",
     "titleAccent": "ne va pas bien",
     "titleEnd": "avant qu'il ne soit trop tard.",
     "description": "CatSensor suit chaque jour le poids et la composition corporelle de votre chat - automatiquement, à la maison, sans effort.",
     "primaryCta": "Précommander maintenant",
-    "secondaryCta": "Voir le fonctionnement"
+    "secondaryCta": "Voir le fonctionnement",
+    "productAlt": "Station de suivi de santé féline CatSensor"
   },
   "problem": {
     "eyebrow": "Le problème",

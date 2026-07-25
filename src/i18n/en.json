@@ -246,12 +246,14 @@
     "localeAria": "Switch language to French"
   },
   "hero": {
+    "eyebrow": "At-home feline health monitoring",
     "titleStart": "Know when your cat",
     "titleAccent": "isn't well",
     "titleEnd": "before it's too late.",
     "description": "CatSensor tracks your cat's weight and body composition daily - automatically, at home, without effort.",
     "primaryCta": "Pre-order Now",
-    "secondaryCta": "How it works"
+    "secondaryCta": "How it works",
+    "productAlt": "CatSensor feline health monitoring station"
   },
   "problem": {
     "eyebrow": "The Problem",
