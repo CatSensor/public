@@ -42,8 +42,7 @@ const contentSelector = [
   'main label',
   'main form',
   'main img',
-  'footer a',
-  'footer img',
+  'footer',
 ].join(',')
 
 function clamp(value: number, minimum: number, maximum: number) {
@@ -153,6 +152,17 @@ function isDarkArea(y: number) {
   })
 }
 
+function measureContentHeight() {
+  const contentBottom = Array.from(
+    document.querySelectorAll<HTMLElement>('header, main, footer'),
+  ).reduce((maximum, element) => {
+    const rect = element.getBoundingClientRect()
+    return Math.max(maximum, rect.bottom + window.scrollY)
+  }, 0)
+
+  return Math.ceil(Math.max(window.innerHeight, contentBottom))
+}
+
 function updateReveal() {
   const revealLine = window.scrollY + window.innerHeight * 0.82
   let changed = false
@@ -182,10 +192,7 @@ function requestRevealUpdate() {
 
 function buildTrail() {
   const pageWidth = document.documentElement.clientWidth
-  const pageHeight = Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight,
-  )
+  const pageHeight = measureContentHeight()
   const blockedRects = collectContentRects()
   const spacing = pageWidth < 640 ? 124 : 112
   const generated: PawPrint[] = []
