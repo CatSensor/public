@@ -11,7 +11,6 @@ export type TimelineEntry = {
 export type TeamMemberText = {
   name: string
   role: string
-  bio: string
 }
 
 export const aboutImages = {

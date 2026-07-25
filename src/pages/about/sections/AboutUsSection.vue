@@ -111,18 +111,27 @@ const teamMembers = computed(() =>
         </p>
       </div>
 
-      <div class="mt-16 space-y-12 lg:mt-24">
+      <div class="mt-20 lg:mt-28">
+        <span
+          data-aos="fade-up"
+          class="mb-12 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)] md:mb-16"
+        >
+          <span aria-hidden="true" class="h-px w-6 bg-current"></span>
+          {{ t('about.team.eyebrow') }}
+        </span>
+
+        <div class="grid gap-16 md:grid-cols-2 md:gap-14 lg:gap-24">
         <article
           v-for="(member, index) in teamMembers"
           :key="member.name"
           data-aos="fade-up"
           :data-aos-delay="index * 120 + 120"
-          class="grid items-center gap-6 border-b border-[oklch(88%_0.012_150)] pb-10 last:border-b-0 md:grid-cols-2 md:gap-10 md:pb-12"
+          class="team-profile"
         >
           <div
             :class="[
-              'mx-auto w-full max-w-[340px] overflow-hidden rounded-[14px] bg-[oklch(91%_0.012_120)] sm:max-w-[400px] md:max-w-[420px]',
-              index % 2 === 0 ? 'md:order-1 md:justify-self-start' : 'md:order-2 md:justify-self-end',
+              'team-portrait relative mx-auto aspect-square w-full max-w-[440px] overflow-hidden bg-[oklch(91%_0.025_150)] md:mx-0',
+              index % 2 === 0 ? 'team-portrait-left' : 'team-portrait-right',
             ]"
           >
             <img
@@ -132,21 +141,20 @@ const teamMembers = computed(() =>
               height="400"
               loading="lazy"
               decoding="async"
-              class="aspect-[4/3] h-full w-full object-cover"
+              class="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.025]"
             />
           </div>
-          <div :class="[index % 2 === 0 ? 'md:order-2' : 'md:order-1']">
-            <h3 class="text-[clamp(28px,3vw,40px)] leading-[1.04] font-semibold tracking-[-0.025em] text-[oklch(16%_0.02_155)]">
-              {{ member.name }}
-            </h3>
-            <p class="mt-2 text-[clamp(17px,1.6vw,24px)] leading-[1.3] font-medium text-[oklch(34%_0.1_155)]">
+
+          <div class="mx-auto mt-7 w-full max-w-[440px] md:mx-0 md:mt-9">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)]">
               {{ member.role }}
             </p>
-            <p class="mt-4 max-w-[60ch] text-[clamp(15px,1.3vw,20px)] leading-[1.6] font-light text-[oklch(43%_0.012_160)]">
-              {{ member.bio }}
-            </p>
+            <h3 class="mt-3 text-[clamp(32px,4vw,54px)] leading-[1.02] font-medium tracking-[-0.055em] text-[oklch(16%_0.02_155)]">
+              {{ member.name }}
+            </h3>
           </div>
         </article>
+        </div>
       </div>
     </div>
   </section>
@@ -235,6 +243,33 @@ const teamMembers = computed(() =>
   background: oklch(91.5% 0.04 150 / 0.45);
   pointer-events: none;
   transform: rotate(-12deg);
+}
+
+.team-portrait {
+  box-shadow: 0 20px 50px oklch(28% 0.055 155 / 0.1);
+}
+
+.team-portrait::after {
+  position: absolute;
+  inset: 0;
+  border: 1px solid oklch(38% 0.09 158 / 0.1);
+  border-radius: inherit;
+  content: '';
+  pointer-events: none;
+}
+
+.team-portrait-left {
+  border-radius: 48% 52% 46% 54% / 45% 43% 57% 55%;
+}
+
+.team-portrait-right {
+  border-radius: 53% 47% 51% 49% / 47% 54% 46% 53%;
+}
+
+@media (min-width: 768px) {
+  .team-profile:nth-child(2) {
+    margin-top: 96px;
+  }
 }
 
 @media (max-width: 639px) {

@@ -187,24 +187,22 @@
       ]
     },
     "team": {
-      "eyebrow": "À propos de nous",
+      "eyebrow": "L'équipe derrière",
       "title": "Créé par des propriétaires de chats, pour des propriétaires de chats.",
       "description": "Nous construisons CatSensor pour rendre les premiers signaux de santé simples, visibles et actionnables à la maison.",
       "members": [
         {
           "name": "Samuel Courchesne",
-          "role": "Cofondateur",
-          "bio": "Samuel développe la partie logicielle embarquée de notre prototype, assure l'intégration IoT de CatSensor et prend également en charge le portail de paiement."
+          "role": "Cofondateur"
         },
         {
           "name": "William Beaudin",
-          "role": "Cofondateur",
-          "bio": "William s'occupe de la partie technique et des relations publiques pour faire avancer CatSensor côté produit et sur le terrain."
+          "role": "Cofondateur"
         }
       ]
     },
     "story": {
-      "eyebrow": "L'équipe derrière",
+      "eyebrow": "À propos de nous",
       "brandLead": "Cat",
       "brandTail": "Sensor",
       "imageAltTall": "Fondateur CatSensor avec un chat",
