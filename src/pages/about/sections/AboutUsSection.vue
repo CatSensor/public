@@ -37,9 +37,9 @@ const teamMembers = computed(() =>
       <div class="grid items-start gap-10 pt-10 lg:grid-cols-[0.95fr_1fr] lg:gap-14 lg:pt-12">
         <div
           data-aos="fade-up"
-          class="mx-auto grid w-full max-w-[520px] grid-cols-2 gap-3 sm:gap-4"
+          class="about-collage relative mx-auto aspect-[0.96] w-full max-w-[610px]"
         >
-          <div class="row-span-2 overflow-hidden rounded-[14px] bg-[oklch(91%_0.012_120)]">
+          <div class="collage-frame collage-frame-main">
             <img
               :src="aboutImages.collageTall"
               :alt="t('about.story.imageAltTall')"
@@ -50,7 +50,7 @@ const teamMembers = computed(() =>
               class="h-full w-full object-cover"
             />
           </div>
-          <div class="overflow-hidden rounded-[14px] bg-[oklch(91%_0.012_120)]">
+          <div class="collage-frame collage-frame-top">
             <img
               :src="aboutImages.collageTop"
               :alt="t('about.story.imageAltTop')"
@@ -58,10 +58,10 @@ const teamMembers = computed(() =>
               height="640"
               loading="lazy"
               decoding="async"
-              class="aspect-square h-full w-full object-cover"
+              class="h-full w-full object-cover"
             />
           </div>
-          <div class="overflow-hidden rounded-[14px] bg-[oklch(91%_0.012_120)]">
+          <div class="collage-frame collage-frame-bottom">
             <img
               :src="aboutImages.collageBottom"
               :alt="t('about.story.imageAltBottom')"
@@ -69,9 +69,10 @@ const teamMembers = computed(() =>
               height="640"
               loading="lazy"
               decoding="async"
-              class="aspect-square h-full w-full object-cover"
+              class="h-full w-full object-cover"
             />
           </div>
+          <div aria-hidden="true" class="collage-swoop"></div>
         </div>
 
         <div
@@ -147,3 +148,70 @@ const teamMembers = computed(() =>
     </div>
   </section>
 </template>
+
+<style scoped>
+.about-collage::before {
+  position: absolute;
+  inset: 7% 4% 9% 4%;
+  border-radius: 50%;
+  background: oklch(94% 0.018 145 / 0.48);
+  content: '';
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+.collage-frame {
+  position: absolute;
+  overflow: hidden;
+  border: 4px solid oklch(98.5% 0.003 90);
+  background: oklch(91% 0.012 120);
+  box-shadow: 0 18px 45px oklch(28% 0.055 155 / 0.11);
+}
+
+.collage-frame-main {
+  z-index: 1;
+  top: 5%;
+  left: 0;
+  width: 59%;
+  height: 70%;
+  border-radius: 48% 52% 46% 54% / 42% 44% 56% 58%;
+}
+
+.collage-frame-top {
+  z-index: 3;
+  top: 0;
+  right: 1%;
+  width: 49%;
+  height: 38%;
+  border-radius: 51% 49% 47% 53% / 52% 46% 54% 48%;
+}
+
+.collage-frame-bottom {
+  z-index: 2;
+  right: 3%;
+  bottom: 7%;
+  width: 54%;
+  height: 39%;
+  border-radius: 49% 51% 53% 47% / 50% 44% 56% 50%;
+}
+
+.collage-swoop {
+  position: absolute;
+  z-index: 0;
+  bottom: 1.5%;
+  left: 10%;
+  width: 52%;
+  height: 15%;
+  border-bottom: 1.5px solid oklch(50% 0.075 158 / 0.68);
+  border-radius: 50%;
+  transform: rotate(3deg);
+  transform-origin: center;
+}
+
+@media (max-width: 639px) {
+  .collage-frame {
+    border-width: 3px;
+    box-shadow: 0 12px 30px oklch(28% 0.055 155 / 0.1);
+  }
+}
+</style>
