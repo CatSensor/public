@@ -249,7 +249,7 @@
     "titleAccent": "isn't well",
     "titleEnd": "before it's too late.",
     "description": "CatSensor tracks your cat's weight and body composition daily - automatically, at home, without effort.",
-    "primaryCta": "Pre-order Now",
+    "primaryCta": "Follow the project",
     "secondaryCta": "How it works",
     "productAlt": "CatSensor feline health monitoring station"
   },
@@ -372,19 +372,19 @@
     "instructionsFoot": "The donor can then decide whether or not to add a Zeffy contribution at the end of checkout."
   },
   "cta": {
-    "eyebrow": "Early Access",
-    "titleStart": "Be the first to know",
-    "titleEnd": "your cat is healthy.",
-    "description": "Reserve your spot. Be among the first to try CatSensor when it launches.",
+    "eyebrow": "Follow the project",
+    "titleStart": "Follow CatSensor",
+    "titleEnd": "through to launch.",
+    "description": "Get product updates, availability news, and future opportunities to try CatSensor.",
     "form": {
       "placeholder": "your{'@'}email.com",
-      "button": "Get Early Access",
+      "button": "Follow the project",
       "loading": "Joining",
       "error": "Please enter a valid email.",
       "submitError": "We couldn't complete your signup. Please try again.",
-      "successTitle": "You're on the list.",
-      "successBody": "We'll reach out the moment CatSensor is ready to ship.",
-      "successFoot": "Early access confirmed",
+      "successTitle": "You're now following the project.",
+      "successBody": "We'll keep you updated on CatSensor's progress and availability.",
+      "successFoot": "Project updates confirmed",
       "privacyLead": "No spam, ever.",
       "privacyLink": "Privacy policy"
     }

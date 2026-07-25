@@ -249,7 +249,7 @@
     "titleAccent": "ne va pas bien",
     "titleEnd": "avant qu'il ne soit trop tard.",
     "description": "CatSensor suit chaque jour le poids et la composition corporelle de votre chat - automatiquement, à la maison, sans effort.",
-    "primaryCta": "Précommander maintenant",
+    "primaryCta": "Suivre le projet",
     "secondaryCta": "Voir le fonctionnement",
     "productAlt": "Station de suivi de santé féline CatSensor"
   },
@@ -390,19 +390,19 @@
     "instructionsFoot": "Le donateur peut ensuite choisir d'ajouter, ou non, une contribution à Zeffy au moment du paiement."
   },
   "cta": {
-    "eyebrow": "Accès anticipé",
-    "titleStart": "Soyez parmi les premiers à savoir",
-    "titleEnd": "que votre chat va bien.",
-    "description": "Réservez votre place. Faites partie des premiers à essayer CatSensor au lancement.",
+    "eyebrow": "Suivre le projet",
+    "titleStart": "Suivez CatSensor",
+    "titleEnd": "jusqu'à son lancement.",
+    "description": "Recevez les avancées du produit, les nouvelles de disponibilité et les prochaines occasions d'essayer CatSensor.",
     "form": {
       "placeholder": "votre{'@'}email.com",
-      "button": "Obtenir l'accès anticipé",
+      "button": "Suivre le projet",
       "loading": "Inscription",
       "error": "Veuillez entrer un email valide.",
       "submitError": "Nous n'avons pas pu compléter votre inscription. Veuillez réessayer.",
-      "successTitle": "Vous êtes sur la liste.",
-      "successBody": "Nous vous contacterons dès que CatSensor sera prêt à être expédié.",
-      "successFoot": "Accès anticipé confirmé",
+      "successTitle": "Vous suivez maintenant le projet.",
+      "successBody": "Nous vous tiendrons au courant des avancées de CatSensor et de sa disponibilité.",
+      "successFoot": "Suivi du projet confirmé",
       "privacyLead": "Aucun spam, jamais.",
       "privacyLink": "Politique de confidentialité"
     }
