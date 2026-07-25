@@ -11,7 +11,7 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
 <template>
   <section
     id="problem"
-    class="relative overflow-hidden bg-[oklch(96%_0.028_150)] px-4 py-16 sm:px-7 md:px-14 md:py-28"
+    class="relative overflow-hidden bg-[#EEF9F0] px-4 py-16 sm:px-7 md:px-14 md:py-28"
   >
     <div class="relative z-10 mx-auto max-w-[1320px]">
       <div class="grid gap-7 md:grid-cols-[minmax(0,1.15fr)_minmax(300px,0.65fr)] md:items-end md:gap-16">

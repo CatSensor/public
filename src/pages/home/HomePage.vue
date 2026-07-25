@@ -64,12 +64,12 @@ onBeforeUnmount(() => {
   <HeroSection />
   <OrganicWave
     from="oklch(98.5% 0.003 90)"
-    to="oklch(96% 0.028 150)"
+    to="#EEF9F0"
     direction="left"
   />
   <ProblemSection />
   <OrganicWave
-    from="oklch(96% 0.028 150)"
+    from="#EEF9F0"
     to="oklch(98.5% 0.003 90)"
     direction="right"
   />
