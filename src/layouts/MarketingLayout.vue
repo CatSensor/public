@@ -2,8 +2,8 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
-import SiteFooter from '@/components/shared/Footer.vue'
 import SiteHeader from '@/components/shared/Header.vue'
+import SiteFooter from '@/pages/home/sections/SiteFooter.vue'
 
 const route = useRoute()
 const currentPage = computed(() => (String(route.name ?? '').startsWith('about-') ? 'about' : 'home'))

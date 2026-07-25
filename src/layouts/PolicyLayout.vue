@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SiteFooter from '@/components/shared/Footer.vue'
+import SiteFooter from '@/pages/home/sections/SiteFooter.vue'
 import SiteHeader from '@/components/shared/Header.vue'
 </script>
 
