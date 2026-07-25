@@ -33,15 +33,20 @@ const waveStyle = computed(
     :style="waveStyle"
     aria-hidden="true"
   >
-    <span class="organic-wave__swell organic-wave__swell--wide"></span>
-    <span class="organic-wave__swell organic-wave__swell--narrow"></span>
-    <span class="organic-wave__base"></span>
+    <svg
+      class="organic-wave__shape"
+      viewBox="0 0 1440 120"
+      preserveAspectRatio="none"
+      focusable="false"
+    >
+      <path d="M0 36C142 22 330 72 548 83C776 95 958 52 1137 27C1266 9 1366 11 1440 33V120H0Z" />
+    </svg>
   </div>
 </template>
 
 <style scoped>
 .organic-wave {
-  --wave-height: clamp(54px, 7vw, 104px);
+  --wave-height: clamp(58px, 6.25vw, 112px);
   position: relative;
   z-index: 1;
   height: var(--wave-height);
@@ -52,63 +57,19 @@ const waveStyle = computed(
 }
 
 .organic-wave--compact {
-  --wave-height: clamp(42px, 5vw, 72px);
+  --wave-height: clamp(46px, 4.75vw, 82px);
 }
 
-.organic-wave__base,
-.organic-wave__swell {
+.organic-wave__shape {
   position: absolute;
+  inset: -1px -1px -2px;
   display: block;
-  background: var(--wave-to);
-}
-
-.organic-wave__base {
-  inset: auto -2px -2px;
-  height: 38%;
-}
-
-.organic-wave__swell {
-  bottom: 14%;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  transform-origin: 50% 100%;
-  will-change: transform;
-}
-
-.organic-wave__swell--wide {
-  left: -18%;
-  width: 82%;
-  height: 76%;
-  transform: translateY(36%) rotate(1.4deg);
-  animation: wave-drift-wide 16s ease-in-out infinite alternate;
-}
-
-.organic-wave__swell--narrow {
-  right: -16%;
-  width: 76%;
-  height: 90%;
-  transform: translateY(43%) rotate(-1.8deg);
-  animation: wave-drift-narrow 19s ease-in-out infinite alternate;
+  width: calc(100% + 2px);
+  height: calc(100% + 3px);
+  fill: var(--wave-to);
 }
 
 .organic-wave--right {
   transform: scaleX(-1);
-}
-
-@keyframes wave-drift-wide {
-  to {
-    transform: translate(2.5%, 31%) rotate(-0.6deg) scaleX(1.035);
-  }
-}
-
-@keyframes wave-drift-narrow {
-  to {
-    transform: translate(-2%, 47%) rotate(0.8deg) scaleX(1.025);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .organic-wave__swell {
-    animation: none;
-  }
 }
 </style>
