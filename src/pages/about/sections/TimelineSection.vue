@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import Eyebrow from '@/components/shared/Eyebrow.vue'
 import type { TimelineEntry } from '@/pages/about/content'
 
 const { t, tm } = useI18n()
@@ -15,13 +16,13 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
   >
     <div class="mx-auto max-w-6xl">
       <div class="grid gap-8 lg:grid-cols-[0.42fr_1.58fr] lg:gap-12">
-        <span
+        <Eyebrow
           data-aos="fade-up"
-          class="flex items-center gap-3 self-start pt-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)]"
+          bars="left"
+          class="self-start pt-2 tracking-[0.15em] text-[oklch(38%_0.09_158)]"
         >
-          <span aria-hidden="true" class="h-px w-6 bg-current"></span>
           {{ t('about.timeline.eyebrow') }}
-        </span>
+        </Eyebrow>
 
         <div>
           <h2

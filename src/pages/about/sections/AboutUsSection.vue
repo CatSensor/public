@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import Eyebrow from '@/components/shared/Eyebrow.vue'
 import { aboutImages, type TeamMemberText } from '@/pages/about/content'
 
 const { t, tm } = useI18n()
@@ -20,13 +21,13 @@ const teamMembers = computed(() =>
     <div class="mx-auto max-w-6xl">
       <div class="about-hero grid min-h-[calc(100svh-104px)] items-center gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:gap-10">
         <div class="relative z-10 max-w-[540px]">
-          <span
+          <Eyebrow
             data-aos="fade-up"
-            class="mb-5 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)]"
+            bars="left"
+            class="mb-5 tracking-[0.15em] text-[oklch(38%_0.09_158)]"
           >
-            <span aria-hidden="true" class="h-px w-6 bg-current"></span>
             {{ t('about.story.eyebrow') }}
-          </span>
+          </Eyebrow>
 
           <h1
             data-aos="fade-up"
@@ -110,13 +111,13 @@ const teamMembers = computed(() =>
       </div>
 
       <div class="mt-14">
-        <span
+        <Eyebrow
           data-aos="fade-up"
-          class="mb-8 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)]"
+          bars="left"
+          class="mb-8 tracking-[0.15em] text-[oklch(38%_0.09_158)]"
         >
-          <span aria-hidden="true" class="h-px w-6 bg-current"></span>
           {{ t('about.team.eyebrow') }}
-        </span>
+        </Eyebrow>
 
         <div class="grid gap-12 md:grid-cols-2 md:gap-10 lg:gap-14">
         <article

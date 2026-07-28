@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import Eyebrow from '@/components/shared/Eyebrow.vue'
 import type { HowStep } from '@/pages/home/content'
 
 const { t, tm } = useI18n()
@@ -13,13 +14,13 @@ const howSteps = computed(() => tm('how.steps') as HowStep[])
     <div class="mx-auto max-w-6xl">
       <div class="grid items-end gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
         <div>
-          <span
+          <Eyebrow
             data-aos="fade-up"
-            class="mb-5 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)]"
+            bars="left"
+            class="mb-5 text-[oklch(38%_0.09_158)]"
           >
-            <span aria-hidden="true" class="h-px w-6 bg-current"></span>
             {{ t('how.eyebrow') }}
-          </span>
+          </Eyebrow>
 
           <h2
             data-aos="fade-up"

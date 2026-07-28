@@ -2,6 +2,8 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import Eyebrow from '@/components/shared/Eyebrow.vue'
+
 type DonationStep = {
   field: string
   value: string
@@ -17,12 +19,13 @@ const donationSteps = computed(() => tm('donation.steps') as DonationStep[])
     <div class="mx-auto max-w-6xl border-t border-[oklch(84%_0.02_150)] pt-8 lg:pt-10">
       <div class="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-10 xl:gap-14">
         <div class="lg:pr-8">
-          <span
+          <Eyebrow
             data-aos="fade-up"
-            class="mb-4 block text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(44%_0.095_158)]"
+            bars="left"
+            class="mb-4 tracking-[0.13em] text-[oklch(44%_0.095_158)]"
           >
             {{ t('donation.eyebrow') }}
-          </span>
+          </Eyebrow>
           <h2
             data-aos="fade-up"
             data-aos-delay="80"

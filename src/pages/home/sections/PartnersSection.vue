@@ -8,6 +8,7 @@ import hubLogo from '@/assets/partner-logo/hub-logo.webp'
 import leviatLegalLogo from '@/assets/partner-logo/leviat-legal.webp'
 import sapdsrLogo from '@/assets/partner-logo/sapdsr.png'
 import tonEquipier from '@/assets/partner-logo/ton-equipier.webp'
+import Eyebrow from '@/components/shared/Eyebrow.vue'
 
 type PartnerCopy = {
   key: string
@@ -37,14 +38,13 @@ const partners = computed(() =>
   <section id="partners" class="partners-section relative overflow-hidden px-4 py-14 sm:px-6 md:px-10 md:py-16">
     <div class="relative mx-auto max-w-6xl">
       <div class="mx-auto max-w-[760px] text-center">
-        <span
+        <Eyebrow
           data-aos="fade-up"
-          class="mb-5 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(79%_0.07_153)]"
+          bars="both"
+          class="mb-5 tracking-[0.15em] text-[oklch(79%_0.07_153)]"
         >
-          <span aria-hidden="true" class="h-px w-6 bg-current"></span>
           {{ t('partners.eyebrow') }}
-          <span aria-hidden="true" class="h-px w-6 bg-current"></span>
-        </span>
+        </Eyebrow>
 
         <h2
           data-aos="fade-up"

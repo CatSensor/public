@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import Eyebrow from '@/components/shared/Eyebrow.vue'
 import { usePageSeo } from '@/composables/usePageSeo'
 
 type PolicyCard = {
@@ -26,9 +27,9 @@ const titleLineClass = computed(() => (locale.value === 'fr' ? 'xl:whitespace-no
   <section class="px-4 pb-10 pt-[88px] sm:px-6 md:px-10 md:pt-[92px]">
     <div class="mx-auto max-w-6xl">
       <div class="max-w-[680px]">
-        <span class="mb-4 block text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(44%_0.095_158)]">
+        <Eyebrow bars="left" class="mb-4 tracking-[0.13em] text-[oklch(44%_0.095_158)]">
           {{ t('privacy.hero.eyebrow') }}
-        </span>
+        </Eyebrow>
         <h1 class="text-[clamp(32px,6vw,56px)] leading-[1] font-semibold tracking-[-0.05em] text-[oklch(13%_0.01_240)]">
           <span :class="['block', titleLineClass]">{{ t('privacy.hero.titleStart') }}</span>
           <span :class="['mt-2 block font-light text-[oklch(44%_0.095_158)]', titleLineClass]">{{ t('privacy.hero.titleAccent') }}</span>
@@ -75,9 +76,9 @@ const titleLineClass = computed(() => (locale.value === 'fr' ? 'xl:whitespace-no
   <section class="bg-[oklch(96.5%_0.006_110)] px-4 py-12 sm:px-6 md:px-10 md:py-14">
     <div class="mx-auto max-w-6xl">
       <div class="mb-8 max-w-[680px]">
-        <span class="mb-4 block text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(44%_0.095_158)]">
+        <Eyebrow bars="left" class="mb-4 tracking-[0.13em] text-[oklch(44%_0.095_158)]">
           {{ t('privacy.commitments.eyebrow') }}
-        </span>
+        </Eyebrow>
         <h2 class="max-w-[14ch] text-[clamp(28px,3.2vw,40px)] leading-[1.06] font-semibold tracking-[-0.04em] text-[oklch(13%_0.01_240)]">
           {{ t('privacy.commitments.title') }}
         </h2>

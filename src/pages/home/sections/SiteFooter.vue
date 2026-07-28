@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { RouterLink, useRoute } from 'vue-router'
 
 import logoMark from '@/assets/catsensor-logo-white.png'
+import Eyebrow from '@/components/shared/Eyebrow.vue'
 import OrganicWave from '@/components/shared/OrganicWave.vue'
 import SignupForm from '@/pages/home/components/SignupForm.vue'
 import { buildPagePath, type SeoRouteMeta } from '@/router/route'
@@ -84,12 +85,13 @@ function resolveRouterTo(href: string) {
       class="relative px-4 py-14 sm:px-6 md:px-10 md:py-16"
     >
       <div class="relative z-10 mx-auto max-w-[620px] text-center">
-        <span
+        <Eyebrow
           data-aos="fade-up"
-          class="mb-5 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(78%_0.07_155)] before:h-px before:w-5 before:bg-current"
+          bars="left"
+          class="mb-5 tracking-[0.13em] text-[oklch(78%_0.07_155)]"
         >
           {{ t('cta.eyebrow') }}
-        </span>
+        </Eyebrow>
         <h2
           data-aos="fade-up"
           data-aos-delay="80"

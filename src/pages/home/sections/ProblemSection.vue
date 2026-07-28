@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import Eyebrow from '@/components/shared/Eyebrow.vue'
 import type { ProblemItem } from '@/pages/home/content'
 
 const { t, tm } = useI18n()
@@ -16,12 +17,13 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
     <div class="relative z-10 mx-auto max-w-6xl">
       <div class="grid gap-6 md:grid-cols-[minmax(0,1.15fr)_minmax(300px,0.65fr)] md:items-end md:gap-12">
         <div>
-          <span
+          <Eyebrow
             data-aos="fade-up"
-            class="mb-4 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(44%_0.095_158)] before:h-px before:w-5 before:bg-current"
+            bars="left"
+            class="mb-4 tracking-[0.13em] text-[oklch(44%_0.095_158)]"
           >
             {{ t('problem.eyebrow') }}
-          </span>
+          </Eyebrow>
           <h2
             data-aos="fade-up"
             data-aos-delay="80"

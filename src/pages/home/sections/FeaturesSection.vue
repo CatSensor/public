@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import Eyebrow from '@/components/shared/Eyebrow.vue'
 import FeatureIcon from '@/pages/home/components/FeatureIcon.vue'
 import type { FeatureItem } from '@/pages/home/content'
 
@@ -14,13 +15,13 @@ const featureItems = computed(() => tm('features.items') as FeatureItem[])
     <div class="mx-auto max-w-6xl">
       <div class="grid gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-end lg:gap-12">
         <div>
-          <span
+          <Eyebrow
             data-aos="fade-up"
-            class="mb-5 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)]"
+            bars="left"
+            class="mb-5 text-[oklch(38%_0.09_158)]"
           >
-            <span aria-hidden="true" class="h-px w-6 bg-current"></span>
             {{ t('features.eyebrow') }}
-          </span>
+          </Eyebrow>
 
           <h2
             data-aos="fade-up"
