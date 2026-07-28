@@ -66,7 +66,7 @@ const partners = computed(() =>
       <div
         data-aos="fade-up"
         data-aos-delay="180"
-        class="partner-gallery mt-10 overflow-hidden rounded-[12px] border border-[oklch(30%_0.07_155_/_0.24)] bg-[oklch(84%_0.045_150)] shadow-[0_24px_56px_rgba(5,35,24,0.26)]"
+        class="partner-gallery mt-10 overflow-hidden rounded-[12px] border border-white/18 bg-[oklch(42%_0.085_155)] shadow-[0_24px_56px_rgba(5,35,24,0.26)]"
       >
         <a
           v-for="partner in partners"
@@ -75,14 +75,14 @@ const partners = computed(() =>
           target="_blank"
           rel="noopener noreferrer"
           :aria-label="`${partner.name} — ${t('partners.eyebrow')}`"
-          class="partner-link group relative flex min-h-[104px] items-center justify-center px-5 py-6 transition-colors duration-300 hover:bg-[oklch(92%_0.028_150)] focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[oklch(30%_0.08_155)] sm:min-h-[112px]"
+          class="partner-link group relative flex min-h-[104px] items-center justify-center px-5 py-6 transition-colors duration-300 hover:bg-[oklch(76%_0.055_150)] focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-white/70 sm:min-h-[112px]"
         >
           <img
             :src="partner.logo.logo"
             :alt="partner.name"
             loading="lazy"
             decoding="async"
-            class="max-h-12 w-full max-w-[130px] object-contain opacity-70 grayscale transition-[filter,opacity,transform] duration-500 group-hover:scale-[1.04] group-hover:opacity-100 group-hover:grayscale-0 sm:max-w-[140px]"
+            class="partner-logo max-h-12 w-full max-w-[130px] object-contain opacity-[0.78] transition-[filter,opacity,transform] duration-500 group-hover:scale-[1.04] group-hover:opacity-100 sm:max-w-[140px]"
           />
         </a>
       </div>
@@ -101,8 +101,18 @@ const partners = computed(() =>
 }
 
 .partner-link {
-  border-right: 1px solid oklch(30% 0.07 155 / 0.16);
-  border-bottom: 1px solid oklch(30% 0.07 155 / 0.16);
+  border-right: 1px solid oklch(98% 0.008 105 / 0.16);
+  border-bottom: 1px solid oklch(98% 0.008 105 / 0.16);
+}
+
+.partner-logo {
+  filter: grayscale(1) invert(1);
+  mix-blend-mode: screen;
+}
+
+.partner-link:hover .partner-logo {
+  filter: none;
+  mix-blend-mode: multiply;
 }
 
 .partner-link:nth-child(2n) {
@@ -119,7 +129,7 @@ const partners = computed(() =>
   }
 
   .partner-link:nth-child(2n) {
-    border-right: 1px solid oklch(30% 0.07 155 / 0.16);
+    border-right: 1px solid oklch(98% 0.008 105 / 0.16);
   }
 
   .partner-link:nth-child(3n) {
@@ -137,12 +147,12 @@ const partners = computed(() =>
   }
 
   .partner-link {
-    border-right: 1px solid oklch(30% 0.07 155 / 0.16);
+    border-right: 1px solid oklch(98% 0.008 105 / 0.16);
     border-bottom: 0;
   }
 
   .partner-link:nth-child(3n) {
-    border-right: 1px solid oklch(30% 0.07 155 / 0.16);
+    border-right: 1px solid oklch(98% 0.008 105 / 0.16);
   }
 
   .partner-link:last-child {
