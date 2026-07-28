@@ -75,7 +75,7 @@ const partners = computed(() =>
           target="_blank"
           rel="noopener noreferrer"
           :aria-label="`${partner.name} — ${t('partners.eyebrow')}`"
-          class="partner-link group relative flex min-h-[104px] items-center justify-center px-5 py-6 transition-colors duration-300 hover:bg-[oklch(76%_0.055_150)] focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-white/70 sm:min-h-[112px]"
+          class="partner-link group relative flex min-h-[104px] items-center justify-center px-5 py-6 transition-colors duration-300 hover:bg-[oklch(48%_0.085_155)] focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-white/70 sm:min-h-[112px]"
         >
           <img
             :src="partner.logo.logo"
