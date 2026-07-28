@@ -77,7 +77,7 @@ const { t } = useI18n()
               {{ t('how.monitor.title') }}
             </span>
             <span class="flex items-center gap-1.5 text-[10px] font-medium text-[oklch(38%_0.09_158)]">
-              <span class="size-1.5 bg-[oklch(59%_0.11_153)]"></span>
+              <span class="size-1.5 rounded-full bg-[oklch(59%_0.11_153)]"></span>
               94/100
             </span>
           </div>
@@ -115,7 +115,7 @@ const { t } = useI18n()
 .health-line {
   height: 3px;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 9999px;
   background: oklch(88% 0.025 153);
 }
 

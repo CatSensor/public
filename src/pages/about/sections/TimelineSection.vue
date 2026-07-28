@@ -50,7 +50,7 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
           class="timeline-entry relative grid gap-6 border-t border-[oklch(72%_0.045_153_/_0.42)] py-8 md:grid-cols-[130px_minmax(0,1fr)_170px] md:gap-8 lg:grid-cols-[150px_minmax(0,1fr)_180px] lg:gap-10 lg:py-10"
         >
           <div class="relative">
-            <span class="mb-3 block size-1.5 bg-[oklch(59%_0.1_153)]"></span>
+            <span class="mb-3 block size-1.5 rounded-full bg-[oklch(59%_0.1_153)]"></span>
             <p class="text-[15px] leading-[1.3] font-medium tracking-[-0.02em] text-[oklch(31%_0.07_158)] sm:text-base">
               {{ entry.period }}
             </p>
@@ -114,11 +114,11 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
 }
 
 .timeline-image {
-  border-radius: 12px;
+  border-radius: 48% 52% 46% 54% / 43% 48% 52% 57%;
 }
 
 .timeline-entry:nth-child(even) .timeline-image {
-  border-radius: 12px;
+  border-radius: 54% 46% 52% 48% / 49% 43% 57% 51%;
 }
 
 .timeline-rule {

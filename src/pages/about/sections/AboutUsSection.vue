@@ -173,7 +173,7 @@ const teamMembers = computed(() =>
   left: 0;
   width: 59%;
   height: 70%;
-  border-radius: 12px;
+  border-radius: 48% 52% 46% 54% / 42% 44% 56% 58%;
 }
 
 .collage-frame-top {
@@ -182,7 +182,7 @@ const teamMembers = computed(() =>
   right: 1%;
   width: 49%;
   height: 38%;
-  border-radius: 12px;
+  border-radius: 51% 49% 47% 53% / 52% 46% 54% 48%;
 }
 
 .collage-frame-bottom {
@@ -191,7 +191,7 @@ const teamMembers = computed(() =>
   bottom: 7%;
   width: 54%;
   height: 39%;
-  border-radius: 12px;
+  border-radius: 49% 51% 53% 47% / 50% 44% 56% 50%;
 }
 
 .team-portrait {
@@ -208,11 +208,11 @@ const teamMembers = computed(() =>
 }
 
 .team-portrait-left {
-  border-radius: 12px;
+  border-radius: 48% 52% 46% 54% / 45% 43% 57% 55%;
 }
 
 .team-portrait-right {
-  border-radius: 12px;
+  border-radius: 53% 47% 51% 49% / 47% 54% 46% 53%;
 }
 
 @media (min-width: 768px) {

@@ -52,7 +52,7 @@ const featureItems = computed(() => tm('features.items') as FeatureItem[])
           class="feature-item group relative z-10 overflow-hidden rounded-[12px] border border-[oklch(38%_0.09_158_/_0.1)] bg-[oklch(99%_0.006_145_/_0.72)] px-5 py-5 transition-[transform,background-color,border-color] duration-500 hover:-translate-y-1 hover:border-[oklch(38%_0.09_158_/_0.18)] hover:bg-white/90 sm:px-6 lg:min-h-[184px]"
         >
           <div class="relative flex items-start justify-between gap-5">
-            <div class="flex size-11 items-center justify-center rounded-md bg-[oklch(80%_0.075_153)] text-[oklch(30%_0.08_158)]">
+            <div class="flex size-11 items-center justify-center rounded-full bg-[oklch(80%_0.075_153)] text-[oklch(30%_0.08_158)]">
               <FeatureIcon :name="feature.icon" />
             </div>
             <span class="pt-1 text-[11px] font-semibold tracking-[0.12em] text-[oklch(48%_0.07_158)]">
