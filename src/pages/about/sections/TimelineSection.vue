@@ -50,7 +50,7 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
           class="timeline-entry relative grid gap-6 border-t border-[oklch(72%_0.045_153_/_0.42)] py-8 md:grid-cols-[130px_minmax(0,1fr)_170px] md:gap-8 lg:grid-cols-[150px_minmax(0,1fr)_180px] lg:gap-10 lg:py-10"
         >
           <div class="relative">
-            <span class="mb-3 block size-1.5 rounded-full bg-[oklch(59%_0.1_153)]"></span>
+            <span class="mb-3 block size-1.5 bg-[oklch(59%_0.1_153)]"></span>
             <p class="text-[15px] leading-[1.3] font-medium tracking-[-0.02em] text-[oklch(31%_0.07_158)] sm:text-base">
               {{ entry.period }}
             </p>
@@ -100,7 +100,7 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
                 class="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.035]"
               />
             </div>
-            <div v-else aria-hidden="true" class="timeline-arc"></div>
+            <div v-else aria-hidden="true" class="timeline-rule"></div>
           </div>
         </li>
       </ol>
@@ -114,23 +114,17 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
 }
 
 .timeline-image {
-  border-radius: 48% 52% 46% 54% / 43% 48% 52% 57%;
+  border-radius: 12px;
 }
 
 .timeline-entry:nth-child(even) .timeline-image {
-  border-radius: 54% 46% 52% 48% / 49% 43% 57% 51%;
+  border-radius: 12px;
 }
 
-.timeline-arc {
+.timeline-rule {
   width: min(100%, 190px);
-  height: 96px;
+  height: 1px;
   border-top: 1.5px dashed oklch(52% 0.075 158 / 0.38);
-  border-radius: 50%;
-  transform: rotate(-7deg);
-}
-
-.timeline-entry:nth-child(even) .timeline-arc {
-  transform: rotate(8deg);
 }
 
 @media (max-width: 767px) {
@@ -142,9 +136,9 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
     max-width: 210px;
   }
 
-  .timeline-arc {
+  .timeline-rule {
     width: 150px;
-    height: 70px;
+    height: 1px;
   }
 }
 </style>

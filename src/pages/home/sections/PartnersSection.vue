@@ -35,9 +35,6 @@ const partners = computed(() =>
 
 <template>
   <section id="partners" class="partners-section relative overflow-hidden px-4 py-14 sm:px-6 md:px-10 md:py-16">
-    <div aria-hidden="true" class="organic-field organic-field-left"></div>
-    <div aria-hidden="true" class="organic-field organic-field-right"></div>
-
     <div class="relative mx-auto max-w-6xl">
       <div class="mx-auto max-w-[760px] text-center">
         <span
@@ -96,29 +93,6 @@ const partners = computed(() =>
 <style scoped>
 .partners-section {
   background: oklch(38% 0.09 155);
-}
-
-.organic-field {
-  position: absolute;
-  border-radius: 9999px;
-  background: oklch(77% 0.07 153 / 0.07);
-  pointer-events: none;
-}
-
-.organic-field-left {
-  top: 13%;
-  left: -13rem;
-  width: 34rem;
-  height: 17rem;
-  transform: rotate(18deg);
-}
-
-.organic-field-right {
-  right: -12rem;
-  bottom: -7rem;
-  width: 30rem;
-  height: 22rem;
-  transform: rotate(-14deg);
 }
 
 .partner-gallery {

@@ -72,7 +72,7 @@ const donationSteps = computed(() => tm('donation.steps') as DonationStep[])
             class="grid gap-3 border-b border-[oklch(84%_0.02_150)] py-3 sm:grid-cols-[32px_minmax(0,1fr)] sm:gap-4"
           >
             <span
-              class="inline-flex h-7 w-7 items-center justify-center rounded-full border border-[oklch(84%_0.02_150)] text-xs font-semibold text-[oklch(44%_0.095_158)]"
+              class="inline-flex h-7 w-7 items-center justify-center rounded-md border border-[oklch(84%_0.02_150)] text-xs font-semibold text-[oklch(44%_0.095_158)]"
             >
               {{ index + 1 }}
             </span>

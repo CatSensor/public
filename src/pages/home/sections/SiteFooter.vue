@@ -78,12 +78,6 @@ function resolveRouterTo(href: string) {
     direction="left"
   />
   <footer class="relative overflow-hidden bg-[oklch(38%_0.09_155)] text-white">
-    <div
-      v-if="showEarlyAccess"
-      aria-hidden="true"
-      class="pointer-events-none absolute -bottom-28 -right-24 size-[420px] rounded-full bg-white/[0.035] sm:-bottom-44 sm:-right-28 sm:size-[560px]"
-    ></div>
-
     <section
       v-if="showEarlyAccess"
       id="cta"

@@ -91,7 +91,6 @@ const teamMembers = computed(() =>
               class="h-full w-full object-cover"
             />
           </div>
-          <div aria-hidden="true" class="collage-swoop"></div>
         </div>
       </div>
 
@@ -99,7 +98,6 @@ const teamMembers = computed(() =>
         data-aos="fade-up"
         class="about-approach relative mt-10 grid gap-6 overflow-hidden border-y border-[oklch(77%_0.035_153)] py-6 md:grid-cols-[0.42fr_0.78fr_1.2fr] md:items-start md:gap-8"
       >
-        <div aria-hidden="true" class="approach-wash"></div>
         <p class="relative text-[11px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)]">
           {{ t('about.story.approachLabel') }}
         </p>
@@ -161,30 +159,6 @@ const teamMembers = computed(() =>
 </template>
 
 <style scoped>
-.about-hero::before {
-  position: absolute;
-  top: 6%;
-  left: -19%;
-  width: 52%;
-  height: 58%;
-  border-radius: 50%;
-  background: oklch(94% 0.022 150 / 0.5);
-  content: '';
-  filter: blur(4px);
-  pointer-events: none;
-  transform: rotate(-12deg);
-}
-
-.about-collage::before {
-  position: absolute;
-  inset: 7% 4% 9% 4%;
-  border-radius: 50%;
-  background: oklch(94% 0.018 145 / 0.48);
-  content: '';
-  filter: blur(18px);
-  pointer-events: none;
-}
-
 .collage-frame {
   position: absolute;
   overflow: hidden;
@@ -199,7 +173,7 @@ const teamMembers = computed(() =>
   left: 0;
   width: 59%;
   height: 70%;
-  border-radius: 48% 52% 46% 54% / 42% 44% 56% 58%;
+  border-radius: 12px;
 }
 
 .collage-frame-top {
@@ -208,7 +182,7 @@ const teamMembers = computed(() =>
   right: 1%;
   width: 49%;
   height: 38%;
-  border-radius: 51% 49% 47% 53% / 52% 46% 54% 48%;
+  border-radius: 12px;
 }
 
 .collage-frame-bottom {
@@ -217,32 +191,7 @@ const teamMembers = computed(() =>
   bottom: 7%;
   width: 54%;
   height: 39%;
-  border-radius: 49% 51% 53% 47% / 50% 44% 56% 50%;
-}
-
-.collage-swoop {
-  position: absolute;
-  z-index: 0;
-  bottom: 1.5%;
-  left: 10%;
-  width: 52%;
-  height: 15%;
-  border-bottom: 1.5px solid oklch(50% 0.075 158 / 0.68);
-  border-radius: 50%;
-  transform: rotate(3deg);
-  transform-origin: center;
-}
-
-.approach-wash {
-  position: absolute;
-  top: -90%;
-  right: 5%;
-  width: 38%;
-  height: 260%;
-  border-radius: 50%;
-  background: oklch(91.5% 0.04 150 / 0.45);
-  pointer-events: none;
-  transform: rotate(-12deg);
+  border-radius: 12px;
 }
 
 .team-portrait {
@@ -259,11 +208,11 @@ const teamMembers = computed(() =>
 }
 
 .team-portrait-left {
-  border-radius: 48% 52% 46% 54% / 45% 43% 57% 55%;
+  border-radius: 12px;
 }
 
 .team-portrait-right {
-  border-radius: 53% 47% 51% 49% / 47% 54% 46% 53%;
+  border-radius: 12px;
 }
 
 @media (min-width: 768px) {
@@ -273,13 +222,6 @@ const teamMembers = computed(() =>
 }
 
 @media (max-width: 639px) {
-  .about-hero::before {
-    top: 0;
-    left: -45%;
-    width: 120%;
-    height: 38%;
-  }
-
   .collage-frame {
     border-width: 3px;
     box-shadow: 0 12px 30px oklch(28% 0.055 155 / 0.1);

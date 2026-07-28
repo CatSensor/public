@@ -8,8 +8,6 @@ const { t } = useI18n()
 
 <template>
   <section id="hero" class="hero-section relative overflow-hidden bg-[oklch(98.5%_0.003_90)] px-4 pb-12 pt-[88px] sm:px-6 md:px-10 md:pt-[88px]">
-    <div aria-hidden="true" class="hero-wash"></div>
-
     <div class="relative mx-auto grid min-h-[calc(100svh-136px)] max-w-6xl items-center gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-8 xl:gap-10">
       <div class="relative z-10 max-w-[620px]">
         <h1
@@ -59,10 +57,6 @@ const { t } = useI18n()
         data-aos-delay="130"
         class="hero-visual relative mx-auto flex aspect-[0.95] w-full max-w-[500px] items-center justify-center lg:mx-0 lg:justify-self-end"
       >
-        <div aria-hidden="true" class="hero-orbit hero-orbit-one"></div>
-        <div aria-hidden="true" class="hero-orbit hero-orbit-two"></div>
-        <div class="hero-blob absolute inset-[4%] bg-[oklch(91.5%_0.046_150)]"></div>
-
         <img
           data-float
           :src="productImages.line"
@@ -83,7 +77,7 @@ const { t } = useI18n()
               {{ t('how.monitor.title') }}
             </span>
             <span class="flex items-center gap-1.5 text-[10px] font-medium text-[oklch(38%_0.09_158)]">
-              <span class="size-1.5 rounded-full bg-[oklch(59%_0.11_153)]"></span>
+              <span class="size-1.5 bg-[oklch(59%_0.11_153)]"></span>
               94/100
             </span>
           </div>
@@ -109,45 +103,6 @@ const { t } = useI18n()
 </template>
 
 <style scoped>
-.hero-wash {
-  position: absolute;
-  top: 8%;
-  left: -12%;
-  width: 58vw;
-  height: 55vw;
-  max-height: 600px;
-  border-radius: 50%;
-  background: oklch(93% 0.025 150 / 0.45);
-  filter: blur(2px);
-  pointer-events: none;
-  transform: rotate(-16deg);
-}
-
-.hero-blob {
-  border-radius: 43% 57% 52% 48% / 57% 39% 61% 43%;
-  box-shadow: inset 0 0 0 1px oklch(38% 0.09 158 / 0.06);
-  transform: rotate(-5deg);
-}
-
-.hero-orbit {
-  position: absolute;
-  border: 1px solid oklch(42% 0.08 158 / 0.2);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.hero-orbit-one {
-  inset: 0 4% 8% 0;
-  transform: rotate(13deg);
-}
-
-.hero-orbit-two {
-  inset: 9% -1% -2% 9%;
-  border-style: dashed;
-  opacity: 0.55;
-  transform: rotate(-11deg);
-}
-
 .health-row {
   display: grid;
   grid-template-columns: 56px 1fr;
@@ -160,7 +115,7 @@ const { t } = useI18n()
 .health-line {
   height: 3px;
   overflow: hidden;
-  border-radius: 9999px;
+  border-radius: 2px;
   background: oklch(88% 0.025 153);
 }
 
@@ -169,15 +124,6 @@ const { t } = useI18n()
   height: 100%;
   border-radius: inherit;
   background: oklch(38% 0.09 158);
-}
-
-@media (max-width: 1023px) {
-  .hero-wash {
-    top: 5%;
-    left: -32%;
-    width: 110vw;
-    height: 88vw;
-  }
 }
 
 @media (max-width: 639px) {
@@ -194,9 +140,4 @@ const { t } = useI18n()
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hero-orbit {
-    display: none;
-  }
-}
 </style>

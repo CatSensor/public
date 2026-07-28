@@ -51,7 +51,7 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
             <article class="problem-card">
               <div class="mb-5 flex items-center justify-between gap-4">
                 <span
-                  class="inline-flex size-10 items-center justify-center rounded-full border border-[oklch(44%_0.095_158_/_0.18)] bg-[oklch(92%_0.04_150)] text-[11px] font-semibold tracking-[0.06em] text-[oklch(38%_0.09_155)]"
+                  class="inline-flex size-10 items-center justify-center rounded-md border border-[oklch(44%_0.095_158_/_0.18)] bg-[oklch(92%_0.04_150)] text-[11px] font-semibold tracking-[0.06em] text-[oklch(38%_0.09_155)]"
                 >
                   {{ item.number.replace(' -', '') }}
                 </span>
@@ -65,7 +65,7 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
                 {{ item.body }}
               </p>
               <span
-                class="mt-auto flex items-start gap-2.5 pt-5 text-xs leading-[1.55] font-semibold tracking-[0.02em] text-[oklch(55%_0.08_155)] before:mt-[6px] before:size-1.5 before:shrink-0 before:rounded-full before:bg-[oklch(66%_0.075_155)]"
+                class="mt-auto flex items-start gap-2.5 pt-5 text-xs leading-[1.55] font-semibold tracking-[0.02em] text-[oklch(55%_0.08_155)] before:mt-[6px] before:size-1.5 before:shrink-0 before:bg-[oklch(66%_0.075_155)]"
               >
                 {{ item.stat }}
               </span>

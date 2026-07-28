@@ -63,7 +63,7 @@ const titleLineClass = computed(() => (locale.value === 'fr' ? 'xl:whitespace-no
               :key="item"
               class="flex gap-3"
             >
-              <span class="mt-[10px] h-[5px] w-[5px] shrink-0 rounded-full bg-[oklch(44%_0.095_158)]"></span>
+              <span class="mt-[10px] h-[5px] w-[5px] shrink-0 bg-[oklch(44%_0.095_158)]"></span>
               <span>{{ item }}</span>
             </li>
           </ul>

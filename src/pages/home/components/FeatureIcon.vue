@@ -15,7 +15,7 @@ defineProps<{
     stroke-width="1.5"
     class="h-8 w-8"
   >
-    <circle cx="16" cy="16" r="12"></circle>
+    <rect x="4" y="4" width="24" height="24" rx="2"></rect>
     <path d="M16 10v6l4 2"></path>
   </svg>
 
@@ -53,7 +53,7 @@ defineProps<{
     stroke-width="1.5"
     class="h-8 w-8"
   >
-    <path d="M16 4C9.4 4 4 9.4 4 16s5.4 12 12 12 12-5.4 12-12S22.6 4 16 4z"></path>
+    <rect x="4" y="4" width="24" height="24" rx="2"></rect>
     <path d="M16 4v12l8 4"></path>
   </svg>
 </template>

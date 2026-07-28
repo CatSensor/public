@@ -68,7 +68,7 @@ async function submit() {
     v-if="status === 'success'"
     class="mx-auto w-full max-w-[560px] rounded-[14px] border border-white/14 bg-white/[0.07] px-5 py-5 text-left shadow-[0_18px_50px_rgba(0,0,0,0.08)] backdrop-blur-sm sm:px-7"
   >
-    <div class="mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-[oklch(78%_0.07_155)] text-[oklch(30%_0.08_155)]">
+    <div class="mb-4 flex h-9 w-9 items-center justify-center rounded-md bg-[oklch(78%_0.07_155)] text-[oklch(30%_0.08_155)]">
       <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" class="h-[18px] w-[18px]">
         <polyline points="3,9 7,13 15,5" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
@@ -102,7 +102,7 @@ async function submit() {
         class="cursor-pointer inline-flex w-full items-center justify-center gap-2 rounded-[9px] bg-[oklch(78%_0.07_155)] px-5 py-2.5 text-[13px] font-semibold tracking-[-0.01em] text-[oklch(25%_0.06_155)] transition hover:-translate-y-px hover:bg-[oklch(84%_0.065_155)] active:translate-y-0 disabled:cursor-wait sm:w-auto"
       >
         <span v-if="status === 'loading'" class="inline-flex items-center gap-[7px]">
-          <span class="inline-block h-[13px] w-[13px] animate-spin rounded-full border-[1.5px] border-white/35 border-t-white"></span>
+          <span class="inline-block h-[13px] w-[13px] animate-spin rounded-[2px] border-[1.5px] border-white/35 border-t-white"></span>
           {{ t('cta.form.loading') }}
         </span>
         <span v-else>{{ t('cta.form.button') }}</span>

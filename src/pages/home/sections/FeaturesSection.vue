@@ -51,10 +51,8 @@ const featureItems = computed(() => tm('features.items') as FeatureItem[])
           :data-aos-delay="index * 90"
           class="feature-item group relative z-10 overflow-hidden rounded-[12px] border border-[oklch(38%_0.09_158_/_0.1)] bg-[oklch(99%_0.006_145_/_0.72)] px-5 py-5 transition-[transform,background-color,border-color] duration-500 hover:-translate-y-1 hover:border-[oklch(38%_0.09_158_/_0.18)] hover:bg-white/90 sm:px-6 lg:min-h-[184px]"
         >
-          <div aria-hidden="true" class="feature-orb absolute -right-12 -top-12 size-40 rounded-full bg-[oklch(83%_0.065_150_/_0.22)] transition-transform duration-700 group-hover:scale-110"></div>
-
           <div class="relative flex items-start justify-between gap-5">
-            <div class="flex size-11 items-center justify-center rounded-full bg-[oklch(80%_0.075_153)] text-[oklch(30%_0.08_158)]">
+            <div class="flex size-11 items-center justify-center rounded-md bg-[oklch(80%_0.075_153)] text-[oklch(30%_0.08_158)]">
               <FeatureIcon :name="feature.icon" />
             </div>
             <span class="pt-1 text-[11px] font-semibold tracking-[0.12em] text-[oklch(48%_0.07_158)]">
@@ -95,11 +93,9 @@ const featureItems = computed(() => tm('features.items') as FeatureItem[])
     top: 43%;
     left: -4%;
     width: 108%;
-    height: 80px;
+    height: 0;
     border-top: 2px dashed oklch(56% 0.075 153 / 0.3);
-    border-radius: 50%;
     content: '';
-    transform: rotate(2deg);
   }
 
   .feature-item:nth-child(even) {
@@ -112,8 +108,7 @@ const featureItems = computed(() => tm('features.items') as FeatureItem[])
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .feature-item,
-  .feature-orb {
+  .feature-item {
     transition: none;
   }
 }

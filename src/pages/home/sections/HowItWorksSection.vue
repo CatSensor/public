@@ -51,7 +51,7 @@ const howSteps = computed(() => tm('how.steps') as HowStep[])
           class="step-item relative pb-10 pl-20 last:pb-0 md:pb-0 md:pl-0"
         >
           <div
-            class="step-marker absolute left-0 top-0 z-10 flex size-12 items-center justify-center rounded-full bg-[oklch(79%_0.075_153)] text-lg font-medium tracking-[-0.04em] text-[oklch(20%_0.025_158)] md:relative md:mb-6"
+            class="step-marker absolute left-0 top-0 z-10 flex size-12 items-center justify-center rounded-md bg-[oklch(79%_0.075_153)] text-lg font-medium tracking-[-0.04em] text-[oklch(20%_0.025_158)] md:relative md:mb-6"
           >
             {{ index + 1 }}
           </div>
@@ -79,12 +79,9 @@ const howSteps = computed(() => tm('how.steps') as HowStep[])
     top: 23px;
     left: 4%;
     width: 92%;
-    height: 68px;
+    height: 0;
     border-top: 2px dashed oklch(65% 0.07 153 / 0.48);
-    border-radius: 50%;
     content: '';
-    transform: rotate(-1.5deg);
-    transform-origin: center;
   }
 
   .step-item:nth-child(2) .step-marker {
