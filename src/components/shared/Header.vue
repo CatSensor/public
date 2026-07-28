@@ -41,8 +41,14 @@ const primaryLabel = computed(() => {
 })
 
 function resolveNavTo(href: string) {
-  if (href === '/about') {
+  const normalizedPath = href.split(/[?#]/, 1)[0]?.replace(/\/+$/, '') ?? ''
+
+  if (normalizedPath === '/about' || normalizedPath === '/en/about') {
     return { path: buildPagePath('about', currentLocale.value) }
+  }
+
+  if (href.startsWith('/')) {
+    return { path: href }
   }
 
   return {
