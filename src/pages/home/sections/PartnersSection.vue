@@ -34,15 +34,15 @@ const partners = computed(() =>
 </script>
 
 <template>
-  <section id="partners" class="partners-section relative overflow-hidden px-4 py-20 sm:px-7 md:px-14 md:py-28">
+  <section id="partners" class="partners-section relative overflow-hidden px-4 py-14 sm:px-6 md:px-10 md:py-16">
     <div aria-hidden="true" class="organic-field organic-field-left"></div>
     <div aria-hidden="true" class="organic-field organic-field-right"></div>
 
-    <div class="relative mx-auto max-w-[1320px]">
-      <div class="mx-auto max-w-[940px] text-center">
+    <div class="relative mx-auto max-w-6xl">
+      <div class="mx-auto max-w-[760px] text-center">
         <span
           data-aos="fade-up"
-          class="mb-7 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(79%_0.07_153)]"
+          class="mb-5 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(79%_0.07_153)]"
         >
           <span aria-hidden="true" class="h-px w-6 bg-current"></span>
           {{ t('partners.eyebrow') }}
@@ -52,7 +52,7 @@ const partners = computed(() =>
         <h2
           data-aos="fade-up"
           data-aos-delay="70"
-          class="text-[clamp(40px,5.4vw,72px)] leading-[1.02] font-medium tracking-[-0.055em] text-[oklch(98.5%_0.008_105)]"
+          class="text-[clamp(34px,4.4vw,54px)] leading-[1.04] font-medium tracking-[-0.05em] text-[oklch(98.5%_0.008_105)]"
         >
           {{ t('partners.title') }}
         </h2>
@@ -60,7 +60,7 @@ const partners = computed(() =>
         <p
           data-aos="fade-up"
           data-aos-delay="130"
-          class="mx-auto mt-7 max-w-[720px] text-[16px] leading-[1.75] font-light text-[oklch(87%_0.025_150_/_0.78)] sm:text-lg"
+          class="mx-auto mt-5 max-w-[660px] text-[14px] leading-[1.65] font-light text-[oklch(87%_0.025_150_/_0.78)] sm:text-[16px]"
         >
           {{ t('partners.description') }}
         </p>
@@ -69,7 +69,7 @@ const partners = computed(() =>
       <div
         data-aos="fade-up"
         data-aos-delay="180"
-        class="partner-gallery mt-14 overflow-hidden rounded-[14px] border border-white/12 bg-[oklch(98%_0.008_105)] shadow-[0_28px_70px_rgba(5,35,24,0.28)] md:mt-20"
+        class="partner-gallery mt-10 overflow-hidden rounded-[12px] border border-white/12 bg-[oklch(98%_0.008_105)] shadow-[0_24px_56px_rgba(5,35,24,0.26)]"
       >
         <a
           v-for="partner in partners"
@@ -78,14 +78,14 @@ const partners = computed(() =>
           target="_blank"
           rel="noopener noreferrer"
           :aria-label="`${partner.name} — ${t('partners.eyebrow')}`"
-          class="partner-link group relative flex min-h-[132px] items-center justify-center px-6 py-8 transition-colors duration-300 hover:bg-white focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[oklch(38%_0.09_158)] sm:min-h-[156px] lg:min-h-[180px]"
+          class="partner-link group relative flex min-h-[104px] items-center justify-center px-5 py-6 transition-colors duration-300 hover:bg-white focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[oklch(38%_0.09_158)] sm:min-h-[112px]"
         >
           <img
             :src="partner.logo.logo"
             :alt="partner.name"
             loading="lazy"
             decoding="async"
-            class="max-h-14 w-full max-w-[150px] object-contain opacity-70 grayscale transition-[filter,opacity,transform] duration-500 group-hover:scale-[1.04] group-hover:opacity-100 group-hover:grayscale-0 sm:max-w-[170px]"
+            class="max-h-12 w-full max-w-[130px] object-contain opacity-70 grayscale transition-[filter,opacity,transform] duration-500 group-hover:scale-[1.04] group-hover:opacity-100 group-hover:grayscale-0 sm:max-w-[140px]"
           />
         </a>
       </div>

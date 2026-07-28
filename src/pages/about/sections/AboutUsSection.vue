@@ -16,13 +16,13 @@ const teamMembers = computed(() =>
 </script>
 
 <template>
-  <section class="relative overflow-hidden px-4 pb-6 pt-[124px] sm:px-7 md:px-14 md:pb-6 md:pt-[142px]">
-    <div class="mx-auto max-w-[1320px]">
-      <div class="about-hero grid min-h-[calc(100svh-170px)] items-center gap-12 lg:grid-cols-[0.86fr_1.14fr] lg:gap-12 xl:gap-20">
-        <div class="relative z-10 max-w-[600px]">
+  <section class="relative overflow-hidden px-4 pb-4 pt-[88px] sm:px-6 md:px-10 md:pt-[88px]">
+    <div class="mx-auto max-w-6xl">
+      <div class="about-hero grid min-h-[calc(100svh-104px)] items-center gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:gap-10">
+        <div class="relative z-10 max-w-[540px]">
           <span
             data-aos="fade-up"
-            class="mb-7 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)]"
+            class="mb-5 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)]"
           >
             <span aria-hidden="true" class="h-px w-6 bg-current"></span>
             {{ t('about.story.eyebrow') }}
@@ -31,7 +31,7 @@ const teamMembers = computed(() =>
           <h1
             data-aos="fade-up"
             data-aos-delay="70"
-            class="whitespace-nowrap text-[clamp(52px,8vw,96px)] leading-[0.9] tracking-[-0.07em]"
+            class="whitespace-nowrap text-[clamp(42px,6vw,70px)] leading-[0.92] tracking-[-0.065em]"
           >
             <span class="font-medium text-[oklch(16%_0.02_155)]">{{ t('about.story.brandLead') }}</span><span class="font-light italic text-[oklch(38%_0.09_158)]">{{ t('about.story.brandTail') }}</span>
           </h1>
@@ -39,15 +39,15 @@ const teamMembers = computed(() =>
           <div
             data-aos="fade-up"
             data-aos-delay="140"
-            class="mt-12 max-w-[560px] border-l border-[oklch(38%_0.09_158_/_0.35)] pl-5 sm:pl-7"
+            class="mt-8 max-w-[520px] border-l border-[oklch(38%_0.09_158_/_0.35)] pl-5"
           >
             <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)]">
               {{ t('about.story.missionLabel') }}
             </p>
-            <h2 class="mt-3 max-w-[17ch] text-[clamp(26px,3vw,40px)] leading-[1.08] font-medium tracking-[-0.04em] text-[oklch(17%_0.02_158)]">
+            <h2 class="mt-3 max-w-[17ch] text-[clamp(23px,2.5vw,32px)] leading-[1.1] font-medium tracking-[-0.04em] text-[oklch(17%_0.02_158)]">
               {{ t('about.story.missionTitle') }}
             </h2>
-            <p class="mt-5 max-w-[54ch] text-[16px] leading-[1.75] font-light text-[oklch(43%_0.018_158)] sm:text-lg">
+            <p class="mt-4 max-w-[54ch] text-[14px] leading-[1.65] font-light text-[oklch(43%_0.018_158)] sm:text-[16px]">
               {{ t('about.story.missionBody') }}
             </p>
           </div>
@@ -56,7 +56,7 @@ const teamMembers = computed(() =>
         <div
           data-aos="fade-up"
           data-aos-delay="100"
-          class="about-collage relative mx-auto aspect-[0.96] w-full max-w-[610px]"
+          class="about-collage relative mx-auto aspect-[0.96] w-full max-w-[480px]"
         >
           <div class="collage-frame collage-frame-main">
             <img
@@ -97,30 +97,30 @@ const teamMembers = computed(() =>
 
       <div
         data-aos="fade-up"
-        class="about-approach relative mt-12 grid gap-6 overflow-hidden border-y border-[oklch(77%_0.035_153)] py-9 md:grid-cols-[0.42fr_0.78fr_1.2fr] md:items-start md:gap-10 md:py-12 lg:mt-20"
+        class="about-approach relative mt-10 grid gap-6 overflow-hidden border-y border-[oklch(77%_0.035_153)] py-6 md:grid-cols-[0.42fr_0.78fr_1.2fr] md:items-start md:gap-8"
       >
         <div aria-hidden="true" class="approach-wash"></div>
         <p class="relative text-[11px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)]">
           {{ t('about.story.approachLabel') }}
         </p>
-        <h2 class="relative max-w-[15ch] text-[clamp(26px,2.7vw,38px)] leading-[1.08] font-medium tracking-[-0.04em] text-[oklch(17%_0.02_158)]">
+        <h2 class="relative max-w-[15ch] text-[clamp(23px,2.3vw,30px)] leading-[1.1] font-medium tracking-[-0.04em] text-[oklch(17%_0.02_158)]">
           {{ t('about.story.approachTitle') }}
         </h2>
-        <p class="relative max-w-[62ch] text-[16px] leading-[1.75] font-light text-[oklch(43%_0.018_158)] sm:text-lg">
+        <p class="relative max-w-[62ch] text-[14px] leading-[1.65] font-light text-[oklch(43%_0.018_158)] sm:text-[16px]">
           {{ t('about.story.approachBody') }}
         </p>
       </div>
 
-      <div class="mt-20 lg:mt-28">
+      <div class="mt-14">
         <span
           data-aos="fade-up"
-          class="mb-12 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)] md:mb-16"
+          class="mb-8 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)]"
         >
           <span aria-hidden="true" class="h-px w-6 bg-current"></span>
           {{ t('about.team.eyebrow') }}
         </span>
 
-        <div class="grid gap-16 md:grid-cols-2 md:gap-14 lg:gap-24">
+        <div class="grid gap-12 md:grid-cols-2 md:gap-10 lg:gap-14">
         <article
           v-for="(member, index) in teamMembers"
           :key="member.name"
@@ -130,7 +130,7 @@ const teamMembers = computed(() =>
         >
           <div
             :class="[
-              'team-portrait relative mx-auto aspect-square w-full max-w-[440px] overflow-hidden bg-[oklch(91%_0.025_150)] md:mx-0',
+              'team-portrait relative mx-auto aspect-square w-full max-w-[360px] overflow-hidden bg-[oklch(91%_0.025_150)] md:mx-0',
               index % 2 === 0 ? 'team-portrait-left' : 'team-portrait-right',
             ]"
           >
@@ -145,11 +145,11 @@ const teamMembers = computed(() =>
             />
           </div>
 
-          <div class="mx-auto mt-7 w-full max-w-[440px] md:mx-0 md:mt-9">
+          <div class="mx-auto mt-5 w-full max-w-[360px] md:mx-0">
             <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)]">
               {{ member.role }}
             </p>
-            <h3 class="mt-3 text-[clamp(32px,4vw,54px)] leading-[1.02] font-medium tracking-[-0.055em] text-[oklch(16%_0.02_155)]">
+            <h3 class="mt-2 text-[clamp(28px,3vw,40px)] leading-[1.04] font-medium tracking-[-0.05em] text-[oklch(16%_0.02_155)]">
               {{ member.name }}
             </h3>
           </div>
@@ -268,7 +268,7 @@ const teamMembers = computed(() =>
 
 @media (min-width: 768px) {
   .team-profile:nth-child(2) {
-    margin-top: 96px;
+    margin-top: 48px;
   }
 }
 

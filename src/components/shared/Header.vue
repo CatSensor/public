@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { RouterLink, useRoute } from 'vue-router'
 
@@ -26,7 +26,6 @@ const props = withDefaults(
 const { t, tm } = useI18n()
 const route = useRoute()
 const { toggleLocale } = useLocale()
-const isScrolled = ref(true)
 const isMarketingPage = computed(() => props.page !== 'privacy')
 const navLinks = computed(() => (isMarketingPage.value ? (tm('nav.links') as NavLink[]) : []))
 const currentLocale = computed(() => ((route.meta as Partial<SeoRouteMeta>).locale ?? 'fr'))
@@ -40,10 +39,6 @@ const primaryLabel = computed(() => {
 
   return t('privacy.header.backHome')
 })
-
-function updateScrollState() {
-  isScrolled.value = window.scrollY > 40
-}
 
 function resolveNavTo(href: string) {
   if (href === '/about') {
@@ -60,28 +55,19 @@ function isRouterNavLink(href: string) {
   return href.startsWith('/') || (props.page === 'about' && href.startsWith('#'))
 }
 
-onMounted(() => {
-  updateScrollState()
-  window.addEventListener('scroll', updateScrollState, { passive: true })
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', updateScrollState)
-})
 </script>
 
 <template>
   <header
     :class="[
-      'fixed inset-x-0 top-0 z-[100] border-b border-black/6 bg-[oklch(98.5%_0.003_90_/_0.88)] px-4 backdrop-blur-[18px] transition-[padding] duration-300 sm:px-7 md:px-14',
-      isScrolled ? 'py-[15px]' : 'py-[22px]',
+      'fixed inset-x-0 top-0 z-[100] h-[68px] max-h-[68px] border-b border-black/6 bg-[oklch(98.5%_0.003_90_/_0.88)] px-4 backdrop-blur-[18px] sm:px-6 md:px-10',
     ]"
   >
-    <div class="mx-auto flex max-w-[1320px] items-center justify-between gap-3">
+    <div class="mx-auto flex h-full max-w-6xl items-center justify-between gap-3">
       <RouterLink
         v-if="isSecondaryPage"
         :to="homeHeroRoute"
-        class="group flex cursor-pointer shrink-0 items-center gap-2 text-[15px] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] no-underline sm:gap-3 sm:text-[17px]"
+        class="group flex cursor-pointer shrink-0 items-center gap-2 text-[14px] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] no-underline sm:text-[16px]"
         aria-label="CatSensor home"
       >
         <img
@@ -89,7 +75,7 @@ onBeforeUnmount(() => {
           alt="CatSensor logo"
           width="48"
           height="48"
-          class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04] sm:h-12"
+          class="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04]"
         />
         <span class="leading-none">
           CatSensor
@@ -98,7 +84,7 @@ onBeforeUnmount(() => {
       <a
         v-else
         href="#hero"
-        class="group flex cursor-pointer shrink-0 items-center gap-2 text-[15px] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] no-underline sm:gap-3 sm:text-[17px]"
+        class="group flex cursor-pointer shrink-0 items-center gap-2 text-[14px] font-semibold tracking-[-0.03em] text-[oklch(13%_0.01_240)] no-underline sm:text-[16px]"
         aria-label="CatSensor home"
       >
         <img
@@ -106,7 +92,7 @@ onBeforeUnmount(() => {
           alt="CatSensor logo"
           width="48"
           height="48"
-          class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04] sm:h-12"
+          class="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04]"
         />
         <span class="leading-none">
           CatSensor
@@ -115,7 +101,7 @@ onBeforeUnmount(() => {
 
       <nav
         v-if="navLinks.length > 0"
-        class="hidden items-center gap-6 lg:flex"
+        class="hidden items-center gap-5 lg:flex"
       >
         <template
           v-for="link in navLinks"
@@ -124,14 +110,14 @@ onBeforeUnmount(() => {
           <RouterLink
             v-if="isRouterNavLink(link.href)"
             :to="resolveNavTo(link.href)"
-            class="text-sm cursor-pointer font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
+            class="cursor-pointer text-[13px] font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
           >
             {{ link.label }}
           </RouterLink>
           <a
             v-else
             :href="link.href"
-            class="text-sm cursor-pointer font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
+            class="cursor-pointer text-[13px] font-normal text-[oklch(48%_0.008_240)] no-underline transition hover:text-[oklch(13%_0.01_240)]"
           >
             {{ link.label }}
           </a>
@@ -142,7 +128,7 @@ onBeforeUnmount(() => {
         <button
           type="button"
           :aria-label="t('nav.localeAria')"
-          class="inline-flex cursor-pointer items-center justify-center rounded-[10px] border border-black/12 bg-white/70 px-2.5 py-2.5 text-xs font-semibold tracking-[0.04em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:px-3 sm:py-[11px] sm:text-sm"
+          class="inline-flex cursor-pointer items-center justify-center rounded-lg border border-black/12 bg-white/70 px-2.5 py-2 text-xs font-semibold tracking-[0.04em] text-[oklch(13%_0.01_240)] transition hover:border-[oklch(44%_0.095_158)] hover:text-[oklch(44%_0.095_158)] sm:px-3"
           @click="toggleLocale"
         >
           {{ t('nav.localeButton') }}
@@ -150,14 +136,14 @@ onBeforeUnmount(() => {
         <RouterLink
           v-if="!isMarketingPage"
           :to="homeRoute"
-          class="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
+          class="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-[oklch(44%_0.095_158)] px-4 py-2 text-[13px] font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0"
         >
           {{ primaryLabel }}
         </RouterLink>
         <a
           v-else
           href="#cta"
-          class="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-[oklch(44%_0.095_158)] px-[18px] py-[10px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 sm:px-[22px] sm:py-[11px]"
+          class="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-[oklch(44%_0.095_158)] px-4 py-2 text-[13px] font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0"
         >
           {{ primaryLabel }}
         </a>

@@ -87,9 +87,9 @@ function resolveRouterTo(href: string) {
     <section
       v-if="showEarlyAccess"
       id="cta"
-      class="relative px-4 pb-20 pt-16 sm:px-7 md:px-14 md:pb-28 md:pt-24"
+      class="relative px-4 py-14 sm:px-6 md:px-10 md:py-16"
     >
-      <div class="relative z-10 mx-auto max-w-[720px] text-center">
+      <div class="relative z-10 mx-auto max-w-[620px] text-center">
         <span
           data-aos="fade-up"
           class="mb-5 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(78%_0.07_155)] before:h-px before:w-5 before:bg-current"
@@ -99,7 +99,7 @@ function resolveRouterTo(href: string) {
         <h2
           data-aos="fade-up"
           data-aos-delay="80"
-          class="mx-auto max-w-[15ch] text-[clamp(34px,5vw,66px)] leading-[1.02] font-semibold tracking-[-0.045em]"
+          class="mx-auto max-w-[15ch] text-[clamp(30px,4.2vw,52px)] leading-[1.04] font-semibold tracking-[-0.045em]"
         >
           <span class="block text-white">{{ t('cta.titleStart') }}</span>
           <span class="mt-1 block font-light text-[oklch(75%_0.09_150)]">
@@ -109,19 +109,19 @@ function resolveRouterTo(href: string) {
         <p
           data-aos="fade-up"
           data-aos-delay="160"
-          class="mx-auto mt-6 max-w-[580px] text-[15px] leading-[1.75] font-light text-white/65 sm:text-[17px]"
+          class="mx-auto mt-4 max-w-[540px] text-[14px] leading-[1.65] font-light text-white/65 sm:text-[15px]"
         >
           {{ t('cta.description') }}
         </p>
 
-        <div data-aos="fade-up" data-aos-delay="240" class="mt-8 w-full md:mt-10">
+        <div data-aos="fade-up" data-aos-delay="240" class="mt-6 w-full">
           <SignupForm />
         </div>
       </div>
     </section>
 
-    <div class="relative z-10 border-t border-white/10 px-4 py-8 sm:px-7 md:px-14 md:py-9">
-      <div class="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-4 text-center md:flex-row md:flex-wrap md:gap-5 md:text-left">
+    <div class="relative z-10 border-t border-white/10 px-4 py-6 sm:px-6 md:px-10">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-center md:flex-row md:flex-wrap md:gap-5 md:text-left">
         <div class="flex items-center gap-[9px] text-base font-semibold text-white">
           <img
             :src="logoMark"

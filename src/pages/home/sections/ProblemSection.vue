@@ -11,10 +11,10 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
 <template>
   <section
     id="problem"
-    class="relative overflow-hidden bg-[#EEF9F0] px-4 py-16 sm:px-7 md:px-14 md:py-28"
+    class="relative overflow-hidden bg-[#EEF9F0] px-4 py-12 sm:px-6 md:px-10 md:py-16"
   >
-    <div class="relative z-10 mx-auto max-w-[1320px]">
-      <div class="grid gap-7 md:grid-cols-[minmax(0,1.15fr)_minmax(300px,0.65fr)] md:items-end md:gap-16">
+    <div class="relative z-10 mx-auto max-w-6xl">
+      <div class="grid gap-6 md:grid-cols-[minmax(0,1.15fr)_minmax(300px,0.65fr)] md:items-end md:gap-12">
         <div>
           <span
             data-aos="fade-up"
@@ -25,7 +25,7 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
           <h2
             data-aos="fade-up"
             data-aos-delay="80"
-            class="max-w-[18ch] text-[clamp(32px,3.6vw,52px)] leading-[1.04] font-semibold tracking-[-0.04em]"
+            class="max-w-[18ch] text-[clamp(28px,3vw,42px)] leading-[1.06] font-semibold tracking-[-0.04em]"
           >
             {{ t('problem.titleStart') }}<br />{{ t('problem.titleEnd') }}
           </h2>
@@ -33,13 +33,13 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
         <p
           data-aos="fade-up"
           data-aos-delay="160"
-          class="max-w-[520px] border-l border-[oklch(44%_0.095_158_/_0.24)] pl-5 text-[15px] leading-[1.75] font-light text-[oklch(48%_0.008_240)] sm:text-[17px] md:mb-1"
+          class="max-w-[500px] border-l border-[oklch(44%_0.095_158_/_0.24)] pl-5 text-[14px] leading-[1.65] font-light text-[oklch(48%_0.008_240)] sm:text-[15px] md:mb-1"
         >
           {{ t('problem.description') }}
         </p>
       </div>
 
-      <div class="relative mt-14 md:mt-[72px]">
+      <div class="relative mt-10">
         <div class="grid gap-5 md:grid-cols-3 md:gap-6">
           <div
             v-for="(item, index) in problemItems"
@@ -49,7 +49,7 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
             class="problem-card-slot"
           >
             <article class="problem-card">
-              <div class="mb-7 flex items-center justify-between gap-4">
+              <div class="mb-5 flex items-center justify-between gap-4">
                 <span
                   class="inline-flex size-10 items-center justify-center rounded-full border border-[oklch(44%_0.095_158_/_0.18)] bg-[oklch(92%_0.04_150)] text-[11px] font-semibold tracking-[0.06em] text-[oklch(38%_0.09_155)]"
                 >
@@ -65,7 +65,7 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
                 {{ item.body }}
               </p>
               <span
-                class="mt-auto flex items-start gap-2.5 pt-7 text-xs leading-[1.55] font-semibold tracking-[0.02em] text-[oklch(55%_0.08_155)] before:mt-[6px] before:size-1.5 before:shrink-0 before:rounded-full before:bg-[oklch(66%_0.075_155)]"
+                class="mt-auto flex items-start gap-2.5 pt-5 text-xs leading-[1.55] font-semibold tracking-[0.02em] text-[oklch(55%_0.08_155)] before:mt-[6px] before:size-1.5 before:shrink-0 before:rounded-full before:bg-[oklch(66%_0.075_155)]"
               >
                 {{ item.stat }}
               </span>
@@ -80,13 +80,13 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
 <style scoped>
 .problem-card {
   display: flex;
-  min-height: 286px;
+  min-height: 220px;
   height: 100%;
   flex-direction: column;
   border: 1px solid oklch(44% 0.095 158 / 0.12);
   border-radius: 14px;
   background: oklch(98.5% 0.012 145 / 0.68);
-  padding: clamp(24px, 2.7vw, 34px);
+  padding: clamp(20px, 2vw, 26px);
   box-shadow: 0 18px 50px oklch(33% 0.05 155 / 0.045);
   transition:
     transform 350ms cubic-bezier(0.22, 1, 0.36, 1),

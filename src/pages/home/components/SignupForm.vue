@@ -66,7 +66,7 @@ async function submit() {
 <template>
   <div
     v-if="status === 'success'"
-    class="mx-auto w-full max-w-[660px] rounded-[18px] border border-white/14 bg-white/[0.07] px-6 py-7 text-left shadow-[0_18px_50px_rgba(0,0,0,0.08)] backdrop-blur-sm sm:px-10 sm:py-9"
+    class="mx-auto w-full max-w-[560px] rounded-[14px] border border-white/14 bg-white/[0.07] px-5 py-5 text-left shadow-[0_18px_50px_rgba(0,0,0,0.08)] backdrop-blur-sm sm:px-7"
   >
     <div class="mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-[oklch(78%_0.07_155)] text-[oklch(30%_0.08_155)]">
       <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" class="h-[18px] w-[18px]">
@@ -85,7 +85,7 @@ async function submit() {
     </div>
   </div>
 
-  <div v-else class="mx-auto w-full max-w-[660px] border-y border-white/14 py-6 text-left">
+  <div v-else class="mx-auto w-full max-w-[560px] border-y border-white/14 py-4 text-left">
     <label class="mb-3 block text-xs font-semibold text-white" for="email">Email</label>
     <form class="flex flex-col gap-[10px] sm:flex-row" @submit.prevent="submit">
       <input
@@ -94,12 +94,12 @@ async function submit() {
         type="email"
         autocomplete="email"
         :placeholder="t('cta.form.placeholder')"
-        class="min-w-0 flex-1 rounded-[10px] border border-white/35 bg-white/[0.08] px-[18px] py-[13px] text-sm text-white outline-none transition placeholder:text-white/40 focus:border-[oklch(78%_0.07_155)] focus:bg-white/[0.11]"
+        class="min-w-0 flex-1 rounded-[9px] border border-white/35 bg-white/[0.08] px-4 py-2.5 text-[13px] text-white outline-none transition placeholder:text-white/40 focus:border-[oklch(78%_0.07_155)] focus:bg-white/[0.11]"
       />
       <button
         type="submit"
         :disabled="status === 'loading'"
-        class="cursor-pointer inline-flex w-full items-center justify-center gap-2 rounded-[10px] bg-[oklch(78%_0.07_155)] px-[22px] py-[11px] text-sm font-semibold tracking-[-0.01em] text-[oklch(25%_0.06_155)] transition hover:-translate-y-px hover:bg-[oklch(84%_0.065_155)] active:translate-y-0 disabled:cursor-wait sm:w-auto"
+        class="cursor-pointer inline-flex w-full items-center justify-center gap-2 rounded-[9px] bg-[oklch(78%_0.07_155)] px-5 py-2.5 text-[13px] font-semibold tracking-[-0.01em] text-[oklch(25%_0.06_155)] transition hover:-translate-y-px hover:bg-[oklch(84%_0.065_155)] active:translate-y-0 disabled:cursor-wait sm:w-auto"
       >
         <span v-if="status === 'loading'" class="inline-flex items-center gap-[7px]">
           <span class="inline-block h-[13px] w-[13px] animate-spin rounded-full border-[1.5px] border-white/35 border-t-white"></span>

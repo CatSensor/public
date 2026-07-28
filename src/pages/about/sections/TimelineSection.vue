@@ -11,10 +11,10 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
 <template>
   <section
     id="timeline"
-    class="timeline-section overflow-hidden px-4 pb-20 pt-14 sm:px-7 md:px-14 md:pb-28 md:pt-20"
+    class="timeline-section overflow-hidden px-4 py-14 sm:px-6 md:px-10 md:py-16"
   >
-    <div class="mx-auto max-w-[1320px]">
-      <div class="grid gap-8 lg:grid-cols-[0.42fr_1.58fr] lg:gap-16">
+    <div class="mx-auto max-w-6xl">
+      <div class="grid gap-8 lg:grid-cols-[0.42fr_1.58fr] lg:gap-12">
         <span
           data-aos="fade-up"
           class="flex items-center gap-3 self-start pt-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-[oklch(38%_0.09_158)]"
@@ -27,27 +27,27 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
           <h2
             data-aos="fade-up"
             data-aos-delay="70"
-            class="max-w-[12ch] text-[clamp(44px,6.6vw,88px)] leading-[0.95] font-medium tracking-[-0.06em] text-[oklch(16%_0.02_155)]"
+            class="max-w-[12ch] text-[clamp(36px,5vw,62px)] leading-[0.97] font-medium tracking-[-0.055em] text-[oklch(16%_0.02_155)]"
           >
             {{ t('about.timeline.title') }}
           </h2>
           <p
             data-aos="fade-up"
             data-aos-delay="130"
-            class="mt-6 max-w-[640px] text-[16px] leading-[1.75] font-light text-[oklch(43%_0.018_158)] sm:text-lg"
+            class="mt-4 max-w-[600px] text-[14px] leading-[1.65] font-light text-[oklch(43%_0.018_158)] sm:text-[16px]"
           >
             {{ t('about.timeline.description') }}
           </p>
         </div>
       </div>
 
-      <ol class="mt-16 border-b border-[oklch(72%_0.045_153_/_0.42)] md:mt-24">
+      <ol class="mt-12 border-b border-[oklch(72%_0.045_153_/_0.42)]">
         <li
           v-for="(entry, index) in timelineEntries"
           :key="`${entry.period}-${entry.title}`"
           data-aos="fade-up"
           :data-aos-delay="Math.min(index * 70, 210)"
-          class="timeline-entry relative grid gap-7 border-t border-[oklch(72%_0.045_153_/_0.42)] py-10 md:grid-cols-[150px_minmax(0,1fr)_190px] md:gap-10 md:py-12 lg:grid-cols-[190px_minmax(0,1fr)_230px] lg:gap-14 lg:py-14"
+          class="timeline-entry relative grid gap-6 border-t border-[oklch(72%_0.045_153_/_0.42)] py-8 md:grid-cols-[130px_minmax(0,1fr)_170px] md:gap-8 lg:grid-cols-[150px_minmax(0,1fr)_180px] lg:gap-10 lg:py-10"
         >
           <div class="relative">
             <span class="mb-3 block size-1.5 rounded-full bg-[oklch(59%_0.1_153)]"></span>
@@ -57,14 +57,14 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
           </div>
 
           <article class="max-w-[720px]">
-            <h3 class="text-[clamp(25px,2.8vw,38px)] leading-[1.08] font-medium tracking-[-0.045em] text-[oklch(16%_0.02_155)]">
+            <h3 class="text-[clamp(22px,2.3vw,30px)] leading-[1.1] font-medium tracking-[-0.04em] text-[oklch(16%_0.02_155)]">
               {{ entry.title }}
             </h3>
-            <p class="mt-4 text-[15px] leading-[1.75] font-light text-[oklch(42%_0.018_158)] sm:text-base">
+            <p class="mt-3 text-[14px] leading-[1.65] font-light text-[oklch(42%_0.018_158)] sm:text-[15px]">
               {{ entry.summary }}
             </p>
 
-            <ul class="mt-6 space-y-2.5">
+            <ul class="mt-4 space-y-2">
               <li
                 v-for="detail in entry.details"
                 :key="detail"
@@ -90,7 +90,7 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
           <div class="timeline-visual flex items-center justify-center md:justify-end">
             <div
               v-if="entry.image"
-              class="timeline-image aspect-[0.82] w-full max-w-[180px] overflow-hidden border-[3px] border-[oklch(98%_0.006_120)] bg-[oklch(91%_0.025_150)] shadow-[0_16px_38px_rgba(22,78,56,0.11)] md:max-w-[190px]"
+              class="timeline-image aspect-[0.82] w-full max-w-[150px] overflow-hidden border-[3px] border-[oklch(98%_0.006_120)] bg-[oklch(91%_0.025_150)] shadow-[0_16px_38px_rgba(22,78,56,0.11)] md:max-w-[160px]"
             >
               <img
                 :src="entry.image"
