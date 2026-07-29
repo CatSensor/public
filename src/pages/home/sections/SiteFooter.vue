@@ -87,7 +87,7 @@ function resolveRouterTo(href: string) {
       <div class="relative z-10 mx-auto max-w-[620px] text-center">
         <Eyebrow
           data-aos="fade-up"
-          bars="left"
+          bars="both"
           class="mb-5 text-[oklch(78%_0.07_155)]"
         >
           {{ t('cta.eyebrow') }}
