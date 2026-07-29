@@ -241,7 +241,10 @@
     ],
     "preorder": "Suivre le projet",
     "localeButton": "EN",
-    "localeAria": "Changer la langue vers anglais"
+    "localeAria": "Changer la langue vers anglais",
+    "menuOpen": "Ouvrir le menu de navigation",
+    "menuClose": "Fermer le menu de navigation",
+    "mobileNavAria": "Navigation mobile"
   },
   "hero": {
     "eyebrow": "Suivi santé félin à domicile",

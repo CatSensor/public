@@ -241,7 +241,10 @@
     ],
     "preorder": "Follow the project",
     "localeButton": "FR",
-    "localeAria": "Switch language to French"
+    "localeAria": "Switch language to French",
+    "menuOpen": "Open navigation menu",
+    "menuClose": "Close navigation menu",
+    "mobileNavAria": "Mobile navigation"
   },
   "hero": {
     "eyebrow": "At-home feline health monitoring",
