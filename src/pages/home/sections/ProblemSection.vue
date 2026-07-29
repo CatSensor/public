@@ -20,7 +20,7 @@ const problemItems = computed(() => tm('problem.items') as ProblemItem[])
           <Eyebrow
             data-aos="fade-up"
             bars="left"
-            class=" text-[oklch(44%_0.095_158)]"
+            class="mb-5 text-[oklch(44%_0.095_158)]"
           >
             {{ t('problem.eyebrow') }}
           </Eyebrow>
