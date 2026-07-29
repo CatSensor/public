@@ -19,7 +19,7 @@ const timelineEntries = computed(() => (tm('about.timeline.items') as TimelineEn
         <Eyebrow
           data-aos="fade-up"
           bars="left"
-          class="self-start pt-2 tracking-[0.15em] text-[oklch(38%_0.09_158)]"
+          class="self-start pt-2 text-[oklch(38%_0.09_158)]"
         >
           {{ t('about.timeline.eyebrow') }}
         </Eyebrow>

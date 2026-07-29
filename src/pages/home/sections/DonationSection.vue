@@ -22,7 +22,7 @@ const donationSteps = computed(() => tm('donation.steps') as DonationStep[])
           <Eyebrow
             data-aos="fade-up"
             bars="left"
-            class="mb-4 tracking-[0.13em] text-[oklch(44%_0.095_158)]"
+            class="mb-5 text-[oklch(44%_0.095_158)]"
           >
             {{ t('donation.eyebrow') }}
           </Eyebrow>
@@ -61,9 +61,9 @@ const donationSteps = computed(() => tm('donation.steps') as DonationStep[])
         data-aos-delay="200"
         class="lg:border-l lg:border-[oklch(84%_0.02_150)] lg:pl-8 xl:pl-10"
       >
-        <p class="text-[11px] font-semibold uppercase tracking-[0.13em] text-[oklch(44%_0.095_158)]">
+        <Eyebrow bars="left" class="text-[oklch(44%_0.095_158)]">
           {{ t('donation.instructionsEyebrow') }}
-        </p>
+        </Eyebrow>
         <p class="mt-3 max-w-[46ch] text-[15px] leading-[1.6] text-[oklch(13%_0.01_240)] sm:text-[16px]">
           {{ t('donation.instructionsLead') }}
         </p>

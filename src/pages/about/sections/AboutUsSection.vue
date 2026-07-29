@@ -24,7 +24,7 @@ const teamMembers = computed(() =>
           <Eyebrow
             data-aos="fade-up"
             bars="left"
-            class="mb-5 tracking-[0.15em] text-[oklch(38%_0.09_158)]"
+            class="mb-5 text-[oklch(38%_0.09_158)]"
           >
             {{ t('about.story.eyebrow') }}
           </Eyebrow>
@@ -42,9 +42,9 @@ const teamMembers = computed(() =>
             data-aos-delay="140"
             class="mt-8 max-w-[520px] border-l border-[oklch(38%_0.09_158_/_0.35)] pl-5"
           >
-            <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)]">
+            <Eyebrow bars="left" class="text-[oklch(38%_0.09_158)]">
               {{ t('about.story.missionLabel') }}
-            </p>
+            </Eyebrow>
             <h2 class="mt-3 max-w-[17ch] text-[clamp(23px,2.5vw,32px)] leading-[1.1] font-medium tracking-[-0.04em] text-[oklch(17%_0.02_158)]">
               {{ t('about.story.missionTitle') }}
             </h2>
@@ -99,9 +99,9 @@ const teamMembers = computed(() =>
         data-aos="fade-up"
         class="about-approach relative mt-10 grid gap-6 overflow-hidden border-y border-[oklch(77%_0.035_153)] py-6 md:grid-cols-[0.42fr_0.78fr_1.2fr] md:items-start md:gap-8"
       >
-        <p class="relative text-[11px] font-semibold uppercase tracking-[0.14em] text-[oklch(38%_0.09_158)]">
+        <Eyebrow bars="left" class="relative text-[oklch(38%_0.09_158)]">
           {{ t('about.story.approachLabel') }}
-        </p>
+        </Eyebrow>
         <h2 class="relative max-w-[15ch] text-[clamp(23px,2.3vw,30px)] leading-[1.1] font-medium tracking-[-0.04em] text-[oklch(17%_0.02_158)]">
           {{ t('about.story.approachTitle') }}
         </h2>
@@ -114,7 +114,7 @@ const teamMembers = computed(() =>
         <Eyebrow
           data-aos="fade-up"
           bars="left"
-          class="mb-8 tracking-[0.15em] text-[oklch(38%_0.09_158)]"
+          class="mb-8 text-[oklch(38%_0.09_158)]"
         >
           {{ t('about.team.eyebrow') }}
         </Eyebrow>

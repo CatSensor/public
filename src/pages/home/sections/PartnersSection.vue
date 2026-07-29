@@ -41,7 +41,7 @@ const partners = computed(() =>
         <Eyebrow
           data-aos="fade-up"
           bars="both"
-          class="mb-5 tracking-[0.15em] text-[oklch(79%_0.07_153)]"
+          class="mb-5 text-[oklch(79%_0.07_153)]"
         >
           {{ t('partners.eyebrow') }}
         </Eyebrow>
