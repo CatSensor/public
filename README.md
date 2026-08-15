@@ -22,6 +22,10 @@ npm run preview
 
 Do not open files under `dist` directly with a `file://` URL. If using VS Code Live Server, configure `dist` itself as the server root; otherwise absolute `/assets/...` URLs will point at the wrong directory. The recommended preview command is `npm run preview`.
 
+## Privacy consent
+
+Cookie and tracker consent is implemented as a reusable Vue module under `src/modules/consent`. Google Analytics is registered as a consent-gated analytics service and is not loaded until the visitor enables that category. See [`src/modules/consent/README.md`](src/modules/consent/README.md) for instructions on adding categories or services.
+
 # Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.

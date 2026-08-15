@@ -4,11 +4,33 @@
     "description": "CatSensor helps cat owners monitor weight, body composition, and health trends daily so changes can be caught earlier."
   },
   "cookie": {
+    "eyebrow": "Your privacy",
     "title": "Privacy settings",
-    "body": "We use only essential preference storage by default. Optional analytics or marketing cookies stay off unless you consent. See our ",
+    "body": "We use necessary browser storage to remember your preferences. With your permission, Google Analytics helps us understand how the site is used. Analytics stays off until you choose to allow it.",
+    "localStorageNote": "Your choice is stored only in this browser. ",
     "link": "privacy policy.",
-    "essential": "Essential only",
-    "accept": "Accept all"
+    "refuse": "Refuse optional",
+    "customize": "Customize",
+    "accept": "Accept all",
+    "openSettings": "Open privacy settings",
+    "dialogEyebrow": "Cookie preferences",
+    "dialogTitle": "Choose what you allow",
+    "dialogBody": "Select each optional purpose separately. Necessary storage cannot be disabled because it remembers your privacy and language choices.",
+    "close": "Close privacy settings",
+    "alwaysActive": "Always active",
+    "optional": "Optional",
+    "changeNote": "You can reopen these settings at any time using the cookie button at the bottom left. Read our ",
+    "save": "Save my choices",
+    "categories": {
+      "necessary": {
+        "title": "Necessary preferences",
+        "description": "Stores your language and privacy choices in localStorage so the site works as expected. This data stays in your browser."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "Allows Google Analytics (G-ZFBCVKM1V1) to measure page views and site usage. Google may set analytics cookies and process technical usage data."
+      }
+    }
   },
   "privacy": {
     "meta": {
@@ -27,13 +49,14 @@
       "description": "This policy explains what information CatSensor collects, why it is collected, and how users in Quebec and Canada can request access, correction, or deletion under Loi 25."
     },
     "effectiveDateLabel": "Effective date",
-    "effectiveDate": "May 5, 2026",
+    "effectiveDate": "August 14, 2026",
     "cards": [
       {
         "title": "Data We Collect",
         "items": [
           "If you request early access, we collect the email address you submit voluntarily.",
-          "We store your language preference locally in your browser so the site can reopen in English or French.",
+          "We store your language and privacy preferences locally in your browser so the site can remember your choices.",
+          "If you allow analytics, Google Analytics may collect page views, device and browser information, approximate location, and interaction data.",
           "Our hosting provider may process basic technical request data such as IP address, browser type, and access logs to keep the site secure and available."
         ]
       },
@@ -42,6 +65,7 @@
         "items": [
           "To manage the CatSensor waitlist and contact you about launch or product availability.",
           "To remember your selected language and keep the site functioning correctly.",
+          "With your consent, to understand aggregate website usage and improve the site.",
           "To prevent abuse, diagnose technical issues, and maintain website security."
         ]
       },
@@ -49,8 +73,9 @@
         "title": "Cookies And Trackers",
         "items": [
           "No advertising, profiling, or analytics cookies are enabled by default on this site.",
-          "The site currently uses only a functional local storage setting for language preference.",
-          "If non-essential cookies or tracking tools are added later, they will stay disabled until you give explicit consent."
+          "Necessary localStorage entries remember your language and consent choices; the consent record expires after six months and can be changed sooner.",
+          "Google Analytics is loaded only after you enable the Analytics category and may then place cookies such as _ga and _ga_<container-id>.",
+          "If you later refuse analytics, collection is disabled and known Google Analytics cookies for this site are removed."
         ]
       },
       {
@@ -58,6 +83,7 @@
         "items": [
           "Data may be processed by our website hosting provider to serve pages and maintain security logs.",
           "The waitlist registration service receives only the information needed to manage signups and launch communications.",
+          "Google processes analytics data only when you enable the Analytics category; Google's own terms and privacy practices also apply.",
           "We do not sell personal information to advertisers or data brokers."
         ]
       },
@@ -66,7 +92,8 @@
         "items": [
           "Waitlist contact details are kept only as long as needed to manage pre-launch communication or until you ask us to delete them.",
           "Technical logs are retained for a limited period appropriate to security and operational needs.",
-          "Functional preference data remains in your browser until you clear it or change the setting."
+          "Your consent record remains in localStorage for up to six months, unless you change it or clear browser storage sooner.",
+          "Analytics data, when enabled, is retained according to CatSensor's configured Google Analytics retention settings and Google's applicable policies."
         ]
       },
       {
@@ -89,7 +116,7 @@
         "title": "Transfers Outside Quebec Or Canada",
         "items": [
           "We aim to use providers that offer appropriate safeguards for personal information.",
-          "If a service provider stores or processes data outside Quebec or Canada, the information may become subject to the laws of that jurisdiction.",
+          "Google Analytics may process analytics data outside Quebec or Canada, where it can become subject to the laws of another jurisdiction.",
           "When applicable, we limit access contractually and require reasonable protection measures."
         ]
       }
@@ -97,7 +124,7 @@
     "commitments": {
       "eyebrow": "Loi 25",
       "title": "How this site applies privacy by default.",
-      "description": "This page is written in plain language and is linked directly from the website. Non-essential tracking is off by default, and any future tracking that needs consent must stay inactive until the user opts in.",
+      "description": "This page is written in plain language and is linked directly from the website. Non-essential tracking is off by default, and Google Analytics stays inactive until the user opts in.",
       "items": [
         {
           "title": "Accessible Policy",
@@ -105,7 +132,7 @@
         },
         {
           "title": "Explicit Consent",
-          "body": "If analytics, advertising pixels, or similar non-essential tools are introduced, consent must be requested before those technologies are activated."
+          "body": "Analytics consent is requested separately, is off by default, and can be refused or withdrawn without losing access to the site."
         },
         {
           "title": "High Privacy Defaults",

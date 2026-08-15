@@ -4,11 +4,33 @@
     "description": "CatSensor aide les propriétaires à suivre le poids, la composition corporelle et les tendances de santé de leur chat au quotidien."
   },
   "cookie": {
+    "eyebrow": "Votre vie privée",
     "title": "Paramètres de confidentialité",
-    "body": "Nous utilisons seulement un stockage de préférences essentiel par défaut. Les cookies d'analytique ou de marketing facultatifs restent désactivés tant que vous n'avez pas consenti. Consultez notre ",
+    "body": "Nous utilisons un stockage nécessaire dans votre navigateur pour mémoriser vos préférences. Avec votre permission, Google Analytics nous aide à comprendre l'utilisation du site. L'analytique reste désactivée tant que vous ne l'autorisez pas.",
+    "localStorageNote": "Votre choix est conservé uniquement dans ce navigateur. ",
     "link": "politique de confidentialité.",
-    "essential": "Essentiel seulement",
-    "accept": "Tout accepter"
+    "refuse": "Refuser les facultatifs",
+    "customize": "Personnaliser",
+    "accept": "Tout accepter",
+    "openSettings": "Ouvrir les paramètres de confidentialité",
+    "dialogEyebrow": "Préférences de témoins",
+    "dialogTitle": "Choisissez ce que vous autorisez",
+    "dialogBody": "Sélectionnez séparément chaque finalité facultative. Le stockage nécessaire ne peut pas être désactivé, car il mémorise vos choix de confidentialité et de langue.",
+    "close": "Fermer les paramètres de confidentialité",
+    "alwaysActive": "Toujours actif",
+    "optional": "Facultatif",
+    "changeNote": "Vous pouvez rouvrir ces paramètres en tout temps avec le bouton de témoin en bas à gauche. Consultez notre ",
+    "save": "Enregistrer mes choix",
+    "categories": {
+      "necessary": {
+        "title": "Préférences nécessaires",
+        "description": "Conserve vos choix de langue et de confidentialité dans localStorage afin que le site fonctionne comme prévu. Ces données restent dans votre navigateur."
+      },
+      "analytics": {
+        "title": "Analytique",
+        "description": "Autorise Google Analytics (G-ZFBCVKM1V1) à mesurer les pages vues et l'utilisation du site. Google peut créer des témoins analytiques et traiter des données techniques d'utilisation."
+      }
+    }
   },
   "privacy": {
     "meta": {
@@ -27,13 +49,14 @@
       "description": "Cette politique explique quelles informations CatSensor collecte, pourquoi elles sont collectées et comment les utilisateurs au Québec et au Canada peuvent demander l'accès, la correction ou la suppression de leurs données conformément à la Loi 25."
     },
     "effectiveDateLabel": "Date d'entrée en vigueur",
-    "effectiveDate": "5 mai 2026",
+    "effectiveDate": "14 août 2026",
     "cards": [
       {
         "title": "Données collectées",
         "items": [
           "Si vous demandez l'accès anticipé, nous collectons l'adresse courriel que vous soumettez volontairement.",
-          "Nous conservons votre préférence de langue localement dans votre navigateur afin d'ouvrir le site en français ou en anglais.",
+          "Nous conservons vos préférences de langue et de confidentialité localement dans votre navigateur afin de mémoriser vos choix.",
+          "Si vous autorisez l'analytique, Google Analytics peut recueillir les pages vues, des renseignements sur l'appareil et le navigateur, une position approximative et des données d'interaction.",
           "Notre fournisseur d'hébergement peut traiter des données techniques de base comme l'adresse IP, le type de navigateur et les journaux d'accès pour garder le site sécuritaire et disponible."
         ]
       },
@@ -42,6 +65,7 @@
         "items": [
           "Pour gérer la liste d'attente CatSensor et vous contacter lors du lancement ou de la disponibilité du produit.",
           "Pour mémoriser la langue choisie et assurer le bon fonctionnement du site.",
+          "Avec votre consentement, pour comprendre l'utilisation globale du site et l'améliorer.",
           "Pour prévenir les abus, diagnostiquer les problèmes techniques et maintenir la sécurité du site."
         ]
       },
@@ -49,8 +73,9 @@
         "title": "Cookies et outils de suivi",
         "items": [
           "Aucun cookie publicitaire, de profilage ou d'analytique n'est activé par défaut sur ce site.",
-          "Le site utilise actuellement seulement un paramètre fonctionnel de stockage local pour la préférence de langue.",
-          "Si des cookies non essentiels ou des outils de suivi sont ajoutés plus tard, ils resteront désactivés jusqu'à ce que vous donniez un consentement explicite."
+          "Des entrées localStorage nécessaires mémorisent vos choix de langue et de consentement; le consentement expire après six mois et peut être modifié plus tôt.",
+          "Google Analytics est chargé uniquement après l'activation de la catégorie Analytique et peut alors créer des témoins comme _ga et _ga_<identifiant-du-conteneur>.",
+          "Si vous refusez ensuite l'analytique, la collecte est désactivée et les témoins Google Analytics connus pour ce site sont supprimés."
         ]
       },
       {
@@ -58,6 +83,7 @@
         "items": [
           "Les données peuvent être traitées par notre fournisseur d'hébergement afin d'afficher le site et de maintenir les journaux de sécurité.",
           "Le service d'inscription à la liste d'attente reçoit seulement les informations nécessaires pour gérer les inscriptions et les communications de lancement.",
+          "Google traite les données analytiques uniquement lorsque vous activez la catégorie Analytique; ses propres conditions et pratiques de confidentialité s'appliquent aussi.",
           "Nous ne vendons pas les renseignements personnels à des annonceurs ni à des courtiers en données."
         ]
       },
@@ -66,7 +92,8 @@
         "items": [
           "Les coordonnées de la liste d'attente sont conservées seulement le temps nécessaire pour gérer les communications de prélancement ou jusqu'à ce que vous demandiez leur suppression.",
           "Les journaux techniques sont conservés pour une durée limitée adaptée aux besoins de sécurité et d'exploitation.",
-          "Les données de préférence fonctionnelle demeurent dans votre navigateur jusqu'à ce que vous les effaciez ou changiez le paramètre."
+          "Votre consentement reste dans localStorage pendant un maximum de six mois, sauf si vous le modifiez ou effacez plus tôt les données du navigateur.",
+          "Les données analytiques, lorsqu'elles sont activées, sont conservées selon les paramètres de conservation Google Analytics de CatSensor et les politiques applicables de Google."
         ]
       },
       {
@@ -89,7 +116,7 @@
         "title": "Transferts hors Québec ou hors Canada",
         "items": [
           "Nous cherchons à utiliser des fournisseurs offrant des mesures de protection appropriées pour les renseignements personnels.",
-          "Si un fournisseur traite ou héberge des données à l'extérieur du Québec ou du Canada, ces renseignements peuvent être assujettis aux lois de cette autre juridiction.",
+          "Google Analytics peut traiter des données analytiques à l'extérieur du Québec ou du Canada, où elles peuvent être assujetties aux lois d'une autre juridiction.",
           "Lorsque c'est applicable, nous limitons l'accès par contrat et exigeons des mesures de protection raisonnables."
         ]
       }
@@ -97,7 +124,7 @@
     "commitments": {
       "eyebrow": "Loi 25",
       "title": "Comment ce site applique la confidentialité par défaut.",
-      "description": "Cette page est rédigée en langage clair et accessible directement depuis le site. Les outils de suivi non essentiels sont désactivés par défaut et tout outil futur qui exige un consentement devra rester inactif tant que l'utilisateur n'aura pas accepté.",
+      "description": "Cette page est rédigée en langage clair et accessible directement depuis le site. Les outils de suivi non essentiels sont désactivés par défaut et Google Analytics reste inactif tant que l'utilisateur n'a pas accepté.",
       "items": [
         {
           "title": "Politique accessible",
@@ -105,7 +132,7 @@
         },
         {
           "title": "Consentement explicite",
-          "body": "Si des outils d'analytique, des pixels publicitaires ou d'autres technologies non essentielles sont ajoutés, le consentement devra être demandé avant leur activation."
+          "body": "Le consentement analytique est demandé séparément, désactivé par défaut et peut être refusé ou retiré sans perdre l'accès au site."
         },
         {
           "title": "Paramètres élevés par défaut",
