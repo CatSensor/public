@@ -1,9 +1,11 @@
 {
   "\u0000plugin-vue:export-helper": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -12,10 +14,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "\u0000rolldown/runtime.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -24,10 +28,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "\u0000vite/modulepreload-polyfill.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -36,10 +42,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "index.html": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -48,10 +56,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@intlify/core-base/dist/core-base.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -60,10 +70,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@intlify/message-compiler/dist/message-compiler.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -72,10 +84,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@intlify/shared/dist/shared.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -84,10 +98,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@unhead/vue/dist/client.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -96,10 +112,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@unhead/vue/dist/shared/vue.Cr7xSEtD.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -108,10 +126,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@unhead/vue/dist/shared/vue.N9zWjxoK.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -120,10 +140,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -132,10 +154,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -144,10 +168,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -156,10 +182,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -168,10 +196,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/aos/dist/aos.css": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -180,10 +210,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/aos/dist/aos.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -192,10 +224,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/hookable/dist/index.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -204,10 +238,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/unhead/dist/client.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -216,10 +252,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/unhead/dist/shared/unhead.B3VbJo7Y.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -228,10 +266,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/unhead/dist/shared/unhead.CaI5ZD4O.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -240,10 +280,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/unhead/dist/shared/unhead.CbpEuj3y.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -252,10 +294,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/unhead/dist/shared/unhead.yem5I2v_.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -264,10 +308,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/vite-ssg/dist/index.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -276,10 +322,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/vite-ssg/dist/shared/vite-ssg.C6pK7rvr.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -288,10 +336,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/vite-ssg/dist/shared/vite-ssg.ETIvV-80.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -300,10 +350,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/vue-i18n/dist/vue-i18n.mjs": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -312,10 +364,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/vue-router/dist/devtools-BuSwVM2w.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -324,10 +378,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/vue-router/dist/useApi-BNm6g9O9.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -336,10 +392,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/vue-router/dist/vue-router.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -348,10 +406,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "node_modules/vue/dist/vue.runtime.esm-bundler.js": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -360,10 +420,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/App.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -372,34 +434,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/App.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
-    "/assets/cegepst-BGLbmcEk.webp",
-    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
-    "/assets/ton-equipier-CUTCJ2Yn.webp",
-    "/assets/hub-logo-CSvOY_qg.webp",
-    "/assets/leviat-legal-PPB-y0Dc.webp",
-    "/assets/sapdsr-olsOyHrB.png"
-  ],
-  "src/assets/catsenser/catsensor-device.webp": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
-    "/assets/catsensor-logo-black-C3S7pY7D.png",
-    "/assets/icon-CCMb4wWo.png",
-    "/assets/catsensor-device-mp6GFmWB.webp",
-    "/assets/cegepst-BGLbmcEk.webp",
-    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
-    "/assets/ton-equipier-CUTCJ2Yn.webp",
-    "/assets/hub-logo-CSvOY_qg.webp",
-    "/assets/leviat-legal-PPB-y0Dc.webp",
-    "/assets/sapdsr-olsOyHrB.png"
-  ],
-  "src/assets/catsenser/icon.png": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
-    "/assets/catsensor-logo-black-C3S7pY7D.png",
-    "/assets/icon-CCMb4wWo.png",
-    "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -408,10 +448,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/assets/catsensor-logo-black.png": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -419,11 +461,69 @@
     "/assets/leviat-legal-PPB-y0Dc.webp",
     "/assets/sapdsr-olsOyHrB.png"
   ],
-  "src/assets/catsensor-logo-white.png": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+  "src/assets/catsensor/catsensor-device.webp": [
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
+    "/assets/cegepst-BGLbmcEk.webp",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-CUTCJ2Yn.webp",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-PPB-y0Dc.webp",
+    "/assets/sapdsr-olsOyHrB.png"
+  ],
+  "src/assets/catsensor/icon.png": [
+    "/assets/footer_foreground-B9-Lca6T.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/icon-CCMb4wWo.png",
+    "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
+    "/assets/cegepst-BGLbmcEk.webp",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-CUTCJ2Yn.webp",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-PPB-y0Dc.webp",
+    "/assets/sapdsr-olsOyHrB.png"
+  ],
+  "src/assets/footer/footer_foreground.png": [
+    "/assets/footer_foreground-B9-Lca6T.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/icon-CCMb4wWo.png",
+    "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
+    "/assets/cegepst-BGLbmcEk.webp",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-CUTCJ2Yn.webp",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-PPB-y0Dc.webp",
+    "/assets/sapdsr-olsOyHrB.png"
+  ],
+  "src/assets/login-page-cta.png": [
+    "/assets/footer_foreground-B9-Lca6T.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/icon-CCMb4wWo.png",
+    "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
+    "/assets/cegepst-BGLbmcEk.webp",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-CUTCJ2Yn.webp",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-PPB-y0Dc.webp",
+    "/assets/sapdsr-olsOyHrB.png"
+  ],
+  "src/assets/misc/iphone_no-screen.png": [
+    "/assets/footer_foreground-B9-Lca6T.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/icon-CCMb4wWo.png",
+    "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -432,10 +532,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/assets/partner-logo/COLOSSE_LOGO_AJUSTE.svg": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -444,10 +546,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/assets/partner-logo/cegepst.webp": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -456,10 +560,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/assets/partner-logo/hub-logo.webp": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -468,10 +574,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/assets/partner-logo/leviat-legal.webp": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -480,10 +588,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/assets/partner-logo/sapdsr.png": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -492,10 +602,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/assets/partner-logo/ton-equipier.webp": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -504,10 +616,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/components/shared/CookieConsent.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -516,10 +630,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/components/shared/CookieConsent.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -528,10 +644,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/components/shared/CookieConsent.vue?vue&type=style&index=0&scoped=28d85eb4&lang.css": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -540,10 +658,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/components/shared/Footer.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -552,10 +672,26 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/components/shared/Footer.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
+    "/assets/cegepst-BGLbmcEk.webp",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-CUTCJ2Yn.webp",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-PPB-y0Dc.webp",
+    "/assets/sapdsr-olsOyHrB.png"
+  ],
+  "src/components/shared/Footer.vue?vue&type=style&index=0&scoped=d1a70f34&lang.css": [
+    "/assets/footer_foreground-B9-Lca6T.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/icon-CCMb4wWo.png",
+    "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -564,10 +700,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/components/shared/Header.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -576,10 +714,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/components/shared/Header.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -588,10 +728,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/composables/useLocale.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -600,10 +742,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/composables/usePageSeo.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -612,10 +756,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/i18n/en.json": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -624,10 +770,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/i18n/fr.json": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -636,10 +784,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/i18n/index.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -648,10 +798,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/layouts/MarketingLayout.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -660,10 +812,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/layouts/MarketingLayout.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -672,10 +826,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/layouts/PolicyLayout.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -684,10 +840,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/layouts/PolicyLayout.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -696,10 +854,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/main.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -708,10 +868,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/modules/analytics/googleAnalytics.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -720,10 +882,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/modules/consent/config.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -732,10 +896,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/modules/consent/index.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -744,10 +910,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/modules/consent/manager.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -756,10 +924,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/about/AboutPage.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -768,10 +938,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/about/AboutPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -780,10 +952,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/about/content.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -792,10 +966,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/about/sections/AboutUsSection.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -804,10 +980,26 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/about/sections/AboutUsSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
+    "/assets/cegepst-BGLbmcEk.webp",
+    "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
+    "/assets/ton-equipier-CUTCJ2Yn.webp",
+    "/assets/hub-logo-CSvOY_qg.webp",
+    "/assets/leviat-legal-PPB-y0Dc.webp",
+    "/assets/sapdsr-olsOyHrB.png"
+  ],
+  "src/pages/about/sections/AboutUsSection.vue?vue&type=style&index=0&scoped=24431b50&lang.css": [
+    "/assets/footer_foreground-B9-Lca6T.png",
+    "/assets/catsensor-logo-black-C3S7pY7D.png",
+    "/assets/icon-CCMb4wWo.png",
+    "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -816,10 +1008,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/about/sections/TimelineSection.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -828,10 +1022,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/about/sections/TimelineSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -840,10 +1036,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/HomePage.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -852,10 +1050,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/HomePage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -864,10 +1064,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/components/FeatureIcon.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -876,10 +1078,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/components/FeatureIcon.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -888,10 +1092,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/components/SignupForm.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -900,10 +1106,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/components/SignupForm.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -912,10 +1120,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/content.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -924,10 +1134,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/CtaSection.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -936,10 +1148,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/CtaSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -948,10 +1162,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/DonationSection.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -960,10 +1176,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/DonationSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -972,10 +1190,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/FeaturesSection.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -984,10 +1204,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/FeaturesSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -996,10 +1218,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/HeroSection.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1008,10 +1232,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/HeroSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1020,10 +1246,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/HowItWorksSection.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1032,10 +1260,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/HowItWorksSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1044,10 +1274,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/PartnersSection.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1056,10 +1288,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/PartnersSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1068,10 +1302,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/ProblemSection.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1080,10 +1316,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/home/sections/ProblemSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1092,10 +1330,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/privacy/PrivacyPage.vue": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1104,10 +1344,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/pages/privacy/PrivacyPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1116,10 +1358,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/router/route.ts": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
@@ -1128,10 +1372,12 @@
     "/assets/sapdsr-olsOyHrB.png"
   ],
   "src/styles/app.css": [
-    "/assets/catsensor-logo-white-jsJGyDcQ.png",
+    "/assets/footer_foreground-B9-Lca6T.png",
     "/assets/catsensor-logo-black-C3S7pY7D.png",
     "/assets/icon-CCMb4wWo.png",
     "/assets/catsensor-device-mp6GFmWB.webp",
+    "/assets/login-page-cta-BxhPpQRz.png",
+    "/assets/iphone_no-screen-P6aPwYTd.png",
     "/assets/cegepst-BGLbmcEk.webp",
     "/assets/COLOSSE_LOGO_AJUSTE-BqPhfdFZ.svg",
     "/assets/ton-equipier-CUTCJ2Yn.webp",
