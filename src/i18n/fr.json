@@ -149,6 +149,16 @@
     "header": {
       "backHome": "Retour à l'accueil"
     },
+    "intro": {
+      "eyebrow": "À propos de nous",
+      "title": "À propos de nous.",
+      "description": "CatSensor est né d'une idée simple : rendre visibles les changements qui se cachent dans la routine quotidienne. Notre équipe réunit le développement, l'IoT et une attention particulière au bien-être animal pour aider les propriétaires à mieux comprendre leur chat, sans perturber ses habitudes."
+    },
+    "workplace": {
+      "title": "Notre façon de faire",
+      "description": "Nous construisons CatSensor pour rendre les premiers signaux de santé simples, visibles et actionnables à la maison.",
+      "details": "Notre travail réunit développement, validation terrain et écoute des propriétaires de chats. Chaque étape est pensée pour créer un outil discret, compréhensible et réellement utile au quotidien."
+    },
     "timeline": {
       "eyebrow": "Chronologie",
       "title": "De l'idée au prototype.",
@@ -215,18 +225,22 @@
     },
     "team": {
       "eyebrow": "À propos de nous",
-      "title": "Créé par des propriétaires de chats, pour des propriétaires de chats.",
+      "title": "Nos créateurs",
       "description": "Nous construisons CatSensor pour rendre les premiers signaux de santé simples, visibles et actionnables à la maison.",
       "members": [
         {
           "name": "Samuel Courchesne",
+          "shortName": "Samuel Courchesne",
           "role": "Cofondateur",
-          "bio": "Samuel développe la partie logicielle embarquée de notre prototype, assure l'intégration IoT de CatSensor et prend également en charge le portail de paiement."
+          "bio": "Samuel développe la partie logicielle embarquée de notre prototype, assure l'intégration IoT de CatSensor et prend également en charge le portail de paiement.",
+          "quote": "Je suis déterminé et passionné. Ma vision pour CatSensor me pousse à aller plus loin. Je veux contribuer à créer un outil fiable qui aide les propriétaires à mieux comprendre la santé de leur chat."
         },
         {
           "name": "William Beaudin",
+          "shortName": "William Beaudin",
           "role": "Cofondateur",
-          "bio": "William s'occupe de la partie technique et des relations publiques pour faire avancer CatSensor côté produit et sur le terrain."
+          "bio": "William s'occupe de la partie technique et des relations publiques pour faire avancer CatSensor côté produit et sur le terrain.",
+          "quote": "J'ai envie de bâtir quelque chose de simple, fiable et réellement utile pour les propriétaires de chats. Chaque étape nous rapproche d'un CatSensor qui s'intègre naturellement à leur quotidien."
         }
       ]
     },
@@ -234,9 +248,12 @@
       "eyebrow": "L'équipe derrière",
       "brandLead": "CAT",
       "brandTail": "SENSOR",
-      "imageAltTall": "Fondateur CatSensor avec un chat",
-      "imageAltTop": "Moment d'équipe CatSensor",
-      "imageAltBottom": "Prototype CatSensor",
+      "imageAltTall": "William et Samuel présentent CatSensor",
+      "imageAltWilliam": "William Beaudin, cofondateur de CatSensor",
+      "imageAltSamuel": "Samuel Courchesne, cofondateur de CatSensor",
+      "imageAltTop": "William et Samuel avec leur prix pour CatSensor",
+      "imageAltBottom": "William et Samuel présentent CatSensor devant un public",
+      "imageAltOutdoor": "L'équipe CatSensor lors d'un événement extérieur",
       "missionLabel": "Notre mission",
       "missionTitle": "La santé de votre chat, avant tout.",
       "missionBody": "Né d'une passion profonde pour le bien-être animal, CatSensor réunit vétérinaire, ingénierie et design pour détecter plus tôt les signaux qui comptent.",
@@ -419,7 +436,11 @@
     "eyebrow": "Accès anticipé",
     "titleStart": "Soyez parmi les premiers à savoir",
     "titleEnd": "que votre chat va bien.",
-    "description": "Réservez votre place. Faites partie des premiers à essayer CatSensor au lancement.",
+    "description": "Inscrivez-vous à la file d'attente pour recevoir des nouvelles du lancement de CatSensor et faire partie des premiers à l'essayer.",
+    "visualEyebrow": "L'application CatSensor arrive bientôt",
+    "visualTitle": "Le suivi de votre chat, à portée de main.",
+    "visualDescription": "L'application sera disponible au lancement. Inscrivez-vous pour être parmi les premiers à la découvrir.",
+    "visualAlt": "Aperçu de l'application CatSensor dans un téléphone",
     "form": {
       "placeholder": "votre{'@'}email.com",
       "button": "Obtenir l'accès anticipé",
@@ -434,35 +455,38 @@
     }
   },
   "footer": {
-    "links": [
+    "brandHome": "CatSensor - Retour à l'accueil",
+    "navigationLabel": "Navigation du pied de page",
+    "legalLabel": "Liens légaux",
+    "tagline": "Un suivi discret pour rendre les tendances de santé de votre chat plus visibles, au quotidien.",
+    "columns": [
       {
-        "label": "Pourquoi CatSensor",
-        "href": "#problem"
+        "title": "Découvrir",
+        "links": [
+          { "label": "Pourquoi CatSensor", "href": "#problem" },
+          { "label": "Fonctionnement", "href": "#how" },
+          { "label": "Fonctionnalités", "href": "#features" }
+        ]
       },
       {
-        "label": "Fonctionnement",
-        "href": "#how"
+        "title": "Le projet",
+        "links": [
+          { "label": "Nous soutenir", "href": "#donation" },
+          { "label": "À propos de nous", "href": "about" },
+          { "label": "Nous contacter", "href": "mailto:contact@catsensor.ca" }
+        ]
       },
       {
-        "label": "Fonctionnalités",
-        "href": "#features"
-      },
-      {
-        "label": "Nous soutenir",
-        "href": "#donation"
-      },
-      {
-        "label": "À propos de nous",
-        "href": "about"
-      },
-      {
-        "label": "Confidentialité",
-        "href": "privacy"
-      },
-      {
-        "label": "Nous contacter",
-        "href": "mailto:contact@catsensor.ca"
+        "title": "En toute clarté",
+        "links": [
+          { "label": "Politique de confidentialité", "href": "privacy" }
+        ],
+        "description": "CatSensor est un outil de suivi en développement. Il ne remplace pas l'avis d'un professionnel vétérinaire."
       }
+    ],
+    "legalLinks": [
+      { "label": "Politique de confidentialité", "href": "privacy" },
+      { "label": "Nous contacter", "href": "mailto:contact@catsensor.ca" }
     ]
   }
 }
