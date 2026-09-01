@@ -149,6 +149,16 @@
     "header": {
       "backHome": "Back Home"
     },
+    "intro": {
+      "eyebrow": "About us",
+      "title": "About us.",
+      "description": "CatSensor started with a simple idea: make the changes hidden in a cat's daily routine easier to see. Our team brings together software, IoT, and a strong focus on animal wellbeing to help owners understand their cats without disrupting their habits."
+    },
+    "workplace": {
+      "title": "How we work",
+      "description": "We are building CatSensor to make early health signals simple, visible, and actionable at home.",
+      "details": "Our work brings together development, field validation, and conversations with cat owners. Every step is designed to create a discreet, understandable tool that is genuinely useful in everyday life."
+    },
     "timeline": {
       "eyebrow": "Timeline",
       "title": "From idea to prototype.",
@@ -215,18 +225,22 @@
     },
     "team": {
       "eyebrow": "About us",
-      "title": "Built by cat owners, for cat owners.",
+      "title": "Our creators",
       "description": "We are building CatSensor to make early health signals simple, visible, and actionable at home.",
       "members": [
         {
           "name": "Samuel Courchesne",
+          "shortName": "Samuel Courchesne",
           "role": "Co-founder",
-          "bio": "Samuel develops the embedded software for our prototype, leads CatSensor's IoT integration, and also builds the payment portal."
+          "bio": "Samuel develops the embedded software for our prototype, leads CatSensor's IoT integration, and also builds the payment portal.",
+          "quote": "I am determined and passionate. My vision for CatSensor pushes me to go further. I want to help build a reliable tool that helps owners better understand their cat's health."
         },
         {
           "name": "William Beaudin",
+          "shortName": "William Beaudin",
           "role": "Co-founder",
-          "bio": "William handles the technical side and public relations to move CatSensor forward both in product execution and in the field."
+          "bio": "William handles the technical side and public relations to move CatSensor forward both in product execution and in the field.",
+          "quote": "I want to build something simple, reliable, and genuinely useful for cat owners. Every step brings us closer to a CatSensor that naturally fits into their everyday lives."
         }
       ]
     },
@@ -234,9 +248,12 @@
       "eyebrow": "The team behind",
       "brandLead": "CAT",
       "brandTail": "SENSOR",
-      "imageAltTall": "CatSensor founder with a cat",
-      "imageAltTop": "CatSensor team moment",
-      "imageAltBottom": "CatSensor prototype",
+      "imageAltTall": "William and Samuel presenting CatSensor",
+      "imageAltWilliam": "William Beaudin, CatSensor co-founder",
+      "imageAltSamuel": "Samuel Courchesne, CatSensor co-founder",
+      "imageAltTop": "William and Samuel with their CatSensor award",
+      "imageAltBottom": "William and Samuel presenting CatSensor to an audience",
+      "imageAltOutdoor": "The CatSensor team at an outdoor event",
       "missionLabel": "Our mission",
       "missionTitle": "Your cat's health, first.",
       "missionBody": "Born from a deep focus on animal wellbeing, CatSensor brings together veterinary care, engineering, and design to spot meaningful signals earlier.",
@@ -401,7 +418,11 @@
     "eyebrow": "Early Access",
     "titleStart": "Be the first to know",
     "titleEnd": "your cat is healthy.",
-    "description": "Reserve your spot. Be among the first to try CatSensor when it launches.",
+    "description": "Join the waitlist for launch updates and be among the first people to try CatSensor when it becomes available.",
+    "visualEyebrow": "The CatSensor app is coming soon",
+    "visualTitle": "Your cat's health, at your fingertips.",
+    "visualDescription": "The app will be available at launch. Join the waitlist to be among the first to discover it.",
+    "visualAlt": "Preview of the CatSensor app inside a phone",
     "form": {
       "placeholder": "your{'@'}email.com",
       "button": "Get Early Access",
@@ -416,35 +437,38 @@
     }
   },
   "footer": {
-    "links": [
+    "brandHome": "CatSensor - Back to home",
+    "navigationLabel": "Footer navigation",
+    "legalLabel": "Legal links",
+    "tagline": "Quiet monitoring that makes your cat's health trends easier to see, every day.",
+    "columns": [
       {
-        "label": "Why CatSensor",
-        "href": "#problem"
+        "title": "Explore",
+        "links": [
+          { "label": "Why CatSensor", "href": "#problem" },
+          { "label": "How It Works", "href": "#how" },
+          { "label": "Features", "href": "#features" }
+        ]
       },
       {
-        "label": "How It Works",
-        "href": "#how"
+        "title": "The project",
+        "links": [
+          { "label": "Support Us", "href": "#donation" },
+          { "label": "About Us", "href": "about" },
+          { "label": "Contact us", "href": "mailto:contact@catsensor.ca" }
+        ]
       },
       {
-        "label": "Features",
-        "href": "#features"
-      },
-      {
-        "label": "Support Us",
-        "href": "#donation"
-      },
-      {
-        "label": "About Us",
-        "href": "about"
-      },
-      {
-        "label": "Privacy",
-        "href": "privacy"
-      },
-      {
-        "label": "Contact us",
-        "href": "mailto:contact@catsensor.ca"
+        "title": "In plain terms",
+        "links": [
+          { "label": "Privacy policy", "href": "privacy" }
+        ],
+        "description": "CatSensor is a health-monitoring tool in development. It does not replace professional veterinary advice."
       }
+    ],
+    "legalLinks": [
+      { "label": "Privacy policy", "href": "privacy" },
+      { "label": "Contact us", "href": "mailto:contact@catsensor.ca" }
     ]
   }
 }

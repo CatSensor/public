@@ -2,7 +2,7 @@ import { computed, watchEffect } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useRoute } from 'vue-router'
 
-import brandIconUrl from '@/assets/catsenser/icon.png'
+import brandIconUrl from '@/assets/catsensor/icon.png'
 import { i18n, messages, persistLocale, syncDocumentLanguage } from '@/i18n'
 import {
   buildCanonicalUrl,
