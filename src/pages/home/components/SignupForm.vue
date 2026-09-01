@@ -7,6 +7,10 @@ import { buildPagePath, type SeoRouteMeta } from '@/router/route'
 
 type FormStatus = 'idle' | 'loading' | 'success'
 
+withDefaults(defineProps<{ stacked?: boolean }>(), {
+  stacked: false,
+})
+
 const REGISTER_ENDPOINT = 'https://mail-service.catsensor.ca/register'
 
 const { t } = useI18n()
@@ -86,7 +90,13 @@ async function submit() {
   </div>
 
   <div v-else>
-    <form class="mb-4 flex max-w-[420px] flex-col gap-[10px] sm:flex-row" @submit.prevent="submit">
+    <form
+      :class="[
+        'mb-4 flex max-w-[420px] flex-col gap-[10px]',
+        !stacked && 'sm:flex-row',
+      ]"
+      @submit.prevent="submit"
+    >
       <label class="sr-only" for="email">Email</label>
       <input
         id="email"
@@ -99,7 +109,10 @@ async function submit() {
       <button
         type="submit"
         :disabled="status === 'loading'"
-        class="inline-flex w-full items-center justify-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 disabled:cursor-wait sm:w-auto"
+        :class="[
+          'inline-flex w-full items-center justify-center gap-2 rounded-[6px] bg-[oklch(44%_0.095_158)] px-[22px] py-[11px] text-sm font-medium tracking-[-0.01em] text-white transition hover:-translate-y-px hover:bg-[oklch(52%_0.095_158)] active:translate-y-0 disabled:cursor-wait',
+          !stacked && 'sm:w-auto',
+        ]"
       >
         <span v-if="status === 'loading'" class="inline-flex items-center gap-[7px]">
           <span class="inline-block h-[13px] w-[13px] animate-spin rounded-full border-[1.5px] border-white/35 border-t-white"></span>

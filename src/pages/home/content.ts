@@ -1,4 +1,6 @@
-import lineRender from '@/assets/catsenser/catsensor-device.webp'
+import lineRender from '@/assets/catsensor/catsensor-device.webp'
+import appPreview from '@/assets/login-page-cta.png'
+import phoneFrame from '@/assets/misc/iphone_no-screen.png'
 
 export type NavLink = {
   label: string
@@ -32,4 +34,6 @@ export type FooterLink = {
 
 export const productImages = {
   line: lineRender,
+  appPreview,
+  phoneFrame,
 }
